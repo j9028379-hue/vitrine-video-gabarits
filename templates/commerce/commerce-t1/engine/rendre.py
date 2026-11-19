@@ -5,7 +5,8 @@ from pathlib import Path
 from jsonschema import validate
 root=Path(__file__).resolve().parents[1];job=Path(sys.argv[1]);out=Path(sys.argv[2]);out.mkdir(exist_ok=True,parents=True);cv2.setNumThreads(1)
 def load(p):return json.loads(p.read_text())
-c=load(root/'montage/contrat-candidat.json');spec=load(root/'engine/format.json');form=load(job/'formulaire.json');validate(form,load(root/c['formulaire']['schema']));assets=load(job/'prises.json');sc=c['scenes'];assert set(assets)==set(x['prise'] for x in sc);W,H,F,N=[spec[k] for k in ('width','height','fps','frames')];assert N==F*c['duree_s'];caps=[];cache={};files=[]
+from job import lire
+c=load(root/'montage/contrat-candidat.json');spec=load(root/'engine/format.json');form,assets=lire(job,root,c);sc=c['scenes'];assert set(assets)==set(x['prise'] for x in sc);W,H,F,N=[spec[k] for k in ('width','height','fps','frames')];assert N==F*c['duree_s'];caps=[];cache={};files=[]
 for s in sc:
  p=job/assets[s['prise']];cap=cv2.VideoCapture(str(p));assert cap.isOpened() and abs(cap.get(5)-F)<.001 and cap.get(7)>=s['capture_s']*F,(s['id'],p);caps.append(cap);files.append(p)
 for name,h in c['polices'].items():assert hashlib.sha256((root/'assets/fonts'/name).read_bytes()).hexdigest()==h
@@ -71,3 +72,7 @@ for frame in range(N):proc.stdin.write(compose(frame/F).tobytes())
 proc.stdin.close();assert proc.wait()==0
 for cap in caps:cap.release()
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();report={'edition':'V3 lettrage chorégraphié','calques':[{**g,**meta,'valeur':g['texte'].format_map(values)} for g,_,meta in items],'horloge_temoin':clock,'temoins_plein_cadre':trace,'textes_affiches':texts,'sha256':sha(mp),'contrat_sha256':sha(root/'montage/contrat-candidat.json'),'inputs':{p.name:sha(p) for p in files},'textes_resolus':texts,'polices':c['polices'],'effets':{k:{'premiere_image':min(v),'derniere_image':max(v),'images':len(v)} for k,v in events.items()},'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()};(out/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+
+import shutil
+shutil.copyfile(job/'render-job.json',out/'render-job.json')
+if (job/'preuve-parcours.json').exists():shutil.copyfile(job/'preuve-parcours.json',out/'preuve-parcours.json')
