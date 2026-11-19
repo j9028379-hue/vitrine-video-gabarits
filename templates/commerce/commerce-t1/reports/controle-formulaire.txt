@@ -1,1 +1,1 @@
-PASS navigateur : 6 champs vides obligatoires ; pas de prévisualisation à vide ; réponses visibles aux bonnes scènes ; modification de produit répercutée en S1.
+PASS Chromium — six questions et exemples dans l’ordre, champs obligatoires vides ; prix « 5 000 FCFA » accepté, numéro masqué refusé ; réponses affichées aux scènes prévues. Voir reports/controle-socle.mjs.

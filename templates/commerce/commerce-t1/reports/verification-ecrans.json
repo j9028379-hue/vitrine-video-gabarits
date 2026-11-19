@@ -1,211 +1,207 @@
 {
   "viewports": [
     {
-      "viewport": 360,
-      "screen": "1A",
-      "scroll": 360,
-      "view": 360,
-      "h": 815,
-      "clipped": false
+      "ecran": 1,
+      "scene": 1,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "1B",
-      "scroll": 360,
-      "view": 360,
-      "h": 552,
-      "clipped": false
+      "ecran": 2,
+      "scene": 1,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "1C",
-      "scroll": 360,
-      "view": 360,
-      "h": 557,
-      "clipped": false
+      "ecran": 3,
+      "scene": 1,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "2A",
-      "scroll": 360,
-      "view": 360,
-      "h": 807,
-      "clipped": false
+      "ecran": 4,
+      "scene": 2,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "2B",
-      "scroll": 360,
-      "view": 360,
-      "h": 552,
-      "clipped": false
+      "ecran": 5,
+      "scene": 2,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "2C",
-      "scroll": 360,
-      "view": 360,
-      "h": 557,
-      "clipped": false
+      "ecran": 6,
+      "scene": 2,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "3A",
-      "scroll": 360,
-      "view": 360,
-      "h": 816,
-      "clipped": false
+      "ecran": 7,
+      "scene": 3,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "3B",
-      "scroll": 360,
-      "view": 360,
-      "h": 552,
-      "clipped": false
+      "ecran": 8,
+      "scene": 3,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "3C",
-      "scroll": 360,
-      "view": 360,
-      "h": 557,
-      "clipped": false
+      "ecran": 9,
+      "scene": 3,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "4A",
-      "scroll": 360,
-      "view": 360,
-      "h": 848,
-      "clipped": false
+      "ecran": 10,
+      "scene": 4,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "4B",
-      "scroll": 360,
-      "view": 360,
-      "h": 552,
-      "clipped": false
+      "ecran": 11,
+      "scene": 4,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 360,
-      "screen": "4C",
-      "scroll": 360,
-      "view": 360,
-      "h": 557,
-      "clipped": false
+      "ecran": 12,
+      "scene": 4,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 360,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "1A",
-      "scroll": 430,
-      "view": 430,
-      "h": 765,
-      "clipped": false
+      "ecran": 1,
+      "scene": 1,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "1B",
-      "scroll": 430,
-      "view": 430,
-      "h": 552,
-      "clipped": false
+      "ecran": 2,
+      "scene": 1,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "1C",
-      "scroll": 430,
-      "view": 430,
-      "h": 538,
-      "clipped": false
+      "ecran": 3,
+      "scene": 1,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "2A",
-      "scroll": 430,
-      "view": 430,
-      "h": 746,
-      "clipped": false
+      "ecran": 4,
+      "scene": 2,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "2B",
-      "scroll": 430,
-      "view": 430,
-      "h": 552,
-      "clipped": false
+      "ecran": 5,
+      "scene": 2,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "2C",
-      "scroll": 430,
-      "view": 430,
-      "h": 538,
-      "clipped": false
+      "ecran": 6,
+      "scene": 2,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "3A",
-      "scroll": 430,
-      "view": 430,
-      "h": 772,
-      "clipped": false
+      "ecran": 7,
+      "scene": 3,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "3B",
-      "scroll": 430,
-      "view": 430,
-      "h": 552,
-      "clipped": false
+      "ecran": 8,
+      "scene": 3,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "3C",
-      "scroll": 430,
-      "view": 430,
-      "h": 538,
-      "clipped": false
+      "ecran": 9,
+      "scene": 3,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "4A",
-      "scroll": 430,
-      "view": 430,
-      "h": 806,
-      "clipped": false
+      "ecran": 10,
+      "scene": 4,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "4B",
-      "scroll": 430,
-      "view": 430,
-      "h": 552,
-      "clipped": false
+      "ecran": 11,
+      "scene": 4,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 430,
+      "debordement": false
     },
     {
-      "viewport": 430,
-      "screen": "4C",
-      "scroll": 430,
-      "view": 430,
-      "h": 538,
-      "clipped": false
+      "ecran": 12,
+      "scene": 4,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 430,
+      "debordement": false
     }
   ],
   "tests": [
-    "24 vérifications de largeur / contrôles",
-    "12 captures PNG réelles du prototype",
-    "décompte réel et fin automatique S1",
-    "lecture de la vidéo de démo avec piste non muette et temps avançant",
-    "refaire invalide la prise simulée",
-    "validation explicite et navigation C1 à C4 ; sortie montage"
+    "Formulaire : ordre, questions, exemples, six entrées obligatoires vides, montant formaté, téléphone masqué refusé, aperçu vérifié",
+    "24 contrôles du parcours dans Chromium et de largeur ; 12 captures réelles",
+    "4 décomptes et arrêts automatiques ; relecture, reprise et sortie après 4C"
   ],
   "non_testes": [
     "Android physique",
-    "captation réelle",
-    "validation créative",
-    "rendu et mixage de la publicité"
+    "caméra et micro réels",
+    "publication"
   ],
   "errors": []
 }

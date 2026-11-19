@@ -4,7 +4,7 @@
   "etat": "Révision créative candidate ; validation humaine requise.",
   "guide": {
     "path": "capture-guide/guide.json",
-    "sha256": "530446bf19662ebbf3c569df27191fb144761a302a966b17b7ead916b6bf5149",
+    "sha256": "f2c908a813fee66be73404363ef7330442c53effa833d85c8153f223e0a4e5db",
     "usage": "Consignes à la capture seulement ; ne pas incruster les exemples de parole."
   },
   "formulaire": {
@@ -13,9 +13,9 @@
       "nom",
       "produit",
       "prix",
-      "whatsapp",
+      "accroche",
       "quartier",
-      "accroche"
+      "whatsapp"
     ],
     "whatsapp": "Enlever les espaces à la saisie, puis valider. Si une valeur est absente ou invalide, bloquer la préparation.",
     "questions": "form/questions.json",

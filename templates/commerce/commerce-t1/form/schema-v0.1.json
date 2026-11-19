@@ -6,9 +6,9 @@
     "nom",
     "produit",
     "prix",
-    "whatsapp",
+    "accroche",
     "quartier",
-    "accroche"
+    "whatsapp"
   ],
   "properties": {
     "produit": {

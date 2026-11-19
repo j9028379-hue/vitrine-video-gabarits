@@ -1,7 +1,7 @@
 {
   "resultat": "Conforme",
   "source": "capture-guide/guide.json",
-  "methode": "JSON embarqué identique au fichier source. Comparaison de tous les textes visibles dans le téléphone aux séquences attendues issues du JSON ; espaces et capitales de présentation normalisés. Mention T1 et exemples A contrôlés également mot pour mot. Libellé CSS de la photo contrôlé.",
+  "methode": "JSON embarqué identique au fichier source. Comparaison de tous les textes visibles dans le téléphone aux séquences attendues issues du JSON ; espaces et capitales de présentation normalisés. Mention universelle et exemples A contrôlés également mot pour mot. Libellé CSS de la photo contrôlé.",
   "resultats": [
     "360px / 1A : conforme",
     "360px / 1B : conforme",

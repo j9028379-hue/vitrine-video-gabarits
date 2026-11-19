@@ -1,8 +1,8 @@
 {
-  "nom": "Comment s’appelle ton commerce ?",
-  "produit": "Quel produit ou service veux-tu présenter ?",
-  "prix": "Quel est son prix en F CFA ?",
-  "whatsapp": "Sur quel numéro WhatsApp peut-on te contacter ?",
-  "quartier": "Dans quel quartier se trouve ton commerce ?",
-  "accroche": "Quel détail veux-tu montrer ?"
+  "nom": "Comment s'appelle ton commerce ?",
+  "produit": "Qu'est-ce que tu veux présenter dans ta publicité ?",
+  "prix": "Quel prix veux-tu afficher ?",
+  "accroche": "Qu'est-ce que tu veux dire aux clients ?",
+  "quartier": "Où peut-on te trouver ?",
+  "whatsapp": "Quel est ton numéro WhatsApp ?"
 }

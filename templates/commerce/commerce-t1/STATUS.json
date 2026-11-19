@@ -2,8 +2,8 @@
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
   "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "Master V3 rendu sur GitHub et contrôlé ; validation créative en attente.",
-  "branche": "feat/commerce-t1-silencieux",
+  "statut_workflow": "Socle universel v1 intégré à la maquette et au parcours de Produit vedette. Master V3 conservé.",
+  "branche": "feat/commerce-base-commune",
   "commit": "Voir le HEAD de la branche de travail.",
   "preuves": [
     "approvals/selection.json",
@@ -43,12 +43,14 @@
     "montage/Partition-V3.md",
     "reports/rendu-03/manifest.json",
     "reports/rendu-03/controle.json",
-    "reports/rendu-03/planche-QC.jpg"
+    "reports/rendu-03/planche-QC.jpg",
+    "../base-commune/socle-v1.json",
+    "reports/controle-socle.mjs"
   ],
   "derniere_approbation": "Écrans corrigés et consignes produit acceptés.",
-  "decision_attendue": "Visionner le master V3 ; aucun passage à la phase suivante.",
+  "decision_attendue": "Revoir le formulaire de principe et les 12 écrans ; pas de publication ni de création des quatre autres gabarits.",
   "blocages": [
-    "Validation créative du master silencieux V3 en attente."
+    "Pas de déploiement autorisé ni de validation Android."
   ],
   "duree_imposee_s": 30,
   "depot": "https://github.com/j9028379-hue/vitrine-video-gabarits",

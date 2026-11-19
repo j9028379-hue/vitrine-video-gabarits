@@ -5,9 +5,9 @@
     "nom",
     "produit",
     "prix",
-    "whatsapp",
+    "accroche",
     "quartier",
-    "accroche"
+    "whatsapp"
   ],
   "states": [
     "Guide",
@@ -25,10 +25,10 @@
     "mic": "Micro ouvert",
     "verify": "Regarde ta vidéo",
     "confirm": "Si la vidéo te plaît, garde-la et passe à la suite.",
-    "voice": "Tu peux parler pendant que tu filmes, en fon, yoruba, français ou anglais, pour présenter ton produit.",
+    "voice": "Tu peux parler pendant que tu filmes, dans la langue que tu veux : fon, yoruba, français, anglais ou toute autre langue que tu maîtrises.",
     "end": "Tu as gardé tes quatre vidéos. Dans cette démo, le montage ne démarre pas.",
     "voiceTitle": "Parler est facultatif",
-    "choice": "Tu peux aussi filmer sans parler.",
+    "choice": "Tu peux aussi ne pas parler si tu préfères.",
     "example": "Exemple de phrase (facultatif)",
     "say": "Tu peux le dire avec tes mots.",
     "confirmLast": "Si la vidéo te plaît, garde-la et passe au montage.",
@@ -46,70 +46,85 @@
   "scenes": [
     {
       "id": 1,
-      "title": "Présente ton produit",
-      "instruction": "Montre ton produit en entier. Recule un peu si on ne voit pas tout.",
+      "title": "Présente ce que tu proposes",
+      "instruction": "Montre ce que tu proposes. Place-le devant ton téléphone pour qu'on puisse bien voir ce que tu présentes.",
       "needed": [
-        "Le produit en entier."
+        "Ce que tu proposes, en entier.",
+        "Une image bien claire.",
+        "Une belle présentation."
       ],
       "avoid": [
-        "Ne coupe pas une partie du produit à l’écran."
+        "Filmer de trop loin.",
+        "Cacher une partie importante.",
+        "Bouger le téléphone trop vite."
       ],
-      "sample": "Voici le produit que je te présente aujourd’hui.",
+      "sample": "Bonjour, voici ce que nous te proposons aujourd'hui.",
       "capture": 8,
       "kept": 6,
-      "action": "Tiens ton téléphone droit, sans bouger."
+      "action": "Place bien ce que tu veux montrer devant ton téléphone. Commence par une vue d'ensemble et tiens ton téléphone bien droit."
     },
     {
       "id": 2,
-      "title": "Montre le détail",
-      "instruction": "Approche ton téléphone du détail que tu veux montrer.",
+      "title": "Montre les détails",
+      "instruction": "Approche doucement ton téléphone pour montrer les détails. Fais voir les parties importantes que le client doit bien regarder.",
       "needed": [
-        "Le détail du produit que tu as indiqué dans le formulaire."
+        "Les détails importants.",
+        "Les différentes parties.",
+        "Les finitions et l'apparence."
       ],
       "avoid": [
-        "Ne cache pas le détail avec ton doigt."
+        "Approcher trop vite.",
+        "Cacher les détails.",
+        "Filmer une image floue."
       ],
-      "sample": "Regarde ce détail de près.",
+      "sample": "Regarde bien, voici quelques détails intéressants.",
       "capture": 10,
       "kept": 8,
-      "action": "Attends que l’image soit nette avant de filmer."
+      "action": "Rapproche lentement ton téléphone. Arrête-toi sur les détails pour qu'on puisse bien les voir."
     },
     {
       "id": 3,
-      "title": "Montre comment ça marche",
-      "instruction": "Montre comment tu utilises le produit.",
+      "title": "Montre comment ça se passe",
+      "instruction": "Montre une action liée à ce que tu proposes. Fais voir comment tu travailles, comment tu prépares ou comment on utilise ce que tu présentes.",
       "needed": [
-        "Ta main, le produit et ce que tu fais avec."
+        "Le geste ou l'action principale.",
+        "Ce qui se passe pendant le travail.",
+        "Une étape importante."
       ],
       "avoid": [
-        "Ne cache pas le produit au moment de t’en servir."
+        "Cacher ce que tu fais.",
+        "Filmer trop rapidement.",
+        "Montrer une action sans rapport."
       ],
-      "sample": "Voilà comment je m’en sers.",
+      "sample": "Je vais te montrer comment ça se passe.",
       "capture": 9,
       "kept": 7,
-      "action": "Fais le geste une fois. Puis laisse le temps de voir le résultat."
+      "action": "Fais ton geste ou montre comment ça fonctionne. Filme naturellement et garde ton téléphone stable pour qu'on voie bien ce qui se passe."
     },
     {
       "id": 4,
-      "title": "Montre ta boutique",
-      "instruction": "Montre ton produit dans ta boutique. Si tu peux, filme aussi le nom de la boutique.",
+      "title": "Montre le résultat final",
+      "instruction": "Montre ce que le client va recevoir ou découvrir. Présente bien le résultat et laisse le téléphone filmer quelques secondes sans bouger.",
       "needed": [
-        "Le produit et un endroit où on reconnaît ta boutique."
+        "Le résultat ou la présentation finale.",
+        "Une belle vue d'ensemble.",
+        "Ton lieu de travail, si possible."
       ],
       "avoid": [
-        "Ne filme pas les clients sans leur accord."
+        "Cacher le résultat.",
+        "Filmer dans un endroit trop sombre.",
+        "Bouger le téléphone à la fin."
       ],
-      "sample": "Tu veux ce produit ? Passe à la boutique ou écris-nous sur WhatsApp.",
+      "sample": "Voilà ce que nous te proposons. Contacte-nous pour en savoir plus.",
       "capture": 11,
       "kept": 9,
-      "action": "Laisse un peu de place sous le produit à l’écran, pour le prix et ton numéro."
+      "action": "Présente bien ce que tu proposes. Garde ton téléphone stable quelques secondes pour qu'on puisse tout voir."
     }
   ],
   "text_policy": {
-    "portée": "Tous les gabarits VITRINE VIDÉO",
-    "principe": "Parler au commerçant comme en face de lui. Dire quoi filmer et proposer un exemple différent pour chaque scène, lié aux réponses confirmées et à ce que la caméra montre. Ne rien promettre à sa place.",
-    "service": "Tu peux parler pendant que tu filmes, en fon, yoruba, français ou anglais, pour présenter ton travail.",
-    "parole": "Facultative, libre et sans lien avec la future voix off de démonstration.",
-    "exemple_courant": "Les images illustrent un produit. Les consignes communes disent « ton produit » ou « le produit ». Aucun nom ni détail d’article de démonstration n’est imposé."
+    "portée": "Commerce · cinq gabarits prévus",
+    "source": "../base-commune/socle-v1.json",
+    "principe": "Même mission pour tout le monde. Aucun choix de catégorie. Les visuels sont des exemples.",
+    "parole": "Libre, facultative, sans lien avec une voix off."
   }
 }
