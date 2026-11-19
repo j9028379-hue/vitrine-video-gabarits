@@ -1,0 +1,211 @@
+{
+  "viewports": [
+    {
+      "viewport": 360,
+      "screen": "1A",
+      "scroll": 360,
+      "view": 360,
+      "h": 593,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "1B",
+      "scroll": 360,
+      "view": 360,
+      "h": 552,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "1C",
+      "scroll": 360,
+      "view": 360,
+      "h": 538,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "2A",
+      "scroll": 360,
+      "view": 360,
+      "h": 593,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "2B",
+      "scroll": 360,
+      "view": 360,
+      "h": 552,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "2C",
+      "scroll": 360,
+      "view": 360,
+      "h": 538,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "3A",
+      "scroll": 360,
+      "view": 360,
+      "h": 623,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "3B",
+      "scroll": 360,
+      "view": 360,
+      "h": 552,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "3C",
+      "scroll": 360,
+      "view": 360,
+      "h": 538,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "4A",
+      "scroll": 360,
+      "view": 360,
+      "h": 623,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "4B",
+      "scroll": 360,
+      "view": 360,
+      "h": 552,
+      "clipped": false
+    },
+    {
+      "viewport": 360,
+      "screen": "4C",
+      "scroll": 360,
+      "view": 360,
+      "h": 538,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "1A",
+      "scroll": 430,
+      "view": 430,
+      "h": 530,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "1B",
+      "scroll": 430,
+      "view": 430,
+      "h": 552,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "1C",
+      "scroll": 430,
+      "view": 430,
+      "h": 538,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "2A",
+      "scroll": 430,
+      "view": 430,
+      "h": 530,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "2B",
+      "scroll": 430,
+      "view": 430,
+      "h": 552,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "2C",
+      "scroll": 430,
+      "view": 430,
+      "h": 538,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "3A",
+      "scroll": 430,
+      "view": 430,
+      "h": 550,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "3B",
+      "scroll": 430,
+      "view": 430,
+      "h": 552,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "3C",
+      "scroll": 430,
+      "view": 430,
+      "h": 538,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "4A",
+      "scroll": 430,
+      "view": 430,
+      "h": 530,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "4B",
+      "scroll": 430,
+      "view": 430,
+      "h": 552,
+      "clipped": false
+    },
+    {
+      "viewport": 430,
+      "screen": "4C",
+      "scroll": 430,
+      "view": 430,
+      "h": 538,
+      "clipped": false
+    }
+  ],
+  "tests": [
+    "24 vérifications de largeur / contrôles",
+    "12 captures PNG réelles du prototype",
+    "décompte réel et fin automatique S1",
+    "lecture de la vidéo de démo avec piste non muette et temps avançant",
+    "refaire invalide la prise simulée",
+    "validation explicite et navigation C1 à C4 ; sortie montage"
+  ],
+  "non_testes": [
+    "Android physique",
+    "captation réelle",
+    "validation créative",
+    "rendu et mixage de la publicité"
+  ],
+  "errors": []
+}

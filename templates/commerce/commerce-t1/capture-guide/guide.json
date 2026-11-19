@@ -1,0 +1,73 @@
+{
+  "template": "COMMERCE-T1",
+  "total": 30,
+  "required": [
+    "nom",
+    "produit",
+    "prix",
+    "whatsapp",
+    "quartier",
+    "accroche"
+  ],
+  "states": [
+    "Guide",
+    "Enregistrement",
+    "Vérification"
+  ],
+  "ui": {
+    "start": "COMMENCER À FILMER",
+    "retry": "REFAIRE",
+    "next": "SCÈNE SUIVANTE",
+    "finish": "PASSER AU MONTAGE",
+    "play": "Relire avec le son",
+    "pause": "Mettre en pause",
+    "record": "REC",
+    "mic": "Micro actif",
+    "verify": "Vérifie ta prise",
+    "confirm": "En continuant, tu valides cette prise.",
+    "voice": "Tu peux parler, ce n’est pas obligatoire.",
+    "end": "Les quatre prises sont validées. Le parcours de capture est terminé. Aucun montage n’est lancé dans cette simulation."
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "title": "Le produit entier",
+      "instruction": "Pose ton article sur un fond simple. Cadre-le en entier et tiens ton téléphone immobile.",
+      "needed": "Tout le produit, avec un peu d’espace autour.",
+      "avoid": "Ne coupe ni le haut ni la base.",
+      "sample": "Voici notre lampe de bureau.",
+      "capture": 8,
+      "kept": 6
+    },
+    {
+      "id": 2,
+      "title": "Le détail qui compte",
+      "instruction": "Approche-toi du détail annoncé. Attends que l’image soit nette avant de filmer.",
+      "needed": "Le détail indiqué dans le formulaire : ici, la tête orientable.",
+      "avoid": "Ne cache pas le détail avec ton doigt.",
+      "sample": "Regarde la tête orientable.",
+      "capture": 10,
+      "kept": 8
+    },
+    {
+      "id": 3,
+      "title": "Le geste qui le prouve",
+      "instruction": "Montre comment le produit fonctionne. Fais le geste une fois, puis laisse voir le résultat.",
+      "needed": "Tes mains, l’article et le résultat du geste.",
+      "avoid": "Ne sors pas du cadre au moment important.",
+      "sample": "Je peux orienter la lumière ici.",
+      "capture": 9,
+      "kept": 7
+    },
+    {
+      "id": 4,
+      "title": "Le produit au comptoir",
+      "instruction": "Pose le produit au comptoir. Garde le bas du cadre dégagé pour le prix et le contact.",
+      "needed": "L’article et un repère de ta boutique.",
+      "avoid": "Ne filme pas un numéro personnel en arrière-plan.",
+      "sample": "Contacte-nous pour commander.",
+      "capture": 11,
+      "kept": 9
+    }
+  ]
+}
