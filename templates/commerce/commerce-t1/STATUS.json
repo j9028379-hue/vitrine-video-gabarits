@@ -2,8 +2,8 @@
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
   "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "Quatre musiques approuvées ; voix française choisie ; aperçu voix seule assemblé localement.",
-  "branche": "feat/commerce-t1-audition",
+  "statut_workflow": "Liaison formulaire → 12 écrans → RenderJob → rendu silencieux démontrée sur runner GitHub. Musique en pause.",
+  "branche": "feat/commerce-t1-silencieux",
   "commit": "Voir le HEAD de la branche de travail.",
   "preuves": [
     "approvals/selection.json",
@@ -50,7 +50,7 @@
     "audio/audition-voix.json"
   ],
   "derniere_approbation": "Écrans corrigés et consignes produit acceptés.",
-  "decision_attendue": "Écoute du débit ; attente des sources musicales pour le contrôle des quatre mixes.",
+  "decision_attendue": "Revue du parcours et des preuves. Aucun déploiement mobile ni publication.",
   "blocages": [
     "Fichiers audio Pixabay non disponibles dans cet espace ; aucun mix voix-musique livré."
   ],
@@ -63,5 +63,12 @@
     "commit": "c84cfd8143fdb4fc355aca8981f34f5ea6796ef7",
     "sha256": "d0a55142d49e012a91209ffb1c5d45adef4dae5235649ee5dd80abb08dcb46bb",
     "publication_release": false
+  },
+  "preuve_chaine": {
+    "run": "https://github.com/j9028379-hue/vitrine-video-gabarits/actions/runs/44569108988",
+    "commit": "363afcb4d1b37b8f3e983fcedc70059ff4ea32f0",
+    "sha256_mp4": "5aef9d9dd2514e0b8fb0c052f142e30828b8f78ac47170e8614d230293740dcb",
+    "dossier": "reports/parcours-vers-montage",
+    "profil": "Démo : import MP4, simulateur de capture, Chrome sur GitHub Actions."
   }
 }

@@ -1,0 +1,208 @@
+{
+  "resultat": "PASS",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "images_decodees": 900,
+  "duree_s": 30,
+  "pistes_audio": 0,
+  "sha256": "5aef9d9dd2514e0b8fb0c052f142e30828b8f78ac47170e8614d230293740dcb",
+  "effets": {
+    "A": {
+      "premiere_image": 0,
+      "derniere_image": 43,
+      "images": 44
+    },
+    "B": {
+      "premiere_image": 86,
+      "derniere_image": 97,
+      "images": 12
+    },
+    "C": {
+      "premiere_image": 174,
+      "derniere_image": 187,
+      "images": 14
+    },
+    "D": {
+      "premiere_image": 300,
+      "derniere_image": 316,
+      "images": 17
+    },
+    "E": {
+      "premiere_image": 413,
+      "derniere_image": 436,
+      "images": 24
+    },
+    "F": {
+      "premiere_image": 513,
+      "derniere_image": 542,
+      "images": 30
+    },
+    "G": {
+      "premiere_image": 626,
+      "derniere_image": 665,
+      "images": 40
+    },
+    "H": {
+      "premiere_image": 879,
+      "derniere_image": 899,
+      "images": 21
+    }
+  },
+  "controle_image": [
+    {
+      "image": 48,
+      "calques": [
+        "signature"
+      ],
+      "scene": 1,
+      "ecart_moyen_hors_lettres": 2.29,
+      "ecart_bas_vs_rush": 2.18,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 66,
+      "calques": [
+        "signature"
+      ],
+      "scene": 1,
+      "ecart_moyen_hors_lettres": 2.23,
+      "ecart_bas_vs_rush": 2.1,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 105,
+      "calques": [
+        "signature",
+        "produit"
+      ],
+      "scene": 1,
+      "ecart_moyen_hors_lettres": 2.0,
+      "ecart_bas_vs_rush": 1.9,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 152,
+      "calques": [
+        "signature",
+        "produit"
+      ],
+      "scene": 1,
+      "ecart_moyen_hors_lettres": 2.22,
+      "ecart_bas_vs_rush": 2.18,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 201,
+      "calques": [
+        "detail"
+      ],
+      "scene": 2,
+      "ecart_moyen_hors_lettres": 2.18,
+      "ecart_bas_vs_rush": 2.53,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 237,
+      "calques": [
+        "detail"
+      ],
+      "scene": 2,
+      "ecart_moyen_hors_lettres": 2.23,
+      "ecart_bas_vs_rush": 2.74,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 327,
+      "calques": [
+        "offre"
+      ],
+      "scene": 2,
+      "ecart_moyen_hors_lettres": 2.22,
+      "ecart_bas_vs_rush": 2.56,
+      "fraction_encre_ivoire": null
+    },
+    {
+      "image": 356,
+      "calques": [
+        "offre"
+      ],
+      "scene": 2,
+      "ecart_moyen_hors_lettres": 2.22,
+      "ecart_bas_vs_rush": 2.17,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 476,
+      "calques": [],
+      "scene": 3,
+      "ecart_moyen_hors_lettres": 2.04,
+      "ecart_bas_vs_rush": 2.41,
+      "fraction_encre_ivoire": null
+    },
+    {
+      "image": 581,
+      "calques": [],
+      "scene": 3,
+      "ecart_moyen_hors_lettres": 2.09,
+      "ecart_bas_vs_rush": 2.25,
+      "fraction_encre_ivoire": null
+    },
+    {
+      "image": 675,
+      "calques": [
+        "enseigne"
+      ],
+      "scene": 4,
+      "ecart_moyen_hors_lettres": 1.99,
+      "ecart_bas_vs_rush": 2.0,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 721,
+      "calques": [
+        "enseigne",
+        "lieu"
+      ],
+      "scene": 4,
+      "ecart_moyen_hors_lettres": 1.96,
+      "ecart_bas_vs_rush": 1.92,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 771,
+      "calques": [
+        "appel"
+      ],
+      "scene": 4,
+      "ecart_moyen_hors_lettres": 1.98,
+      "ecart_bas_vs_rush": 1.97,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 805,
+      "calques": [
+        "appel",
+        "numero"
+      ],
+      "scene": 4,
+      "ecart_moyen_hors_lettres": 2.01,
+      "ecart_bas_vs_rush": 1.94,
+      "fraction_encre_ivoire": 1.0
+    },
+    {
+      "image": 845,
+      "calques": [
+        "appel",
+        "numero"
+      ],
+      "scene": 4,
+      "ecart_moyen_hors_lettres": 2.02,
+      "ecart_bas_vs_rush": 1.9,
+      "fraction_encre_ivoire": 1.0
+    }
+  ],
+  "observations": "Quinze images hors transition confrontées aux pixels des rushs recadrés, y compris les 144 dernières lignes ; contrôle de la présence chronométrée et de l’ivoire des lettres. Ces vérifications ne valent pas validation du style ou des raccords."
+}
