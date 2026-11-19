@@ -1,0 +1,38 @@
+name: COMMERCE-T1 · Quatre rushs, rendu silencieux
+on:
+  push:
+    branches: [feat/commerce-t1-silencieux]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  montage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: templates/commerce/commerce-t1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Outils du runner hébergé
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install 'numpy<2.3' 'opencv-python-headless<4.13' pillow jsonschema
+      - name: Vérifier formulaire et liaisons
+        run: python tests/controle_liaisons.py
+      - name: Télécharger et verrouiller les quatre rushs réels
+        run: python fixtures/rushs/telecharger.py
+      - name: Monter les prises avec les huit motifs
+        run: python engine/rendre.py fixtures/rushs "$RUNNER_TEMP/master"
+      - name: Décoder et contrôler le MP4
+        run: python tests/qc_mp4.py "$RUNNER_TEMP/master"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: COMMERCE-T1-sans-voix-${{ github.run_number }}
+          path: ${{ runner.temp }}/master/
+          retention-days: 60
+          if-no-files-found: error
