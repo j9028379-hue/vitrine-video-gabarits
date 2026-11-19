@@ -2,7 +2,7 @@
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
   "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "Références en attente de validation",
+  "statut_workflow": "Références validées",
   "branche": "feat/commerce-t1-references",
   "commit": "Voir git rev-parse HEAD (local uniquement)",
   "preuves": [
@@ -12,10 +12,11 @@
     "reports/audit-github.json",
     "approvals/refus-lot-01.json",
     "research/lot-01-refuse.json",
-    "Lot-02.md"
+    "Lot-02.md",
+    "approvals/choix-lot02-option02.json"
   ],
-  "derniere_approbation": "Sélection du gabarit uniquement",
-  "decision_attendue": "Accepter, refuser ou préciser le lot 02",
+  "derniere_approbation": "Lot 02, option 2 uniquement ; tous les raccords visuels à adapter à quatre scènes",
+  "decision_attendue": "Approbation de la traduction en quatre scènes",
   "blocages": [
     "Dépôt commun : API GitHub publique HTTP 404, accès privé éventuel non vérifié. gh absent. Aucun push.",
     "Audio non écouté."
