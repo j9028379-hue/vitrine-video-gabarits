@@ -1,0 +1,20 @@
+{
+  "identifiant": "COMMERCE-T1",
+  "secteur": "Petits commerçants et entreprises",
+  "statut_catalogue": "À DÉVELOPPER",
+  "statut_workflow": "Références en attente de validation",
+  "branche": "feat/commerce-t1-references",
+  "commit": "Voir git rev-parse HEAD (local uniquement)",
+  "preuves": [
+    "approvals/selection.json",
+    "research/references.json",
+    "Lot-01.md",
+    "reports/audit-github.json"
+  ],
+  "derniere_approbation": "Sélection du gabarit uniquement",
+  "decision_attendue": "Lot 01 : accepter, refuser ou préciser",
+  "blocages": [
+    "Dépôt commun : API GitHub publique HTTP 404, accès privé éventuel non vérifié. gh absent. Aucun push.",
+    "Audio non écouté."
+  ]
+}
