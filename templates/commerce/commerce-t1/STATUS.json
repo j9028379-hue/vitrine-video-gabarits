@@ -9,10 +9,13 @@
     "approvals/selection.json",
     "research/references.json",
     "Lot-01.md",
-    "reports/audit-github.json"
+    "reports/audit-github.json",
+    "approvals/refus-lot-01.json",
+    "research/lot-01-refuse.json",
+    "Lot-02.md"
   ],
   "derniere_approbation": "Sélection du gabarit uniquement",
-  "decision_attendue": "Lot 01 : accepter, refuser ou préciser",
+  "decision_attendue": "Accepter, refuser ou préciser le lot 02",
   "blocages": [
     "Dépôt commun : API GitHub publique HTTP 404, accès privé éventuel non vérifié. gh absent. Aucun push.",
     "Audio non écouté."
