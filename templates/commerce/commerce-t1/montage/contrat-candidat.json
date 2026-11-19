@@ -17,7 +17,9 @@
       "quartier",
       "accroche"
     ],
-    "whatsapp": "Enlever les espaces à la saisie, puis valider. Si une valeur est absente ou invalide, bloquer la préparation."
+    "whatsapp": "Enlever les espaces à la saisie, puis valider. Si une valeur est absente ou invalide, bloquer la préparation.",
+    "questions": "form/questions.json",
+    "origine": "Réponses du commerçant uniquement. Aucune réponse préremplie, aucun produit par défaut."
   },
   "reference": {
     "lot": 2,

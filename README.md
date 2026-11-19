@@ -11,3 +11,5 @@ Branche de travail : `feat/commerce-t1-contrat-montage`. La validation de connex
 - [Aperçu des textes avant rendu](templates/commerce/commerce-t1/montage/Apercu-textes.png)
 
 Contrôle local du contrat : `python templates/commerce/commerce-t1/tests/controle_liaisons.py` (Python et `jsonschema`). Cette étape ne livre pas encore de master vidéo. Aucun média CapCut tiers n'est redistribué.
+
+- [Formulaire vierge et aperçu des réponses par scène (télécharger puis ouvrir)](templates/commerce/commerce-t1/form/Formulaire-commerce.html)
