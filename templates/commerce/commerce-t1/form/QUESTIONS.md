@@ -4,9 +4,9 @@ Toutes les réponses sont obligatoires. Aucun produit n’est choisi ou proposé
 
 | Question | Réponse du commerçant | Dans la vidéo |
 |---|---|---|
-| Comment s’appelle ton commerce ? | `nom` | S4 · nom du commerce |
+| Comment s’appelle ton commerce ? | `nom` | S1 puis S4 · signature du commerce |
 | Quel produit ou service veux-tu présenter ? | `produit` | S1 · titre, exactement comme saisi |
-| Quel est son prix en F CFA ? | `prix` | S4 · montant en F CFA |
+| Quel est son prix en F CFA ? | `prix` | S2 · après le détail, montant en F CFA |
 | Sur quel numéro WhatsApp peut-on te contacter ? | `whatsapp` | S4 · contact autorisé |
 | Dans quel quartier se trouve ton commerce ? | `quartier` | S4 · après le nom du commerce |
 | Quel détail veux-tu montrer ? | `accroche` | S2 · détail saisi |

@@ -1,7 +1,7 @@
 {
   "id": "COMMERCE-T1",
-  "version": "0.2.0",
-  "etat": "contrat candidat, non rendu",
+  "version": "0.3.0",
+  "etat": "Révision créative candidate ; validation humaine requise.",
   "guide": {
     "path": "capture-guide/guide.json",
     "sha256": "530446bf19662ebbf3c569df27191fb144761a302a966b17b7ead916b6bf5149",
@@ -42,6 +42,7 @@
         7
       ],
       "textes": [
+        "{nom}",
         "{produit}"
       ]
     },
@@ -58,7 +59,8 @@
         9
       ],
       "textes": [
-        "{accroche}"
+        "{accroche}",
+        "{prix:fcfa}"
       ]
     },
     {
@@ -88,9 +90,9 @@
         10
       ],
       "textes": [
-        "{prix:fcfa}",
-        "{nom} · {quartier}",
-        "Contacte-nous sur WhatsApp",
+        "{nom}",
+        "{quartier}",
+        "Écris-nous sur WhatsApp",
         "{whatsapp}"
       ]
     }
@@ -167,16 +169,185 @@
     "source": "Proposition pour ce premier master : son des prises coupé au montage ; originaux intacts, relecture de capture avec leur son."
   },
   "polices": {
-    "poppins/Poppins-ExtraBold.ttf": "f2ab17c1a63a0ecc12c2461848fc8a469395e3cd2d641803e889c643d9f958e1"
+    "dmserifdisplay/DMSerifDisplay-Regular.ttf": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616",
+    "greatvibes/GreatVibes-Regular.ttf": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15"
   },
   "typographie": {
-    "famille": "Poppins ExtraBold",
-    "référence": "Aspect recherché : capitales épaisses blanches directement sur le rush. Police exacte de l’image non identifiée.",
-    "casse": "Majuscules au dessin seulement ; données brutes conservées.",
-    "habillage": "Aucun panneau, aucun fond flou ; ombre courte épousant les lettres."
+    "reference": "image-3.png : signature calligraphique, produit à empattements, lumière ivoire et relief sombre. Correspondance visuelle, familles exactes non identifiées.",
+    "script": "greatvibes/GreatVibes-Regular.ttf",
+    "serif": "dmserifdisplay/DMSerifDisplay-Regular.ttf",
+    "encre_rgb": [
+      255,
+      245,
+      224
+    ],
+    "relief_rgb": [
+      45,
+      28,
+      21
+    ],
+    "casse": "Casse du commerçant conservée."
   },
-  "cta_stable_s": [
-    22.3,
-    29.3
+  "calques": [
+    {
+      "id": "signature",
+      "scene": "S1",
+      "texte": "{nom}",
+      "police": "script",
+      "taille_px": 95,
+      "centre": [
+        360,
+        788
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        45,
+        171
+      ],
+      "entree": 23,
+      "sortie": 7,
+      "mouvement": "plume"
+    },
+    {
+      "id": "produit",
+      "scene": "S1",
+      "texte": "{produit}",
+      "police": "serif",
+      "taille_px": 68,
+      "centre": [
+        360,
+        962
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        72,
+        171
+      ],
+      "entree": 16,
+      "sortie": 7,
+      "mouvement": "lever"
+    },
+    {
+      "id": "detail",
+      "scene": "S2",
+      "texte": "{accroche}",
+      "police": "serif",
+      "taille_px": 68,
+      "centre": [
+        360,
+        927
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        194,
+        295
+      ],
+      "entree": 20,
+      "sortie": 7,
+      "mouvement": "vague"
+    },
+    {
+      "id": "offre",
+      "scene": "S2",
+      "texte": "{prix:fcfa}",
+      "police": "serif",
+      "taille_px": 78,
+      "centre": [
+        360,
+        934
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        321,
+        407
+      ],
+      "entree": 15,
+      "sortie": 7,
+      "mouvement": "lever"
+    },
+    {
+      "id": "enseigne",
+      "scene": "S4",
+      "texte": "{nom}",
+      "police": "script",
+      "taille_px": 100,
+      "centre": [
+        360,
+        480
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        666,
+        763
+      ],
+      "entree": 19,
+      "sortie": 7,
+      "mouvement": "plume"
+    },
+    {
+      "id": "lieu",
+      "scene": "S4",
+      "texte": "{quartier}",
+      "police": "serif",
+      "taille_px": 56,
+      "centre": [
+        360,
+        629
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        682,
+        763
+      ],
+      "entree": 13,
+      "sortie": 7,
+      "mouvement": "lever"
+    },
+    {
+      "id": "appel",
+      "scene": "S4",
+      "texte": "Écris-nous sur WhatsApp",
+      "police": "script",
+      "taille_px": 67,
+      "centre": [
+        360,
+        575
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        765,
+        879
+      ],
+      "entree": 18,
+      "sortie": 7,
+      "mouvement": "plume"
+    },
+    {
+      "id": "numero",
+      "scene": "S4",
+      "texte": "{whatsapp}",
+      "police": "serif",
+      "taille_px": 65,
+      "centre": [
+        360,
+        695
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        777,
+        879
+      ],
+      "entree": 12,
+      "sortie": 7,
+      "mouvement": "lever"
+    }
   ]
 }

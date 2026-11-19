@@ -2,7 +2,7 @@
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
   "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "Rendu silencieux en attente de validation",
+  "statut_workflow": "V2 refusée ; V3 en préparation",
   "branche": "feat/commerce-t1-silencieux",
   "commit": "Voir le HEAD de la branche de travail.",
   "preuves": [
@@ -38,10 +38,11 @@
     "approvals/refus-rendu-v1.json",
     "reports/rendu-02/controle.json",
     "reports/rendu-02/manifest.json",
-    "reports/rendu-02/planche-QC.jpg"
+    "reports/rendu-02/planche-QC.jpg",
+    "approvals/refus-rendu-v2.json"
   ],
   "derniere_approbation": "Écrans corrigés et consignes produit acceptés.",
-  "decision_attendue": "Visionner la V2 plein écran et valider le style et les raccords, ou demander une correction.",
+  "decision_attendue": "Visionner le master V3 ; aucun passage à la phase suivante.",
   "blocages": [
     "Audio non écouté."
   ],

@@ -26,7 +26,7 @@ def timed(i,t,k):
 
 def view(i,t,k=0,push=0,shift=0,tilt=0):
  o,w,n,a=timed(i,t,k);hh,ww=a.shape[:2];ang=(1-w)*o['angle_debut']+w*o['angle_fin']+tilt;z=(1-w)*o['zoom_debut']+w*o['zoom_fin']+push;theta=math.radians(ang);co,si=abs(math.cos(theta)),abs(math.sin(theta));scale=max((W*co+H*si)/ww,(H*co+W*si)/hh)*max(1.003,z);hx=(W*co+H*si)/scale/2;hy=(H*co+W*si)/scale/2;cx=float(np.clip(ww*(o['cx']+shift),hx,ww-hx));cy=float(np.clip(hh*o['cy'],hy,hh-hy));M=cv2.getRotationMatrix2D((cx,cy),ang,scale);M[:,2]+=[W/2-cx,H/2-cy];v=cv2.warpAffine(a,M,(W,H),flags=cv2.INTER_LINEAR,borderMode=cv2.BORDER_REPLICATE);source_used[sc[i]['id']].add(n)
- if round(t*F) in (64,147,237,356,476,581,721,845):trace[str(round(t*F))]=dict(clip=i+1,source_frame=n,matrix=M.tolist())
+ if round(t*F) in CHECK:trace[str(round(t*F))]=dict(clip=i+1,source_frame=n,matrix=M.tolist())
  return v
 def mat(a,b,m):return cv2.blendLinear(a,b,np.ascontiguousarray(1-m,dtype='float32'),np.ascontiguousarray(m,dtype='float32'))
 def fade(a,b,q):return cv2.addWeighted(a,1-q,b,q,0)
@@ -35,27 +35,9 @@ def circle(a,t,r=66):
   v=k*math.pi/7+t*.8;cx,cy=W//2,H//2;cv2.line(a,(round(cx+r*math.cos(v)),round(cy+r*math.sin(v))),(round(cx+(r+5+(k%3)*3)*math.cos(v)),round(cy+(r+5+(k%3)*3)*math.sin(v))),(198,247,230),3,cv2.LINE_AA)
 def scene(i,t,stage):return view(i,t,stage)
 def stage(i,t):return int(i<3 and t>=effects[['B','D','F'][i]][1])
-# Pre-render the commercial text only, separate from the reference effects and on-screen guide.
-ft=lambda size:ImageFont.truetype(str(root/'assets/fonts'/'poppins/Poppins-ExtraBold.ttf'),size)
-def label(i):
- img=Image.new('L',(W,H));d=ImageDraw.Draw(img)
- def line(x,y,msg,size,maxw):
-  while size>18 and d.textlength(msg,font=ft(size))>maxw:size-=1
-  assert d.textlength(msg,font=ft(size))<=maxw;d.text((x,y),msg,font=ft(size),fill=255,anchor='lt')
- def wrap(msg,limit=15):
-  import textwrap
-  return textwrap.wrap(msg,width=limit,break_long_words=False,break_on_hyphens=False)
- msg=[x.upper() for x in texts[i]]
- if i==0:line(46,939,msg[0],108,628)
- if i==1:
-  lines=wrap(msg[0],15);y0=96
-  for j,l in enumerate(lines):line(44,y0+j*78,l,78,632)
- if i==3:
-  line(48,104,msg[0],90,624);line(51,213,msg[1],38,617);line(51,283,msg[2],33,618);line(48,332,msg[3],59,625)
- glyph=np.asarray(img).astype('float32')/255.;shadow=np.asarray(img.filter(ImageFilter.GaussianBlur(4))).astype('float32')/255.;shadow=np.roll(shadow,4,axis=0)*.82;return glyph,shadow
-labels=[label(i) for i in range(4)]; white=np.full_like(black,255); dark=np.full_like(black,10)
-for idx,(glyph,_) in enumerate(labels):
- if glyph.max()>0:cv2.imwrite(str(out/f'masque-lettres-S{idx+1}.png'),np.uint8(glyph*255))
+from lettrage import stamp,paint
+items=[(g,*stamp(root,g,c,g['texte'].format_map(values))) for g in c['calques']]; white=np.full_like(black,255); dark=np.full_like(black,10)
+CHECK=(48,66,105,152,201,237,327,356,476,581,675,721,771,805,845); clock={}
 def compose(t):
  i=next(s for s in range(4) if t<sc[s]['sortie_s'][1]);key=next((k for k,(a,b) in effects.items() if a<=t<b),None)
  if not key:v=scene(i,t,stage(i,t))
@@ -81,16 +63,11 @@ def compose(t):
    v=scene(2,t,0);incoming=scene(2,t,1);rw=max(1,min(W,round(W*ease((p-.045)/.93))));rh=max(1,min(H,round(H*(.11*ease(p/.17)+.89*ease(p)))));x0=round((W-rw)*.5);y0=round((H-rh)*.56);srcw=max(1,round(W*min(1,rw/max(1,rh)*H/W)));cx=W//2;tile=cv2.resize(incoming[:,cx-srcw//2:cx-srcw//2+srcw],(rw,rh));v[y0:y0+rh,x0:x0+rw]=tile
   elif key=='G':
    a=fade(scene(2,t,1),black,.56*ease(p/.44));b=view(3,t,0,push=.62*(1-q),shift=.035*(1-q),tilt=-14*(1-q));axis=.72*nx+.28*(1-ny);m=np.clip((q*1.035-axis)*98,0,1);v=mat(a,b,m)
- # Keep text independent of graphic effects. CTA fully stable after 22.3 seconds.
- alpha=0
- if i==0:alpha=ease((t-1.38)/.32)*ease((5.80-t)/.25)
- if i==1:alpha=ease((t-6.25)/.25)*ease((13.75-t)/.24)
- if i==3:alpha=ease((t-22.20)/.10)*ease((29.30-t)/.00001) if t<29.30 else 0
- if alpha>0:
-  glyph,shadow=labels[i];v=mat(mat(v,dark,shadow*alpha),white,glyph*alpha)
+ n=round(t*F);mask,ids=paint(v,n,items,c,n in CHECK)
+ if n in CHECK:cv2.imwrite(str(out/f'lettres-{n:03}.png'),mask);clock[str(n)]=ids
  return v
 mp=out/'COMMERCE-T1-sans-voix.mp4';proc=subprocess.Popen(['ffmpeg','-loglevel','error','-y','-f','rawvideo','-pix_fmt','bgr24','-s',f'{W}x{H}','-r',str(F),'-i','-','-an','-c:v','libx264','-threads','2','-preset','veryfast','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',str(mp)],stdin=subprocess.PIPE)
 for frame in range(N):proc.stdin.write(compose(frame/F).tobytes())
 proc.stdin.close();assert proc.wait()==0
 for cap in caps:cap.release()
-sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();report={'edition':'V2 plein cadre','temoins_plein_cadre':trace,'textes_affiches':[[l.upper() for l in ls] for ls in texts],'sha256':sha(mp),'contrat_sha256':sha(root/'montage/contrat-candidat.json'),'inputs':{p.name:sha(p) for p in files},'textes_resolus':texts,'polices':c['polices'],'effets':{k:{'premiere_image':min(v),'derniere_image':max(v),'images':len(v)} for k,v in events.items()},'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()};(out/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();report={'edition':'V3 lettrage chorégraphié','calques':[{**g,**meta,'valeur':g['texte'].format_map(values)} for g,_,meta in items],'horloge_temoin':clock,'temoins_plein_cadre':trace,'textes_affiches':texts,'sha256':sha(mp),'contrat_sha256':sha(root/'montage/contrat-candidat.json'),'inputs':{p.name:sha(p) for p in files},'textes_resolus':texts,'polices':c['polices'],'effets':{k:{'premiere_image':min(v),'derniere_image':max(v),'images':len(v)} for k,v in events.items()},'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()};(out/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
