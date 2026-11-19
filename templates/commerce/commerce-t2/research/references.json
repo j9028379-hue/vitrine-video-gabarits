@@ -1,0 +1,190 @@
+{
+  "lot": 1,
+  "selection": [
+    1,
+    4
+  ],
+  "non_retenues": [
+    2,
+    3
+  ],
+  "unite": "images, base zéro, fin exclue",
+  "references": [
+    {
+      "numero": 1,
+      "titre": "New Arrival Product",
+      "createur": "Gleemora",
+      "url": "https://www.capcut.com/template-detail/newarrival-product-producttemplate-productpromote/7634518891598728469",
+      "statut": "retenue explicitement",
+      "analyse": "images de l’aperçu public ; projet de montage non fourni",
+      "fps": 30,
+      "dimensions": [
+        720,
+        1278
+      ],
+      "images": 450,
+      "duree_s": 15.0,
+      "sha256_apercu": "fc238011d9a53827ffff9b56b28a9a2d5f4d9f756857c23d5ea90eef0990ae26",
+      "segments": [
+        {
+          "intervalle_images": [
+            0,
+            63
+          ],
+          "observation": "Ouverture de la boîte ; la main ou le couvercle révèle réellement l’objet."
+        },
+        {
+          "intervalle_images": [
+            63,
+            103
+          ],
+          "observation": "Autre angle de l’écrin ouvert ; montre entière."
+        },
+        {
+          "intervalle_images": [
+            103,
+            128
+          ],
+          "observation": "Éclat chaud puis cadrage plus frontal de la boîte."
+        },
+        {
+          "intervalle_images": [
+            128,
+            200
+          ],
+          "observation": "Coupe sur la montre tenue entre les doigts."
+        },
+        {
+          "intervalle_images": [
+            200,
+            268
+          ],
+          "observation": "Coupe au gros plan du bracelet."
+        },
+        {
+          "intervalle_images": [
+            268,
+            311
+          ],
+          "observation": "Coupe au revers ; mécanisme apparent."
+        },
+        {
+          "intervalle_images": [
+            311,
+            372
+          ],
+          "observation": "Coupe au cadran en très gros plan ; reflet blanc intense qui se retire."
+        },
+        {
+          "intervalle_images": [
+            372,
+            418
+          ],
+          "observation": "Coupe à la montre portée ; cadran de nouveau lisible."
+        },
+        {
+          "intervalle_images": [
+            418,
+            450
+          ],
+          "observation": "Lumière chaude envahissante à la sortie."
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "titre": "WATCH",
+      "createur": "EditsCreative",
+      "url": "https://www.capcut.com/template-detail/product-newproduct-acessories-lojas-watch/7636863669346848018",
+      "statut": "retenue explicitement",
+      "analyse": "images de l’aperçu public ; projet de montage non fourni",
+      "fps": 30,
+      "dimensions": [
+        720,
+        1280
+      ],
+      "images": 423,
+      "duree_s": 14.1,
+      "sha256_apercu": "c6e4c279cd39beb19f5e1433864b4bc9e786e50b7f0670c0da8225816f6a7c50",
+      "segments": [
+        {
+          "intervalle_images": [
+            0,
+            2
+          ],
+          "observation": "Amorce au poignet."
+        },
+        {
+          "intervalle_images": [
+            2,
+            27
+          ],
+          "observation": "Coupe immédiate vers le très gros plan du cadran."
+        },
+        {
+          "intervalle_images": [
+            27,
+            89
+          ],
+          "observation": "Les doigts manipulent la montre près de l’objectif."
+        },
+        {
+          "intervalle_images": [
+            89,
+            113
+          ],
+          "observation": "Image floue et doublée, puis retrait vers un cadre plus large."
+        },
+        {
+          "intervalle_images": [
+            113,
+            184
+          ],
+          "observation": "Montre entière entre les mains, rotation vers la tranche."
+        },
+        {
+          "intervalle_images": [
+            184,
+            207
+          ],
+          "observation": "Assombrissement au raccord, réapparition du cadran agrandi."
+        },
+        {
+          "intervalle_images": [
+            207,
+            240
+          ],
+          "observation": "Très gros plan net sur le cadran."
+        },
+        {
+          "intervalle_images": [
+            240,
+            255
+          ],
+          "observation": "Deux tailles du cadran se chevauchent ; lumière plus chaude."
+        },
+        {
+          "intervalle_images": [
+            255,
+            318
+          ],
+          "observation": "Fin de superposition : montre entière sur bracelet noir."
+        },
+        {
+          "intervalle_images": [
+            318,
+            401
+          ],
+          "observation": "Passage assombri vers le poignet puis plan porté stabilisé."
+        },
+        {
+          "intervalle_images": [
+            401,
+            423
+          ],
+          "observation": "Extinction progressive au noir."
+        }
+      ]
+    }
+  ]
+}

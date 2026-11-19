@@ -7,3 +7,7 @@
 - [Lot 01 : quatre films à regarder pour choisir les transitions](research/lot-01.md).
 
 Après retour sur le lot : analyser les raccords retenus et leur faisabilité avec quatre prises ; soumettre les écrans et le contrat ; rendre le film silencieux. Valider ensuite quatre musiques, la voix et les mixes avec le propriétaire. La rotation inter-rendus, le contrôle d'architecture et la préparation du canon pour un futur catalogue feront l'objet de preuves propres à T2.
+
+## Mise à jour — choix des transitions
+
+Le propriétaire a retenu les références **1 et 4** exclusivement. [Effets et fenêtres en JSON](reverse-engineering/effets.json) · [Rapport d'adaptation en quatre prises](reverse-engineering/REPORT.md). Les paramètres proposés documentent l'aspect à reconstruire ; ce ne sont pas des réglages propriétaires exportés. Étape actuelle : adaptation à valider, moteur non développé.
