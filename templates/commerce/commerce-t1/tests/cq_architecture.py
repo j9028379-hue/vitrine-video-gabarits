@@ -34,4 +34,6 @@ checks['mixes, niveaux AAC, balance, identité du flux vidéo']=4
 subprocess.run(['node',str(repo/'shared/cloudflare-control-plane/test.mjs')],check=True);checks['Worker 4 contrôles handlers']=True
 with tempfile.TemporaryDirectory() as tmp:subprocess.run(['npx','--yes','wrangler@4.45.0','deploy','--dry-run','--outdir',tmp],cwd=repo/'shared/cloudflare-control-plane',check=True)
 checks['Wrangler assemblage dry-run sans déploiement']=True
+from cq_marchand import contre_epreuve
+checks['Contre-épreuve rendu marchand avec musique du cache local']=contre_epreuve(out)
 sha_ci=subprocess.check_output(['git','rev-parse','HEAD'],cwd=repo,text=True).strip();atomic(out/'CQ-architecture.json',{'commit':sha_ci,'resultat':'PASS contrôles de référence listés','checks':checks,'non_testes':['Android physique, notamment 2 Go','OTA appareil–serveur, signature, activation, rollback','Cloudflare de production et authentification de dispatch','réécoute des quatre auditions vocales initiales (plateforme, pas d’archive de ces quatre démos)']});z=out/'COMMERCE-T1-1.0.0.zip';manifest=build(out,out,z);print('Paquet contrôlé, fichiers:',len(manifest['files']))

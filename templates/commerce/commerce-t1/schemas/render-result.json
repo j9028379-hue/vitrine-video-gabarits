@@ -29,7 +29,8 @@
     "mode": {
       "enum": [
         "silent",
-        "demo-approved"
+        "demo-approved",
+        "merchant-music"
       ]
     },
     "output": {
