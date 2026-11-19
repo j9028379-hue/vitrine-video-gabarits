@@ -1,8 +1,8 @@
 {
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
-  "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "Audition des quatre mixes validée ; en attente de la prochaine instruction.",
+  "statut_catalogue": "EXISTANT",
+  "statut_workflow": "Version 1.0.0 : paquet public de référence ; Android et OTA non intégrés.",
   "branche": "feat/commerce-t1-silencieux",
   "commit": "Voir le HEAD de la branche de travail.",
   "preuves": [
@@ -50,9 +50,11 @@
     "audio/audition-voix.json",
     "approvals/mixes-valides.json"
   ],
-  "derniere_approbation": "Audition COMMERCE-T1 : quatre variantes voix + musique.",
-  "decision_attendue": "Prochaine instruction du propriétaire. Aucune variante par défaut désignée.",
-  "blocages": [],
+  "derniere_approbation": "Quatre mixes acceptés ; livraison publique GitHub demandée.",
+  "decision_attendue": "Intégration applicative séparée.",
+  "blocages": [
+    "Android, OTA et Cloudflare de production non validés."
+  ],
   "duree_imposee_s": 30,
   "depot": "https://github.com/j9028379-hue/vitrine-video-gabarits",
   "rendu_silencieux": {

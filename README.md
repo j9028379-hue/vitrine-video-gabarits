@@ -1,9 +1,10 @@
-# Vitrine Vidéo · Commerce
+# Vitrine Vidéo · Catalogue public
 
-[Base commune v1 des cinq gabarits prévus](templates/commerce/base-commune/README.md) · six questions, quatre missions de tournage, douze écrans. Première intégration : **COMMERCE-T1 — Produit vedette**. Branche de révision : `feat/commerce-base-commune`.
+**[COMMERCE‑T1 — Produit vedette · Release 1.0.0](https://github.com/j9028379-hue/vitrine-video-gabarits/releases/tag/commerce-t1-v1.0.0)** : présenter un produit et donner envie de l’acheter. Un master de 30 secondes, quatre variantes voix + musique approuvées, documentation et ZIP pour l’intégrateur.
 
-- [Formulaire de principe et aperçu par scène](templates/commerce/commerce-t1/form/Formulaire-commerce.html) · [questions et clés](templates/commerce/commerce-t1/form/QUESTIONS.md)
-- [Parcours interactif (télécharger le HTML et l’ouvrir)](templates/commerce/commerce-t1/simulation/Parcours-12-ecrans.html) · [douze captures](templates/commerce/commerce-t1/ui-screens/Planche-12-ecrans.png) · [quatre guides](templates/commerce/commerce-t1/capture-guide/Quatre-guides.md)
-- [Liaisons du montage](templates/commerce/commerce-t1/montage/contrat-candidat.json) · [preuves du master V3 antérieur, inchangé](templates/commerce/commerce-t1/reports/rendu-03) · [état de la branche](templates/commerce/commerce-t1/STATUS.json)
+- [Architecture, CQ et limites](templates/commerce/commerce-t1/package/PASSATION.md)
+- [Catalogue central](catalogue/catalogue.json) · [Couche Cloudflare commune, non déployée](shared/cloudflare-control-plane/README.md)
+- [Questions](templates/commerce/commerce-t1/form/QUESTIONS.md) · [Quatre guides](templates/commerce/commerce-t1/capture-guide/Quatre-guides.md) · [Douze écrans](templates/commerce/commerce-t1/ui-screens/Planche-12-ecrans.png)
+- [Parcours jusqu’au RenderJob](templates/commerce/commerce-t1/integration/README.md) · [Contrat du montage](templates/commerce/commerce-t1/montage/contrat-candidat.json) · [Approbation des quatre mixes](templates/commerce/commerce-t1/approvals/mixes-valides.json)
 
-Cette révision porte sur la saisie et la capture, pas sur le rendu de la publicité. Aucun changement de `main`, de l’application Android ou de la diffusion du master.
+Le paquet programme un moteur Python/Linux. Il ne constitue pas une application Android ou un service OTA en production. Les dates et les anciens statuts des rapports d’étape sont historiques.

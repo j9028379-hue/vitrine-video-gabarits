@@ -1,0 +1,8 @@
+{
+  "run": 44571258004,
+  "mp4_sha256": "224ff28c272295b6888930ab23ecdff078a742621c4485e2e030d5b1a6bad573",
+  "miniatures_sha256": "4f8304e3268eb55d8850ef807df36e1c64cd20bc82a98e4d34bff64dd2b282e3",
+  "tolerance_mae_par_image": 1.5,
+  "images": 900,
+  "mixes": "approvals/mixes-valides.json"
+}

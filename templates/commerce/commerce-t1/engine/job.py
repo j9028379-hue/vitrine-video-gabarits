@@ -2,7 +2,7 @@ import hashlib,json
 from jsonschema import validate
 
 def lire(job,root,c):
- j=json.loads((job/'render-job.json').read_text());schema=json.loads((root/'form/schema-v0.1.json').read_text());validate(j['merchant_payload'],schema)
+ j=json.loads((job/'render-job.json').read_text());validate(j,json.loads((root/'schemas/render-job.json').read_text()))
  if set(j)!={'template_id','template_version','merchant_payload','captures'} or (j['template_id'],j['template_version'])!=('COMMERCE-T1',c['version']):raise ValueError('Contrat de job incorrect')
  records=j['captures'];assets={};seen=set();ids=set()
  if set(records)!={s['id'] for s in c['scenes']}:raise ValueError('Quatre scènes requises')

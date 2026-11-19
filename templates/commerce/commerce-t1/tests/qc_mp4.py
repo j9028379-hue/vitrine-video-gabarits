@@ -24,3 +24,4 @@ j=json.loads((out/'render-job.json').read_text());d=j['merchant_payload'];prix=f
 # Préserve le master silencieux contrôlé ci-dessus ; tous les fichiers musicaux sont des variantes séparées.
 if j['merchant_payload']==json.loads((root/'fixtures/rushs/formulaire.json').read_text()) and (root/'audio/auditions/voix-demo.flac').exists():
  subprocess.run([sys.executable,str(root/'audio/auditions/mixer.py'),str(p),str(out/'ecoutes')],check=True)
+subprocess.run([sys.executable,str(root/'tests/cq_architecture.py'),str(out)],check=True)

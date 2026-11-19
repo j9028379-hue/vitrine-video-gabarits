@@ -15,7 +15,10 @@ def main(video,dest):
  envelope=-3-7*env;res=[];voiced=np.repeat(active,480);prefix='COMMERCE-T1';songs=I(D/'sources.json');assert len(songs)==4
  with tempfile.TemporaryDirectory() as tmp:
   for n,t in enumerate(songs,1):
-   mid=t['id'];mp=P(tmp)/f'{mid}.mp3';run(['curl','--fail','--silent','--show-error','--retry','2','-L',t['source_mp3'],'-o',str(mp)]);assert H(mp)==t['sha256'];full=decode(mp);start=round(t['source_debut_s']*R);m=full[start:start+N].copy();assert m.shape==v.shape;m*=db(-18-level(m)[0]);m*=db(envelope[:,None]);m*=np.minimum(np.clip(vtime/.025,0,1),np.clip((30-vtime)/.35,0,1))[:,None];balance=10*math.log10(np.mean(v[voiced]**2)/np.mean(m[voiced]**2));
+   mid=t['id'];mp=P(tmp)/f'{mid}.mp3'
+   if os.environ.get('COMMERCE_MUSIC_CACHE'):mp=P(os.environ['COMMERCE_MUSIC_CACHE'])/f'{mid}.mp3'
+   else:run(['curl','--fail','--silent','--show-error','--retry','2','-L',t['source_mp3'],'-o',str(mp)])
+   assert H(mp)==t['sha256'];full=decode(mp);start=round(t['source_debut_s']*R);m=full[start:start+N].copy();assert m.shape==v.shape;m*=db(-18-level(m)[0]);m*=db(envelope[:,None]);m*=np.minimum(np.clip(vtime/.025,0,1),np.clip((30-vtime)/.35,0,1))[:,None];balance=10*math.log10(np.mean(v[voiced]**2)/np.mean(m[voiced]**2));
    if balance<4:m*=db(balance-4);balance=4
    x=v+m;li,tp=level(x);x*=db(-16-li);# Seulement les pointes dépassant -2.65 dBFS sont limitées ; pas de changement de débit.
    peak=np.max(abs(x),axis=1,keepdims=True);x*=np.minimum(1,db(-2.65)/np.maximum(peak,1e-12));li,tp=level(x)

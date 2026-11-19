@@ -1,7 +1,7 @@
 {
   "id": "COMMERCE-T1",
-  "version": "0.3.0",
-  "etat": "Révision créative candidate ; validation humaine requise.",
+  "version": "1.0.0",
+  "etat": "Montage et mixes de démonstration validés.",
   "guide": {
     "path": "capture-guide/guide.json",
     "sha256": "f2c908a813fee66be73404363ef7330442c53effa833d85c8153f223e0a4e5db",
@@ -349,5 +349,8 @@
       "sortie": 7,
       "mouvement": "lever"
     }
-  ]
+  ],
+  "template_id": "COMMERCE-T1",
+  "schema_version": "1.0.0",
+  "audio_profile": "afrobeat_amapiano_commerce"
 }
