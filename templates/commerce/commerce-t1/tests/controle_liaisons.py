@@ -34,3 +34,5 @@ for variant in (0,1):
 print('PASS — horloge, formulaire synchronisé, maximum deux calques simultanés, réponses aux longueurs limites.')
 import subprocess
 integrated=root/'integration/Parcours-vers-montage.html';before=integrated.read_bytes();subprocess.run([sys.executable,str(root/'integration/construire.py')],check=True);assert before==integrated.read_bytes();print('PASS — reconstruction déterministe du parcours intégré.')
+for p in (root/'schemas').glob('*.json'):V.check_schema(json.loads(p.read_text()))
+V(read('schemas/template.json')).validate(c)
