@@ -2,7 +2,7 @@
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
   "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "V2 refusée ; V3 en préparation",
+  "statut_workflow": "Master V3 rendu sur GitHub et contrôlé ; validation créative en attente.",
   "branche": "feat/commerce-t1-silencieux",
   "commit": "Voir le HEAD de la branche de travail.",
   "preuves": [
@@ -39,21 +39,25 @@
     "reports/rendu-02/controle.json",
     "reports/rendu-02/manifest.json",
     "reports/rendu-02/planche-QC.jpg",
-    "approvals/refus-rendu-v2.json"
+    "approvals/refus-rendu-v2.json",
+    "montage/Partition-V3.md",
+    "reports/rendu-03/manifest.json",
+    "reports/rendu-03/controle.json",
+    "reports/rendu-03/planche-QC.jpg"
   ],
   "derniere_approbation": "Écrans corrigés et consignes produit acceptés.",
   "decision_attendue": "Visionner le master V3 ; aucun passage à la phase suivante.",
   "blocages": [
-    "Audio non écouté."
+    "Validation créative du master silencieux V3 en attente."
   ],
   "duree_imposee_s": 30,
   "depot": "https://github.com/j9028379-hue/vitrine-video-gabarits",
   "rendu_silencieux": {
-    "version": "V2",
-    "run": "https://github.com/j9028379-hue/vitrine-video-gabarits/actions/runs/44543249370",
-    "commit": "1de7aeefded24331399f5447c6905c4447d41a3c",
-    "artefact": "COMMERCE-T1-sans-voix-4",
-    "sha256": "b45d8010201b53cc7b53f99e5b37e67427d9c68377a198e71402c927599c79f1",
+    "version": "V3",
+    "run": "https://github.com/j9028379-hue/vitrine-video-gabarits/actions/runs/44559927274",
+    "artefact": "COMMERCE-T1-sans-voix-5",
+    "commit": "c84cfd8143fdb4fc355aca8981f34f5ea6796ef7",
+    "sha256": "d0a55142d49e012a91209ffb1c5d45adef4dae5235649ee5dd80abb08dcb46bb",
     "publication_release": false
   }
 }
