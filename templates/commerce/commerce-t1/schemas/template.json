@@ -25,7 +25,7 @@
       "const": "COMMERCE-T1"
     },
     "version": {
-      "const": "1.0.0"
+      "const": "2.0.0"
     },
     "etat": {
       "type": "string"
@@ -652,13 +652,17 @@
       "additionalProperties": false,
       "required": [
         "dmserifdisplay/DMSerifDisplay-Regular.ttf",
-        "greatvibes/GreatVibes-Regular.ttf"
+        "greatvibes/GreatVibes-Regular.ttf",
+        "DejaVuSans.ttf"
       ],
       "properties": {
         "dmserifdisplay/DMSerifDisplay-Regular.ttf": {
           "type": "string"
         },
         "greatvibes/GreatVibes-Regular.ttf": {
+          "type": "string"
+        },
+        "DejaVuSans.ttf": {
           "type": "string"
         }
       }
@@ -1340,7 +1344,7 @@
       "const": "COMMERCE-T1"
     },
     "schema_version": {
-      "const": "1.0.0"
+      "const": "2.0.0"
     },
     "audio_profile": {
       "const": "afrobeat_amapiano_commerce"

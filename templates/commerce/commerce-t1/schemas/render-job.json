@@ -13,7 +13,7 @@
       "const": "COMMERCE-T1"
     },
     "template_version": {
-      "const": "1.0.0"
+      "const": "2.0.0"
     },
     "merchant_payload": {
       "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -53,9 +53,10 @@
           "pattern": "\\S"
         },
         "prix": {
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 999999999
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32,
+          "pattern": "^(?=[^\\r\\n]*[0-9])[^\\u0000-\\u001f\\u007f]+$"
         },
         "whatsapp": {
           "type": "string",

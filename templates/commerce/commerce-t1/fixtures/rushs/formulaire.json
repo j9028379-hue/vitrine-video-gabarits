@@ -1,1 +1,8 @@
-{"nom":"Comptoir Démo","produit":"Cappuccino","accroche":"Un dessin dans la mousse","prix":1500,"quartier":"Akpakpa","whatsapp":"+12025550142"}
+{
+  "nom": "Comptoir Démo",
+  "produit": "Cappuccino",
+  "accroche": "Un dessin dans la mousse",
+  "prix": "1 500 F CFA",
+  "quartier": "Akpakpa",
+  "whatsapp": "+12025550142"
+}

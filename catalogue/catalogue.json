@@ -3,13 +3,13 @@
   "entries": [
     {
       "template_id": "COMMERCE-T1",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "secteur": "Commerce",
       "titre": "Produit vedette",
       "audio_profile": "afrobeat_amapiano_commerce",
       "contrat": "templates/commerce/commerce-t1/montage/contrat-candidat.json",
-      "paquet": "COMMERCE-T1-1.0.0.zip",
-      "tag": "commerce-t1-v1.0.0",
+      "paquet": "COMMERCE-T1-2.0.0.zip",
+      "tag": "commerce-t1-v2.0.0",
       "profil": "Python 3.12 / Linux x64",
       "ota_implemented": false,
       "android_verified": false

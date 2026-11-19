@@ -1,6 +1,6 @@
 # Vitrine Vidéo · Catalogue public
 
-**[COMMERCE‑T1 — Produit vedette · Release 1.0.0](https://github.com/j9028379-hue/vitrine-video-gabarits/releases/tag/commerce-t1-v1.0.0)** : présenter un produit et donner envie de l’acheter. Un master de 30 secondes, quatre variantes voix + musique approuvées, documentation et ZIP pour l’intégrateur.
+**[COMMERCE‑T1 — Produit vedette · Release 2.0.0](https://github.com/j9028379-hue/vitrine-video-gabarits/releases/tag/commerce-t1-v2.0.0)** : présenter un produit et donner envie de l’acheter. Un master de 30 secondes, quatre variantes voix + musique approuvées, documentation et ZIP pour l’intégrateur.
 
 - [Architecture, CQ et limites](templates/commerce/commerce-t1/package/PASSATION.md)
 - [Catalogue central](catalogue/catalogue.json) · [Couche Cloudflare commune, non déployée](shared/cloudflare-control-plane/README.md)

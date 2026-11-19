@@ -18,7 +18,7 @@
     {
       "cle": "prix",
       "question": "Quel prix veux-tu afficher ?",
-      "exemple": "5 000 FCFA",
+      "exemple": "1 500 nairas",
       "obligatoire": true
     },
     {

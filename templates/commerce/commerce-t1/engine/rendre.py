@@ -10,9 +10,7 @@ c=load(root/'montage/contrat-candidat.json');spec=load(root/'engine/format.json'
 for s in sc:
  p=job/assets[s['prise']];cap=cv2.VideoCapture(str(p));assert cap.isOpened() and abs(cap.get(5)-F)<.001 and cap.get(7)>=s['capture_s']*F,(s['id'],p);caps.append(cap);files.append(p)
 for name,h in c['polices'].items():assert hashlib.sha256((root/'assets/fonts'/name).read_bytes()).hexdigest()==h
-class FC(int):
- def __format__(self,key):return f'{int(self):,} F CFA'.replace(',',' ') if key=='fcfa' else super().__format__(key)
-values={**form,'prix':FC(form['prix'])};texts=[[s.format_map(values) for s in item['textes']] for item in sc];effects={e['motif']:e['sortie_s'] for e in c['effets']};Y,X=np.mgrid[0:H,0:W].astype('float32');nx=X/W;ny=Y/H;diag=.62*nx+.38*ny;bands=np.floor((nx+ny*.68)*8);rad=((nx-.5)**2+(ny-.46)**2)**.5;edge=(np.sin(X*.027)*5+np.sin(X*.107)*2+np.sin(X*.37))/H;black=np.full((H,W,3),(22,26,19),np.uint8);accent=np.full_like(black,(117,244,219));source_used={s['id']:set() for s in sc};events={k:[] for k in effects}
+values=form;texts=[[s.format_map(values) for s in item['textes']] for item in sc];effects={e['motif']:e['sortie_s'] for e in c['effets']};Y,X=np.mgrid[0:H,0:W].astype('float32');nx=X/W;ny=Y/H;diag=.62*nx+.38*ny;bands=np.floor((nx+ny*.68)*8);rad=((nx-.5)**2+(ny-.46)**2)**.5;edge=(np.sin(X*.027)*5+np.sin(X*.107)*2+np.sin(X*.37))/H;black=np.full((H,W,3),(22,26,19),np.uint8);accent=np.full_like(black,(117,244,219));source_used={s['id']:set() for s in sc};events={k:[] for k in effects}
 def sat(x):return min(1,max(0,x))
 def ease(x):x=sat(x);return x*x*(3-2*x)
 # Four moving clips, seven editorial beats. No stills, matte, or background duplication.

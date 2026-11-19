@@ -15,7 +15,7 @@ def atomic(p,value):
  tmp=p.with_name(p.name+'.tmp');tmp.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n');os.replace(tmp,p)
 def contract(kind,x):validate(x,read(ROOT/'schemas'/f'{kind}.json'));return x
 def execute(src,out,jid,mode='silent',state=None,media=None,requested=None):
- out.mkdir(exist_ok=True,parents=True);base=dict(template_id='COMMERCE-T1',version='1.0.0',job_id=jid);stage='INVALID_JOB'
+ out.mkdir(exist_ok=True,parents=True);base=dict(template_id='COMMERCE-T1',version='2.0.0',job_id=jid);stage='INVALID_JOB'
  try:
   if not jid.strip():raise ValueError('Identifiant de rendu requis')
   c=read(ROOT/'montage/contrat-candidat.json');contract('template',c)

@@ -7,7 +7,12 @@ from PIL import Image,ImageDraw,ImageFont
 def font(path,size):return ImageFont.truetype(str(path),size)
 def ease(x):x=min(1,max(0,x));return 1-(1-x)**3
 def stamp(root,g,c,msg):
- path=root/'assets/fonts'/c['typographie'][g['police']];msg=' '.join(msg.split());limit=g['largeur_max'];words=msg.split();opts=[[msg]]+[[' '.join(words[:k]),' '.join(words[k:])] for k in range(1,len(words))];
+ path=root/'assets/fonts'/c['typographie'][g['police']]
+ if g['id']=='offre':
+  ft=font(path,g['taille_px']);missing=bytes(ft.getmask('\U0010ffff'))
+  if any(bytes(ft.getmask(ch))==missing for ch in set(msg) if not ch.isspace()):path=root/'assets/fonts/DejaVuSans.ttf'
+ else:msg=' '.join(msg.split())
+ limit=g['largeur_max'];words=msg.split();opts=[[msg]]+([[' '.join(words[:k]),' '.join(words[k:])] for k in range(1,len(words))] if g['id']!='offre' else []);
  # Accepte aussi une réponse longue sans espace, sans perdre de caractères.
  if len(words)==1 and len(msg)>16 and g['id'] not in ('numero','offre'):opts.append([msg[:len(msg)//2],msg[len(msg)//2:]])
  for size in range(g['taille_px'],13,-1):
@@ -19,7 +24,7 @@ def stamp(root,g,c,msg):
  else:raise ValueError('Réponse hors zone : '+g['id'])
  _,_,lines,boxes,h=min(options);w=max(b[2]-b[0] for b in boxes);im=Image.new('L',(w+24,h+24));d=ImageDraw.Draw(im);y=12
  for l,b in zip(lines,boxes):d.text(((im.width-b[2]+b[0])//2-b[0],y-b[1]),l,font=ft,fill=255);y+=b[3]-b[1]+10
- return np.array(im),{'lignes':lines,'taille_px':size,'rectangle':[g['centre'][0]-im.width//2,g['centre'][1]-im.height//2,im.width,im.height]}
+ return np.array(im),{'lignes':lines,'police_effective':path.name,'taille_px':size,'rectangle':[g['centre'][0]-im.width//2,g['centre'][1]-im.height//2,im.width,im.height]}
 def paint(frame,n,items,c,save=False):
  mask=np.zeros(frame.shape[:2],np.uint8) if save else None;ids=[]
  for g,base,meta in items:

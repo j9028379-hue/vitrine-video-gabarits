@@ -23,7 +23,7 @@ def build(media,evidence,z):
  with zipfile.ZipFile(z,'w') as f:
   for n,(p,role) in sorted(files.items()):
    b=p.read_bytes();save(f,n,b);rows.append(dict(path=n,role=role,bytes=len(b),sha256=HASH(b)))
-  save(f,'MANIFEST.json',jd(dict(template_id='COMMERCE-T1',version='1.0.0',schema_version='1.0.0',commit=commit,files=rows)))
+  save(f,'MANIFEST.json',jd(dict(template_id='COMMERCE-T1',version='2.0.0',schema_version='1.0.0',commit=commit,files=rows)))
  return verify(z)
 if __name__=='__main__':
  if sys.argv[1]=='verify':print(len(verify(Path(sys.argv[2]))['files']),'fichiers vérifiés')

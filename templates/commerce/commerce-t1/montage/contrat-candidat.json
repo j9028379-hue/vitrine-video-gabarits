@@ -1,6 +1,6 @@
 {
   "id": "COMMERCE-T1",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "etat": "Montage et mixes de démonstration validés.",
   "guide": {
     "path": "capture-guide/guide.json",
@@ -8,7 +8,7 @@
     "usage": "Consignes à la capture seulement ; ne pas incruster les exemples de parole."
   },
   "formulaire": {
-    "schema": "form/schema-v0.1.json",
+    "schema": "form/schema-v2.json",
     "champs_requis": [
       "nom",
       "produit",
@@ -60,7 +60,7 @@
       ],
       "textes": [
         "{accroche}",
-        "{prix:fcfa}"
+        "{prix}"
       ]
     },
     {
@@ -170,7 +170,8 @@
   },
   "polices": {
     "dmserifdisplay/DMSerifDisplay-Regular.ttf": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616",
-    "greatvibes/GreatVibes-Regular.ttf": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15"
+    "greatvibes/GreatVibes-Regular.ttf": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15",
+    "DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e"
   },
   "typographie": {
     "reference": "image-3.png : signature calligraphique, produit à empattements, lumière ivoire et relief sombre. Correspondance visuelle, familles exactes non identifiées.",
@@ -252,7 +253,7 @@
     {
       "id": "offre",
       "scene": "S2",
-      "texte": "{prix:fcfa}",
+      "texte": "{prix}",
       "police": "serif",
       "taille_px": 78,
       "centre": [
@@ -351,6 +352,6 @@
     }
   ],
   "template_id": "COMMERCE-T1",
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "audio_profile": "afrobeat_amapiano_commerce"
 }

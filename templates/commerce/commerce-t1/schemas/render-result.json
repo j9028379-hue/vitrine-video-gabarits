@@ -17,7 +17,7 @@
       "const": "COMMERCE-T1"
     },
     "version": {
-      "const": "1.0.0"
+      "const": "2.0.0"
     },
     "job_id": {
       "type": "string",

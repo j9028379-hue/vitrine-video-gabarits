@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "nom",
+    "produit",
+    "prix",
+    "accroche",
+    "quartier",
+    "whatsapp"
+  ],
+  "properties": {
+    "produit": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 45,
+      "pattern": "\\S"
+    },
+    "nom": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "pattern": "\\S"
+    },
+    "accroche": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 55,
+      "pattern": "\\S"
+    },
+    "quartier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "pattern": "\\S"
+    },
+    "prix": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32,
+      "pattern": "^(?=[^\\r\\n]*[0-9])[^\\u0000-\\u001f\\u007f]+$"
+    },
+    "whatsapp": {
+      "type": "string",
+      "pattern": "^\\+[1-9][0-9]{6,14}$"
+    }
+  }
+}
