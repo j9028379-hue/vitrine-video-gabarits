@@ -32,3 +32,5 @@ for variant in (0,1):
  for layer in c['calques']:
   msg=fmt.format(layer['texte'],**longest);_,meta=stamp(root,layer,c,msg);x,y,w,h=meta['rectangle'];assert 35<=x and x+w<=685 and y>0 and y+h<1280 and ''.join(''.join(meta['lignes']).split())==''.join(msg.split())
 print('PASS — horloge, formulaire synchronisé, maximum deux calques simultanés, réponses aux longueurs limites.')
+import subprocess
+integrated=root/'integration/Parcours-vers-montage.html';before=integrated.read_bytes();subprocess.run([sys.executable,str(root/'integration/construire.py')],check=True);assert before==integrated.read_bytes();print('PASS — reconstruction déterministe du parcours intégré.')

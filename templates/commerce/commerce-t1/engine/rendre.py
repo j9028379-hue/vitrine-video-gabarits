@@ -71,7 +71,12 @@ mp=out/'COMMERCE-T1-sans-voix.mp4';proc=subprocess.Popen(['ffmpeg','-loglevel','
 for frame in range(N):proc.stdin.write(compose(frame/F).tobytes())
 proc.stdin.close();assert proc.wait()==0
 for cap in caps:cap.release()
-sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();report={'edition':'V3 lettrage chorégraphié','calques':[{**g,**meta,'valeur':g['texte'].format_map(values)} for g,_,meta in items],'horloge_temoin':clock,'temoins_plein_cadre':trace,'textes_affiches':texts,'sha256':sha(mp),'contrat_sha256':sha(root/'montage/contrat-candidat.json'),'inputs':{p.name:sha(p) for p in files},'textes_resolus':texts,'polices':c['polices'],'effets':{k:{'premiere_image':min(v),'derniere_image':max(v),'images':len(v)} for k,v in events.items()},'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()};(out/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+def revision():
+ # Le paquet extrait n’a pas de .git : utiliser le manifest de livraison.
+ m=root.parents[2]/'MANIFEST.json'
+ if m.is_file():return load(m)['commit']
+ return subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();report={'edition':'V3 lettrage chorégraphié','calques':[{**g,**meta,'valeur':g['texte'].format_map(values)} for g,_,meta in items],'horloge_temoin':clock,'temoins_plein_cadre':trace,'textes_affiches':texts,'sha256':sha(mp),'contrat_sha256':sha(root/'montage/contrat-candidat.json'),'inputs':{p.name:sha(p) for p in files},'textes_resolus':texts,'polices':c['polices'],'effets':{k:{'premiere_image':min(v),'derniere_image':max(v),'images':len(v)} for k,v in events.items()},'commit':revision()};(out/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 
 import shutil
 shutil.copyfile(job/'render-job.json',out/'render-job.json')
