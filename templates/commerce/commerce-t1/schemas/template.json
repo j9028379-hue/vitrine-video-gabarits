@@ -292,10 +292,10 @@
               "type": "array",
               "prefixItems": [
                 {
-                  "type": "integer"
+                  "type": "number"
                 },
                 {
-                  "type": "integer"
+                  "type": "number"
                 }
               ],
               "minItems": 2,

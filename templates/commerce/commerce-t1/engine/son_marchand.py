@@ -15,7 +15,7 @@ def produire(video,src,out,cache,piste,contrat):
  for sc in contrat['scenes']:
   source=src/(sc['id']+'.mp4');streams=subprocess.check_output(['ffprobe','-v','error','-select_streams','a:0','-show_entries','stream=index','-of','csv=p=0',str(source)],text=True).strip()
   if streams:
-   a=decode(source);start,end=sc['sortie_s'];offset=sc['source_s'][0]*R;audio=a[offset:offset+(end-start)*R];v[start*R:start*R+len(audio)]=audio
+   a=decode(source);start,end=sc['sortie_s'];offset=round(sc['source_s'][0]*R);audio=a[offset:offset+(end-start)*R];v[start*R:start*R+len(audio)]=audio
  # Détection d'activité par blocs, pas de reconnaissance de langue ; silences longs laissés à la musique.
  energy=np.sqrt(np.mean(v.reshape(-1,480,2)**2,axis=(1,2)));idx=np.flatnonzero(energy>.005)
  if len(idx):
