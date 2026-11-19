@@ -1,0 +1,31 @@
+{
+  "resultat": "Conforme",
+  "source": "capture-guide/guide.json",
+  "methode": "JSON embarqué identique au fichier source. Comparaison de tous les textes visibles dans le téléphone aux séquences attendues issues du JSON ; espaces et capitales de présentation normalisés. Mention universelle et exemples A contrôlés également mot pour mot. Libellé CSS de la photo contrôlé.",
+  "resultats": [
+    "360px / 1A : conforme",
+    "360px / 1B : conforme",
+    "360px / 1C : conforme",
+    "360px / 2A : conforme",
+    "360px / 2B : conforme",
+    "360px / 2C : conforme",
+    "360px / 3A : conforme",
+    "360px / 3B : conforme",
+    "360px / 3C : conforme",
+    "360px / 4A : conforme",
+    "360px / 4B : conforme",
+    "360px / 4C : conforme",
+    "430px / 1A : conforme",
+    "430px / 1B : conforme",
+    "430px / 1C : conforme",
+    "430px / 2A : conforme",
+    "430px / 2B : conforme",
+    "430px / 2C : conforme",
+    "430px / 3A : conforme",
+    "430px / 3B : conforme",
+    "430px / 3C : conforme",
+    "430px / 4A : conforme",
+    "430px / 4B : conforme",
+    "430px / 4C : conforme"
+  ]
+}

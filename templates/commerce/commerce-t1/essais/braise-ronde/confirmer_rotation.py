@@ -1,0 +1,7 @@
+"""Journal entre runners propres. Finalisation par le lanceur autorisé après succès GitHub et vérification du fichier."""
+import sys,base64,os,subprocess,json,hashlib
+from pathlib import Path as P
+q=P(sys.argv[1]);j=json.loads((q/'CQ-pizza.json').read_text());rr=j['rotation'];repo='repos/j9028379-hue/vitrine-video-gabarits';gh=os.environ.get('GH','gh');api=lambda *args:json.loads(subprocess.check_output([gh,'api',*args]));run=api(f"{repo}/actions/runs/{j['run_id']}");assert run['conclusion']=='success' and run['head_sha']==j['commit'];assert hashlib.sha256((q/'La-Braise-Ronde-Pizza.mp4').read_bytes()).hexdigest()==j['sha256'];path=f'{repo}/contents/autoplay/etat.json';r=api(path+'?ref=state/commerce-autoplay');old=json.loads(base64.b64decode(r['content']));new=dict(last_success=rr['choisie'],run_id=j['run_id'],render_sha256=j['sha256']);assert len(set(rr['candidates']))==4 and new['last_success'] in rr['candidates']
+if old==new:print('Déjà confirmé : aucun second avancement.')
+else:
+ assert r['sha']==rr['revision_precedente'] and old['last_success']==rr['precedente']!=rr['choisie'],'Conflit de rotation : refuser de publier, relancer contre le nouvel état.';v=api('-X','PUT',path,'-f','branch=state/commerce-autoplay','-f','sha='+r['sha'],'-f','message=Confirmer la piste du rendu réussi '+str(j['run_id']),'-f','content='+base64.b64encode((json.dumps(new,indent=2)+'\n').encode()).decode());print(v['commit']['html_url'])

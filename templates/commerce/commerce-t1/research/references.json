@@ -1,0 +1,62 @@
+[
+  {
+    "titre": "Shoes Marketing",
+    "createur": "Niv Edits",
+    "plateforme": "CapCut",
+    "page": "https://www.capcut.com/template-detail/Shoes-Marketing/7576373146589121808",
+    "date_observation": "2026-11-19",
+    "dimensions": [
+      720.0,
+      1280.0
+    ],
+    "duree_s": 15.933333333333334,
+    "observations": "La paire tenue à la main passe par plusieurs angles, une mosaïque vers 5,6 s, un flash blanc vers 9 s puis un détail rapproché. Noir et blanc sur fond gris et orange. Aucun CTA identifié.",
+    "sha256_apercu": "74dd3a66ae0d2df7d5b813a9e58a2c776b7825da0b51e934945e3da5048e0640",
+    "decision": "non retenue"
+  },
+  {
+    "titre": "New Drink | Product",
+    "createur": "Meno Me",
+    "plateforme": "CapCut",
+    "page": "https://www.capcut.com/template-detail/New-Drink-Product/7641833250612137223",
+    "date_observation": "2026-11-19",
+    "dimensions": [
+      720.0,
+      1280.0
+    ],
+    "duree_s": 22.566666666666666,
+    "observations": "Après une amorce noire, les canettes occupent des tableaux diagonaux roses et bleus ; éclat vers 3 s, rouge fruité puis décor tropical turquoise, agrumes et glace. Force : le décor entier change, pas seulement le point de vue. Plusieurs produits dans la démo ; pour T1, seul le principe visuel est proposé. Aucun CTA identifié.",
+    "sha256_apercu": "c200dbaa3bf7e2a0804402b7f1c041612fee45b201e174d8ca2ccad645387ca7",
+    "decision": "retenue"
+  },
+  {
+    "titre": "Perfume Product",
+    "createur": "farawilson",
+    "plateforme": "CapCut",
+    "page": "https://www.capcut.com/template-detail/Perfume-Product/7622304618571107601",
+    "date_observation": "2026-11-19",
+    "dimensions": [
+      720.0,
+      1280.0
+    ],
+    "duree_s": 21.4,
+    "observations": "Du flacon sombre titré en blanc, passage à un tapis de roses rouges puis à une rose tenue en main. Le flacon revient entouré de pétales et de points lumineux ; conclusion noire « SHOP NOW ». Le motif floral lie les plans au produit.",
+    "sha256_apercu": "ae4babe9bcd60530484ea0dd29fb8d5b3b70d09b96c560775ecd5d6548442264",
+    "decision": "non retenue"
+  },
+  {
+    "titre": "COMMERCIAL CINEMATIC",
+    "createur": "mø",
+    "plateforme": "CapCut",
+    "page": "https://www.capcut.com/template-detail/COMMERCIAL-CINEMATIC/7318315668686916872",
+    "date_observation": "2026-11-19",
+    "dimensions": [
+      1280.0,
+      720.0
+    ],
+    "duree_s": 11.3,
+    "observations": "Gobelet centré sur fond chaud, changements de lumière et d’échelle, prise en main inclinée. Vers 8 s un balayage flou masque le changement de cadrage, puis retour au gobelet net. Pas de CTA lisible confirmé.",
+    "sha256_apercu": "cede33479502133e154ac1d67f600314ecf76b8d4c4530d69039dc55d96991b8",
+    "decision": "non retenue"
+  }
+]

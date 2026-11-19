@@ -1,0 +1,54 @@
+[
+  {
+    "id": 623364,
+    "titre": "Afrobeat Groove",
+    "artiste": "Sonican",
+    "page": "https://pixabay.com/music/afrobeat-afrobeat-groove-623364/",
+    "source_mp3": "https://cdn.pixabay.com/download/audio/2026/10/20/audio_497b822639.mp3?filename=sonican-afrobeat-groove-623364.mp3",
+    "sha256": "c3939ebbf125ea690f6a5816ae61a3b5ca82ff8025a4ed32c1033649e40c7c59",
+    "octets": 2575464,
+    "licence": "https://pixabay.com/service/license-summary/",
+    "content_id": "Registered sur la fiche",
+    "date": "2026-11-19",
+    "source_debut_s": 0
+  },
+  {
+    "id": 523977,
+    "titre": "Afrobeat Afro Summer",
+    "artiste": "SolarFLEX",
+    "page": "https://pixabay.com/music/afrobeat-afrobeat-afro-summer-523977/",
+    "source_mp3": "https://cdn.pixabay.com/download/audio/2026/05/07/audio_fbad73cec4.mp3?filename=solarflex-afrobeat-afro-summer-523977.mp3",
+    "sha256": "9f35f1052e12c95a9bd168d5381101f6a99a8954c9dafe477538585bd9c18207",
+    "octets": 3091226,
+    "licence": "https://pixabay.com/service/license-summary/",
+    "content_id": "Registered sur la fiche",
+    "date": "2026-11-19",
+    "source_debut_s": 8.94
+  },
+  {
+    "id": 277584,
+    "titre": "Afrobeat",
+    "artiste": "Kulakovka",
+    "page": "https://pixabay.com/music/funk-afrobeat-277584/",
+    "source_mp3": "https://cdn.pixabay.com/download/audio/2024/12/17/audio_2acc096768.mp3?filename=kulakovka-afrobeat-277584.mp3",
+    "sha256": "06c4615b891fb9a26bf7fc49fda07e908fecfa36f4916e96b232220a34948e95",
+    "octets": 1489606,
+    "licence": "https://pixabay.com/service/license-summary/",
+    "content_id": "Registered sur la fiche",
+    "date": "2026-11-19",
+    "source_debut_s": 0
+  },
+  {
+    "id": 597968,
+    "titre": "Amapiano Afrobeat",
+    "artiste": "SigmaMusicArt",
+    "page": "https://pixabay.com/music/afrobeat-amapiano-afrobeat-597968/",
+    "source_mp3": "https://cdn.pixabay.com/download/audio/2026/09/05/audio_cf45eeae61.mp3?filename=sigmamusicart-amapiano-afrobeat-597968.mp3",
+    "sha256": "7942673447e0b041900de8e4b870b0c26e85b8e021316c488988c63459f6178a",
+    "octets": 4218044,
+    "licence": "https://pixabay.com/service/license-summary/",
+    "content_id": "Registered sur la fiche",
+    "date": "2026-11-19",
+    "source_debut_s": 19.5
+  }
+]

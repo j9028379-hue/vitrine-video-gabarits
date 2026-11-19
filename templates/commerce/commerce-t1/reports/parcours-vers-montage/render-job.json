@@ -1,0 +1,38 @@
+{
+  "template_id": "COMMERCE-T1",
+  "template_version": "0.3.0",
+  "merchant_payload": {
+    "nom": "Comptoir Démo",
+    "produit": "Cappuccino",
+    "prix": 1500,
+    "accroche": "Un dessin dans la mousse",
+    "quartier": "Akpakpa",
+    "whatsapp": "+12025550142"
+  },
+  "captures": {
+    "S1": {
+      "uri": "S1.mp4",
+      "sha256": "8dd8106437755f1a0db1653966af7bc51edbea1b11c601d5b6fa741f6d0c42b8",
+      "validation": "C",
+      "prise": 2
+    },
+    "S2": {
+      "uri": "S2.mp4",
+      "sha256": "4f5e8f671e1fc30b5bb317075f4a5e8b3ab584f2d87477edf5f2746db2542947",
+      "validation": "C",
+      "prise": 3
+    },
+    "S3": {
+      "uri": "S3.mp4",
+      "sha256": "054a05af9a83aeda497e95677401131c8931c8a7d9dc031788777aab9396468b",
+      "validation": "C",
+      "prise": 4
+    },
+    "S4": {
+      "uri": "S4.mp4",
+      "sha256": "4e9a2afeabe231aa388c2fe0e197b86bfe69a99ae0cdbca839e3712fda8881bc",
+      "validation": "C",
+      "prise": 5
+    }
+  }
+}

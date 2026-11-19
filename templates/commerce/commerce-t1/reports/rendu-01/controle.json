@@ -1,0 +1,56 @@
+{
+  "resultat": "PASS",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "images_decodees": 900,
+  "duree_s": 30,
+  "pistes_audio": 0,
+  "sha256": "23727da108938539563825d0c93fa7b33fc3e562d3da65224ebc109b142d7ce1",
+  "effets": {
+    "A": {
+      "premiere_image": 0,
+      "derniere_image": 43,
+      "images": 44
+    },
+    "B": {
+      "premiere_image": 86,
+      "derniere_image": 97,
+      "images": 12
+    },
+    "C": {
+      "premiere_image": 174,
+      "derniere_image": 187,
+      "images": 14
+    },
+    "D": {
+      "premiere_image": 300,
+      "derniere_image": 316,
+      "images": 17
+    },
+    "E": {
+      "premiere_image": 413,
+      "derniere_image": 436,
+      "images": 24
+    },
+    "F": {
+      "premiere_image": 513,
+      "derniere_image": 542,
+      "images": 30
+    },
+    "G": {
+      "premiere_image": 626,
+      "derniere_image": 665,
+      "images": 40
+    },
+    "H": {
+      "premiere_image": 879,
+      "derniere_image": 899,
+      "images": 21
+    }
+  },
+  "difference_moyenne_zone_CTA_23_28": 0.17859583333333334,
+  "observations": "Vérifications techniques ; appréciation créative réservée au propriétaire."
+}

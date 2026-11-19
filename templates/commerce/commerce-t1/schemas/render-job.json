@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "template_id",
+    "template_version",
+    "merchant_payload",
+    "captures"
+  ],
+  "properties": {
+    "template_id": {
+      "const": "COMMERCE-T1"
+    },
+    "template_version": {
+      "const": "2.0.0"
+    },
+    "merchant_payload": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nom",
+        "produit",
+        "prix",
+        "accroche",
+        "quartier",
+        "whatsapp"
+      ],
+      "properties": {
+        "produit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 45,
+          "pattern": "\\S"
+        },
+        "nom": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40,
+          "pattern": "\\S"
+        },
+        "accroche": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 55,
+          "pattern": "\\S"
+        },
+        "quartier": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40,
+          "pattern": "\\S"
+        },
+        "prix": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32,
+          "pattern": "^(?=[^\\r\\n]*[0-9])[^\\u0000-\\u001f\\u007f]+$"
+        },
+        "whatsapp": {
+          "type": "string",
+          "pattern": "^\\+[1-9][0-9]{6,14}$"
+        }
+      }
+    },
+    "captures": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "properties": {
+        "S1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "uri",
+            "validation",
+            "prise",
+            "sha256"
+          ],
+          "properties": {
+            "uri": {
+              "const": "S1.mp4"
+            },
+            "validation": {
+              "const": "C"
+            },
+            "prise": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        },
+        "S2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "uri",
+            "validation",
+            "prise",
+            "sha256"
+          ],
+          "properties": {
+            "uri": {
+              "const": "S2.mp4"
+            },
+            "validation": {
+              "const": "C"
+            },
+            "prise": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        },
+        "S3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "uri",
+            "validation",
+            "prise",
+            "sha256"
+          ],
+          "properties": {
+            "uri": {
+              "const": "S3.mp4"
+            },
+            "validation": {
+              "const": "C"
+            },
+            "prise": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        },
+        "S4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "uri",
+            "validation",
+            "prise",
+            "sha256"
+          ],
+          "properties": {
+            "uri": {
+              "const": "S4.mp4"
+            },
+            "validation": {
+              "const": "C"
+            },
+            "prise": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

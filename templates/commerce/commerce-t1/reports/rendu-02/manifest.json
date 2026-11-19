@@ -1,0 +1,217 @@
+{
+  "edition": "V2 plein cadre",
+  "temoins_plein_cadre": {
+    "64": {
+      "clip": 1,
+      "source_frame": 172,
+      "matrix": [
+        [
+          1.8285093747162244,
+          0.0,
+          -962.3779899084133
+        ],
+        [
+          -0.0,
+          1.8285093747162244,
+          -18.263374897840777
+        ]
+      ]
+    },
+    "147": {
+      "clip": 1,
+      "source_frame": 260,
+      "matrix": [
+        [
+          2.1378419500155714,
+          -0.1325887427019609,
+          -1047.353254034473
+        ],
+        [
+          0.1325887427019609,
+          2.1378419500155714,
+          -142.60899809108525
+        ]
+      ]
+    },
+    "237": {
+      "clip": 2,
+      "source_frame": 112,
+      "matrix": [
+        [
+          1.9380256550972639,
+          -0.0407067640848181,
+          -815.1892839695549
+        ],
+        [
+          0.0407067640848181,
+          1.9380256550972639,
+          -124.56083255789986
+        ]
+      ]
+    },
+    "356": {
+      "clip": 2,
+      "source_frame": 313,
+      "matrix": [
+        [
+          2.248709017709242,
+          0.11154521420859102,
+          -1151.3260094402274
+        ],
+        [
+          -0.11154521420859102,
+          2.248709017709242,
+          -161.48133636859097
+        ]
+      ]
+    },
+    "476": {
+      "clip": 3,
+      "source_frame": 436,
+      "matrix": [
+        [
+          1.8469445670418119,
+          -0.030773320254904937,
+          -952.4935354141481
+        ],
+        [
+          0.030773320254904937,
+          1.8469445670418119,
+          -66.03946682621842
+        ]
+      ]
+    },
+    "581": {
+      "clip": 3,
+      "source_frame": 769,
+      "matrix": [
+        [
+          2.1848285687896882,
+          -0.08273556780595784,
+          -1143.2661616744863
+        ],
+        [
+          0.08273556780595784,
+          2.1848285687896882,
+          -338.62581415862513
+        ]
+      ]
+    },
+    "721": {
+      "clip": 4,
+      "source_frame": 123,
+      "matrix": [
+        [
+          1.7831111111111109,
+          0.0,
+          -815.4268540039061
+        ],
+        [
+          -0.0,
+          1.7831111111111109,
+          -1.9199999999999022
+        ]
+      ]
+    },
+    "845": {
+      "clip": 4,
+      "source_frame": 247,
+      "matrix": [
+        [
+          1.7831111111111109,
+          0.0,
+          -815.4268540039061
+        ],
+        [
+          -0.0,
+          1.7831111111111109,
+          -1.9199999999999022
+        ]
+      ]
+    }
+  },
+  "textes_affiches": [
+    [
+      "CAPPUCCINO"
+    ],
+    [
+      "UN DESSIN DANS LA MOUSSE"
+    ],
+    [],
+    [
+      "1 500 F CFA",
+      "COMPTOIR DÉMO · AKPAKPA",
+      "CONTACTE-NOUS SUR WHATSAPP",
+      "+12025550142"
+    ]
+  ],
+  "sha256": "b45d8010201b53cc7b53f99e5b37e67427d9c68377a198e71402c927599c79f1",
+  "contrat_sha256": "e6c1cb94938a88fb332660c9ca399e3d8d374ea8195c2c44fa523eed79cc740a",
+  "inputs": {
+    "S1.mp4": "b5f4540dd2b12da566c3a45344316ad67c72d2c0e9cb0dbc1482405c8e0787f2",
+    "S2.mp4": "fe4412ba51256873da1a95f16873b3bcdda278165e236db197a15b16d7811b2b",
+    "S3.mp4": "5526e2ee6e3915fa5e0f84c061549b78ba42abcc3d9f251cbfcc7a5872eab462",
+    "S4.mp4": "43ba392514aa0383143c0a0f183ccd8d6368a50f5de576d82c99d9dac997d6fe"
+  },
+  "textes_resolus": [
+    [
+      "Cappuccino"
+    ],
+    [
+      "Un dessin dans la mousse"
+    ],
+    [],
+    [
+      "1 500 F CFA",
+      "Comptoir Démo · Akpakpa",
+      "Contacte-nous sur WhatsApp",
+      "+12025550142"
+    ]
+  ],
+  "polices": {
+    "poppins/Poppins-ExtraBold.ttf": "f2ab17c1a63a0ecc12c2461848fc8a469395e3cd2d641803e889c643d9f958e1"
+  },
+  "effets": {
+    "A": {
+      "premiere_image": 0,
+      "derniere_image": 43,
+      "images": 44
+    },
+    "B": {
+      "premiere_image": 86,
+      "derniere_image": 97,
+      "images": 12
+    },
+    "C": {
+      "premiere_image": 174,
+      "derniere_image": 187,
+      "images": 14
+    },
+    "D": {
+      "premiere_image": 300,
+      "derniere_image": 316,
+      "images": 17
+    },
+    "E": {
+      "premiere_image": 413,
+      "derniere_image": 436,
+      "images": 24
+    },
+    "F": {
+      "premiere_image": 513,
+      "derniere_image": 542,
+      "images": 30
+    },
+    "G": {
+      "premiere_image": 626,
+      "derniere_image": 665,
+      "images": 40
+    },
+    "H": {
+      "premiere_image": 879,
+      "derniere_image": 899,
+      "images": 21
+    }
+  },
+  "commit": "1de7aeefded24331399f5447c6905c4447d41a3c"
+}

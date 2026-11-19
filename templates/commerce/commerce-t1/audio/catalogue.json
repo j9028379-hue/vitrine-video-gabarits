@@ -1,0 +1,26 @@
+{
+  "pack_version": "1.0.0",
+  "audio_profile": "afrobeat_amapiano_commerce",
+  "pistes": [
+    {
+      "id": 623364,
+      "fichier_demo": "01-Sonican.mp4",
+      "sha256_demo": "aa2365b2877278d9df2afe828abf35f0b9b86ed9e1e22cbb68a92772488ac2f0"
+    },
+    {
+      "id": 523977,
+      "fichier_demo": "02-SolarFLEX.mp4",
+      "sha256_demo": "e1ca676c7efc2ffa03c5c7bcfe789734c02090e0c9a19f14888782f432846b2b"
+    },
+    {
+      "id": 277584,
+      "fichier_demo": "03-Kulakovka.mp4",
+      "sha256_demo": "23ee48fd8399d9669e064fecee460540c2bae52dc441d7c0ce91ca7121abf548"
+    },
+    {
+      "id": 597968,
+      "fichier_demo": "04-SigmaMusicArt.mp4",
+      "sha256_demo": "099127d6f6a70bda05a8e194833567f369ece1e3848b89d13dc30a909a97abb1"
+    }
+  ]
+}

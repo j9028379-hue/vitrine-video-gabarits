@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-19",
+  "gabarit": "COMMERCE-T1 — Produit vedette",
+  "reponse": "oui c'est bon",
+  "portee": "Acceptation de l’audition comparative des quatre mixes présentés ; aucune variante préférée désignée.",
+  "run": "https://github.com/j9028379-hue/vitrine-video-gabarits/actions/runs/44571258004",
+  "versions": [
+    {
+      "numero": 1,
+      "id": 623364,
+      "titre": "Afrobeat Groove",
+      "sha256": "aa2365b2877278d9df2afe828abf35f0b9b86ed9e1e22cbb68a92772488ac2f0"
+    },
+    {
+      "numero": 2,
+      "id": 523977,
+      "titre": "Afrobeat Afro Summer",
+      "sha256": "e1ca676c7efc2ffa03c5c7bcfe789734c02090e0c9a19f14888782f432846b2b"
+    },
+    {
+      "numero": 3,
+      "id": 277584,
+      "titre": "Afrobeat",
+      "sha256": "23ee48fd8399d9669e064fecee460540c2bae52dc441d7c0ce91ca7121abf548"
+    },
+    {
+      "numero": 4,
+      "id": 597968,
+      "titre": "Amapiano Afrobeat",
+      "sha256": "099127d6f6a70bda05a8e194833567f369ece1e3848b89d13dc30a909a97abb1"
+    }
+  ],
+  "publication_autorisee": false
+}

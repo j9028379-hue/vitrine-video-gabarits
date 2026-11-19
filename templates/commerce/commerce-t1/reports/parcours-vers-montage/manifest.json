@@ -1,0 +1,625 @@
+{
+  "edition": "V3 lettrage chorégraphié",
+  "calques": [
+    {
+      "id": "signature",
+      "scene": "S1",
+      "texte": "{nom}",
+      "police": "script",
+      "taille_px": 95,
+      "centre": [
+        360,
+        788
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        45,
+        171
+      ],
+      "entree": 23,
+      "sortie": 7,
+      "mouvement": "plume",
+      "lignes": [
+        "Comptoir Démo"
+      ],
+      "rectangle": [
+        95,
+        725,
+        530,
+        126
+      ],
+      "valeur": "Comptoir Démo"
+    },
+    {
+      "id": "produit",
+      "scene": "S1",
+      "texte": "{produit}",
+      "police": "serif",
+      "taille_px": 68,
+      "centre": [
+        360,
+        962
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        72,
+        171
+      ],
+      "entree": 16,
+      "sortie": 7,
+      "mouvement": "lever",
+      "lignes": [
+        "Cappuccino"
+      ],
+      "rectangle": [
+        172,
+        918,
+        377,
+        88
+      ],
+      "valeur": "Cappuccino"
+    },
+    {
+      "id": "detail",
+      "scene": "S2",
+      "texte": "{accroche}",
+      "police": "serif",
+      "taille_px": 68,
+      "centre": [
+        360,
+        927
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        194,
+        295
+      ],
+      "entree": 20,
+      "sortie": 7,
+      "mouvement": "vague",
+      "lignes": [
+        "Un dessin dans",
+        "la mousse"
+      ],
+      "rectangle": [
+        126,
+        860,
+        468,
+        134
+      ],
+      "valeur": "Un dessin dans la mousse"
+    },
+    {
+      "id": "offre",
+      "scene": "S2",
+      "texte": "{prix:fcfa}",
+      "police": "serif",
+      "taille_px": 78,
+      "centre": [
+        360,
+        934
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        321,
+        407
+      ],
+      "entree": 15,
+      "sortie": 7,
+      "mouvement": "lever",
+      "lignes": [
+        "1 500 F CFA"
+      ],
+      "rectangle": [
+        162,
+        895,
+        397,
+        79
+      ],
+      "valeur": "1 500 F CFA"
+    },
+    {
+      "id": "enseigne",
+      "scene": "S4",
+      "texte": "{nom}",
+      "police": "script",
+      "taille_px": 100,
+      "centre": [
+        360,
+        480
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        666,
+        763
+      ],
+      "entree": 19,
+      "sortie": 7,
+      "mouvement": "plume",
+      "lignes": [
+        "Comptoir Démo"
+      ],
+      "rectangle": [
+        82,
+        414,
+        557,
+        132
+      ],
+      "valeur": "Comptoir Démo"
+    },
+    {
+      "id": "lieu",
+      "scene": "S4",
+      "texte": "{quartier}",
+      "police": "serif",
+      "taille_px": 56,
+      "centre": [
+        360,
+        629
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        682,
+        763
+      ],
+      "entree": 13,
+      "sortie": 7,
+      "mouvement": "lever",
+      "lignes": [
+        "Akpakpa"
+      ],
+      "rectangle": [
+        237,
+        591,
+        246,
+        77
+      ],
+      "valeur": "Akpakpa"
+    },
+    {
+      "id": "appel",
+      "scene": "S4",
+      "texte": "Écris-nous sur WhatsApp",
+      "police": "script",
+      "taille_px": 67,
+      "centre": [
+        360,
+        575
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        765,
+        879
+      ],
+      "entree": 18,
+      "sortie": 7,
+      "mouvement": "plume",
+      "lignes": [
+        "Écris-nous sur WhatsApp"
+      ],
+      "rectangle": [
+        59,
+        520,
+        602,
+        110
+      ],
+      "valeur": "Écris-nous sur WhatsApp"
+    },
+    {
+      "id": "numero",
+      "scene": "S4",
+      "texte": "{whatsapp}",
+      "police": "serif",
+      "taille_px": 65,
+      "centre": [
+        360,
+        695
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        777,
+        879
+      ],
+      "entree": 12,
+      "sortie": 7,
+      "mouvement": "lever",
+      "lignes": [
+        "+12025550142"
+      ],
+      "rectangle": [
+        154,
+        661,
+        412,
+        68
+      ],
+      "valeur": "+12025550142"
+    }
+  ],
+  "horloge_temoin": {
+    "48": [
+      "signature"
+    ],
+    "66": [
+      "signature"
+    ],
+    "105": [
+      "signature",
+      "produit"
+    ],
+    "152": [
+      "signature",
+      "produit"
+    ],
+    "201": [
+      "detail"
+    ],
+    "237": [
+      "detail"
+    ],
+    "327": [
+      "offre"
+    ],
+    "356": [
+      "offre"
+    ],
+    "476": [],
+    "581": [],
+    "675": [
+      "enseigne"
+    ],
+    "721": [
+      "enseigne",
+      "lieu"
+    ],
+    "771": [
+      "appel"
+    ],
+    "805": [
+      "appel",
+      "numero"
+    ],
+    "845": [
+      "appel",
+      "numero"
+    ]
+  },
+  "temoins_plein_cadre": {
+    "48": {
+      "clip": 1,
+      "source_frame": 156,
+      "matrix": [
+        [
+          1.8117176664100445,
+          0.0,
+          -950.234226256407
+        ],
+        [
+          -0.0,
+          1.8117176664100445,
+          -12.218359907616048
+        ]
+      ]
+    },
+    "66": {
+      "clip": 1,
+      "source_frame": 174,
+      "matrix": [
+        [
+          1.8304526748971193,
+          0.0,
+          -963.7833846229584
+        ],
+        [
+          -0.0,
+          1.8304526748971193,
+          -18.962962962962933
+        ]
+      ]
+    },
+    "105": {
+      "clip": 1,
+      "source_frame": 218,
+      "matrix": [
+        [
+          2.29214033045293,
+          -0.23090113402661278,
+          -1120.1760643010402
+        ],
+        [
+          0.23090113402661278,
+          2.29214033045293,
+          -259.29680202763825
+        ]
+      ]
+    },
+    "152": {
+      "clip": 1,
+      "source_frame": 265,
+      "matrix": [
+        [
+          2.1172845901714017,
+          -0.12054427337158924,
+          -1037.30954867734
+        ],
+        [
+          0.12054427337158924,
+          2.1172845901714017,
+          -127.77744521379572
+        ]
+      ]
+    },
+    "201": {
+      "clip": 2,
+      "source_frame": 77,
+      "matrix": [
+        [
+          1.9074235886242261,
+          -0.06208421883058939,
+          -788.4105668595118
+        ],
+        [
+          0.06208421883058939,
+          1.9074235886242261,
+          -120.46171060830233
+        ]
+      ]
+    },
+    "237": {
+      "clip": 2,
+      "source_frame": 112,
+      "matrix": [
+        [
+          1.9380256550972639,
+          -0.0407067640848181,
+          -815.1892839695549
+        ],
+        [
+          0.0407067640848181,
+          1.9380256550972639,
+          -124.56083255789986
+        ]
+      ]
+    },
+    "327": {
+      "clip": 2,
+      "source_frame": 284,
+      "matrix": [
+        [
+          2.335258494827482,
+          0.15499082132922606,
+          -1224.7171585646634
+        ],
+        [
+          -0.15499082132922606,
+          2.335258494827482,
+          -166.77048021764193
+        ]
+      ]
+    },
+    "356": {
+      "clip": 2,
+      "source_frame": 313,
+      "matrix": [
+        [
+          2.248709017709242,
+          0.11154521420859102,
+          -1151.3260094402274
+        ],
+        [
+          -0.11154521420859102,
+          2.248709017709242,
+          -161.48133636859097
+        ]
+      ]
+    },
+    "476": {
+      "clip": 3,
+      "source_frame": 436,
+      "matrix": [
+        [
+          1.8469445670418119,
+          -0.030773320254904937,
+          -952.4935354141481
+        ],
+        [
+          0.030773320254904937,
+          1.8469445670418119,
+          -66.03946682621842
+        ]
+      ]
+    },
+    "581": {
+      "clip": 3,
+      "source_frame": 769,
+      "matrix": [
+        [
+          2.1848285687896882,
+          -0.08273556780595784,
+          -1143.2661616744863
+        ],
+        [
+          0.08273556780595784,
+          2.1848285687896882,
+          -338.62581415862513
+        ]
+      ]
+    },
+    "675": {
+      "clip": 4,
+      "source_frame": 77,
+      "matrix": [
+        [
+          1.7831111111111109,
+          0.0,
+          -815.4268540039061
+        ],
+        [
+          -0.0,
+          1.7831111111111109,
+          -1.9199999999999022
+        ]
+      ]
+    },
+    "721": {
+      "clip": 4,
+      "source_frame": 123,
+      "matrix": [
+        [
+          1.7831111111111109,
+          0.0,
+          -815.4268540039061
+        ],
+        [
+          -0.0,
+          1.7831111111111109,
+          -1.9199999999999022
+        ]
+      ]
+    },
+    "771": {
+      "clip": 4,
+      "source_frame": 173,
+      "matrix": [
+        [
+          1.7831111111111109,
+          0.0,
+          -815.4268540039061
+        ],
+        [
+          -0.0,
+          1.7831111111111109,
+          -1.9199999999999022
+        ]
+      ]
+    },
+    "805": {
+      "clip": 4,
+      "source_frame": 207,
+      "matrix": [
+        [
+          1.7831111111111109,
+          0.0,
+          -815.4268540039061
+        ],
+        [
+          -0.0,
+          1.7831111111111109,
+          -1.9199999999999022
+        ]
+      ]
+    },
+    "845": {
+      "clip": 4,
+      "source_frame": 247,
+      "matrix": [
+        [
+          1.7831111111111109,
+          0.0,
+          -815.4268540039061
+        ],
+        [
+          -0.0,
+          1.7831111111111109,
+          -1.9199999999999022
+        ]
+      ]
+    }
+  },
+  "textes_affiches": [
+    [
+      "Comptoir Démo",
+      "Cappuccino"
+    ],
+    [
+      "Un dessin dans la mousse",
+      "1 500 F CFA"
+    ],
+    [],
+    [
+      "Comptoir Démo",
+      "Akpakpa",
+      "Écris-nous sur WhatsApp",
+      "+12025550142"
+    ]
+  ],
+  "sha256": "5aef9d9dd2514e0b8fb0c052f142e30828b8f78ac47170e8614d230293740dcb",
+  "contrat_sha256": "82210cf3b61e574a2fcbba6b18ae120452333b7f4506ff14c9606ac10b50d186",
+  "inputs": {
+    "S1.mp4": "8dd8106437755f1a0db1653966af7bc51edbea1b11c601d5b6fa741f6d0c42b8",
+    "S2.mp4": "4f5e8f671e1fc30b5bb317075f4a5e8b3ab584f2d87477edf5f2746db2542947",
+    "S3.mp4": "054a05af9a83aeda497e95677401131c8931c8a7d9dc031788777aab9396468b",
+    "S4.mp4": "4e9a2afeabe231aa388c2fe0e197b86bfe69a99ae0cdbca839e3712fda8881bc"
+  },
+  "textes_resolus": [
+    [
+      "Comptoir Démo",
+      "Cappuccino"
+    ],
+    [
+      "Un dessin dans la mousse",
+      "1 500 F CFA"
+    ],
+    [],
+    [
+      "Comptoir Démo",
+      "Akpakpa",
+      "Écris-nous sur WhatsApp",
+      "+12025550142"
+    ]
+  ],
+  "polices": {
+    "dmserifdisplay/DMSerifDisplay-Regular.ttf": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616",
+    "greatvibes/GreatVibes-Regular.ttf": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15"
+  },
+  "effets": {
+    "A": {
+      "premiere_image": 0,
+      "derniere_image": 43,
+      "images": 44
+    },
+    "B": {
+      "premiere_image": 86,
+      "derniere_image": 97,
+      "images": 12
+    },
+    "C": {
+      "premiere_image": 174,
+      "derniere_image": 187,
+      "images": 14
+    },
+    "D": {
+      "premiere_image": 300,
+      "derniere_image": 316,
+      "images": 17
+    },
+    "E": {
+      "premiere_image": 413,
+      "derniere_image": 436,
+      "images": 24
+    },
+    "F": {
+      "premiere_image": 513,
+      "derniere_image": 542,
+      "images": 30
+    },
+    "G": {
+      "premiere_image": 626,
+      "derniere_image": 665,
+      "images": 40
+    },
+    "H": {
+      "premiere_image": 879,
+      "derniere_image": 899,
+      "images": 21
+    }
+  },
+  "commit": "363afcb4d1b37b8f3e983fcedc70059ff4ea32f0"
+}

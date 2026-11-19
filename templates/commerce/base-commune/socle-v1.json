@@ -1,0 +1,187 @@
+{
+  "version": "1.0.0",
+  "titre": "Les informations de ton commerce",
+  "formulaire": "Maquette de principe",
+  "questions": [
+    {
+      "cle": "nom",
+      "question": "Comment s'appelle ton commerce ?",
+      "exemple": "Restaurant Chez Maman",
+      "obligatoire": true
+    },
+    {
+      "cle": "produit",
+      "question": "Qu'est-ce que tu veux présenter dans ta publicité ?",
+      "exemple": "Riz au poulet, tresses, robe, sac...",
+      "obligatoire": true
+    },
+    {
+      "cle": "prix",
+      "question": "Quel prix veux-tu afficher ?",
+      "exemple": "1 500 nairas",
+      "obligatoire": true
+    },
+    {
+      "cle": "accroche",
+      "question": "Qu'est-ce que tu veux dire aux clients ?",
+      "exemple": "Disponible dès aujourd’hui !",
+      "obligatoire": true
+    },
+    {
+      "cle": "quartier",
+      "question": "Où peut-on te trouver ?",
+      "exemple": "Abomey-Calavi, Arconville",
+      "obligatoire": true
+    },
+    {
+      "cle": "whatsapp",
+      "question": "Quel est ton numéro WhatsApp ?",
+      "exemple": "+229 XX XX XX XX",
+      "obligatoire": true
+    }
+  ],
+  "missions": [
+    {
+      "title": "Présente ce que tu proposes",
+      "instruction": "Montre ce que tu proposes. Place-le devant ton téléphone pour qu'on puisse bien voir ce que tu présentes.",
+      "needed": [
+        "Ce que tu proposes, en entier.",
+        "Une image bien claire.",
+        "Une belle présentation."
+      ],
+      "avoid": [
+        "Filmer de trop loin.",
+        "Cacher une partie importante.",
+        "Bouger le téléphone trop vite."
+      ],
+      "action": "Place bien ce que tu veux montrer devant ton téléphone. Commence par une vue d'ensemble et tiens ton téléphone bien droit.",
+      "sample": "Bonjour, voici ce que nous te proposons aujourd'hui."
+    },
+    {
+      "title": "Montre les détails",
+      "instruction": "Approche doucement ton téléphone pour montrer les détails. Fais voir les parties importantes que le client doit bien regarder.",
+      "needed": [
+        "Les détails importants.",
+        "Les différentes parties.",
+        "Les finitions et l'apparence."
+      ],
+      "avoid": [
+        "Approcher trop vite.",
+        "Cacher les détails.",
+        "Filmer une image floue."
+      ],
+      "action": "Rapproche lentement ton téléphone. Arrête-toi sur les détails pour qu'on puisse bien les voir.",
+      "sample": "Regarde bien, voici quelques détails intéressants."
+    },
+    {
+      "title": "Montre comment ça se passe",
+      "instruction": "Montre une action liée à ce que tu proposes. Fais voir comment tu travailles, comment tu prépares ou comment on utilise ce que tu présentes.",
+      "needed": [
+        "Le geste ou l'action principale.",
+        "Ce qui se passe pendant le travail.",
+        "Une étape importante."
+      ],
+      "avoid": [
+        "Cacher ce que tu fais.",
+        "Filmer trop rapidement.",
+        "Montrer une action sans rapport."
+      ],
+      "action": "Fais ton geste ou montre comment ça fonctionne. Filme naturellement et garde ton téléphone stable pour qu'on voie bien ce qui se passe.",
+      "sample": "Je vais te montrer comment ça se passe."
+    },
+    {
+      "title": "Montre le résultat final",
+      "instruction": "Montre ce que le client va recevoir ou découvrir. Présente bien le résultat et laisse le téléphone filmer quelques secondes sans bouger.",
+      "needed": [
+        "Le résultat ou la présentation finale.",
+        "Une belle vue d'ensemble.",
+        "Ton lieu de travail, si possible."
+      ],
+      "avoid": [
+        "Cacher le résultat.",
+        "Filmer dans un endroit trop sombre.",
+        "Bouger le téléphone à la fin."
+      ],
+      "action": "Présente bien ce que tu proposes. Garde ton téléphone stable quelques secondes pour qu'on puisse tout voir.",
+      "sample": "Voilà ce que nous te proposons. Contacte-nous pour en savoir plus."
+    }
+  ],
+  "parole": {
+    "invitation": "Tu peux parler pendant que tu filmes, dans la langue que tu veux : fon, yoruba, français, anglais ou toute autre langue que tu maîtrises.",
+    "silence": "Tu peux aussi ne pas parler si tu préfères."
+  },
+  "parcours": [
+    {
+      "ecran": 1,
+      "scene": 1,
+      "etat": "A",
+      "fonction": "Guide"
+    },
+    {
+      "ecran": 2,
+      "scene": 1,
+      "etat": "B",
+      "fonction": "Enregistrement"
+    },
+    {
+      "ecran": 3,
+      "scene": 1,
+      "etat": "C",
+      "fonction": "Vérification"
+    },
+    {
+      "ecran": 4,
+      "scene": 2,
+      "etat": "A",
+      "fonction": "Guide"
+    },
+    {
+      "ecran": 5,
+      "scene": 2,
+      "etat": "B",
+      "fonction": "Enregistrement"
+    },
+    {
+      "ecran": 6,
+      "scene": 2,
+      "etat": "C",
+      "fonction": "Vérification"
+    },
+    {
+      "ecran": 7,
+      "scene": 3,
+      "etat": "A",
+      "fonction": "Guide"
+    },
+    {
+      "ecran": 8,
+      "scene": 3,
+      "etat": "B",
+      "fonction": "Enregistrement"
+    },
+    {
+      "ecran": 9,
+      "scene": 3,
+      "etat": "C",
+      "fonction": "Vérification"
+    },
+    {
+      "ecran": 10,
+      "scene": 4,
+      "etat": "A",
+      "fonction": "Guide"
+    },
+    {
+      "ecran": 11,
+      "scene": 4,
+      "etat": "B",
+      "fonction": "Enregistrement"
+    },
+    {
+      "ecran": 12,
+      "scene": 4,
+      "etat": "C",
+      "fonction": "Vérification"
+    }
+  ]
+}

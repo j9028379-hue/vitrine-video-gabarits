@@ -1,0 +1,113 @@
+{
+  "resultat": "PASS",
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "images_decodees": 900,
+  "duree_s": 30,
+  "pistes_audio": 0,
+  "sha256": "b45d8010201b53cc7b53f99e5b37e67427d9c68377a198e71402c927599c79f1",
+  "effets": {
+    "A": {
+      "premiere_image": 0,
+      "derniere_image": 43,
+      "images": 44
+    },
+    "B": {
+      "premiere_image": 86,
+      "derniere_image": 97,
+      "images": 12
+    },
+    "C": {
+      "premiere_image": 174,
+      "derniere_image": 187,
+      "images": 14
+    },
+    "D": {
+      "premiere_image": 300,
+      "derniere_image": 316,
+      "images": 17
+    },
+    "E": {
+      "premiere_image": 413,
+      "derniere_image": 436,
+      "images": 24
+    },
+    "F": {
+      "premiere_image": 513,
+      "derniere_image": 542,
+      "images": 30
+    },
+    "G": {
+      "premiere_image": 626,
+      "derniere_image": 665,
+      "images": 40
+    },
+    "H": {
+      "premiere_image": 879,
+      "derniere_image": 899,
+      "images": 21
+    }
+  },
+  "controle_image": [
+    {
+      "image": 64,
+      "scene": 1,
+      "ecart_moyen_hors_lettres": 2.3,
+      "ecart_bas_vs_rush": 2.16,
+      "fraction_lettres_blanches": 0.9966036350284561
+    },
+    {
+      "image": 147,
+      "scene": 1,
+      "ecart_moyen_hors_lettres": 2.0,
+      "ecart_bas_vs_rush": 1.86,
+      "fraction_lettres_blanches": 0.9978428492748301
+    },
+    {
+      "image": 237,
+      "scene": 2,
+      "ecart_moyen_hors_lettres": 2.24,
+      "ecart_bas_vs_rush": 2.73,
+      "fraction_lettres_blanches": 0.9868102879753792
+    },
+    {
+      "image": 356,
+      "scene": 2,
+      "ecart_moyen_hors_lettres": 2.24,
+      "ecart_bas_vs_rush": 2.18,
+      "fraction_lettres_blanches": 0.9675595892346827
+    },
+    {
+      "image": 476,
+      "scene": 3,
+      "ecart_moyen_hors_lettres": 2.04,
+      "ecart_bas_vs_rush": 2.41,
+      "fraction_lettres_blanches": null
+    },
+    {
+      "image": 581,
+      "scene": 3,
+      "ecart_moyen_hors_lettres": 2.01,
+      "ecart_bas_vs_rush": 2.12,
+      "fraction_lettres_blanches": null
+    },
+    {
+      "image": 721,
+      "scene": 4,
+      "ecart_moyen_hors_lettres": 1.99,
+      "ecart_bas_vs_rush": 1.96,
+      "fraction_lettres_blanches": 0.9973605309689157
+    },
+    {
+      "image": 845,
+      "scene": 4,
+      "ecart_moyen_hors_lettres": 2.06,
+      "ecart_bas_vs_rush": 2.05,
+      "fraction_lettres_blanches": 0.9981036824436871
+    }
+  ],
+  "observations": "Huit images hors transition confrontées aux pixels des rushs recadrés, y compris les 144 dernières lignes ; contrôle du blanc des lettres. Ces vérifications ne valent pas validation du style ou des raccords."
+}

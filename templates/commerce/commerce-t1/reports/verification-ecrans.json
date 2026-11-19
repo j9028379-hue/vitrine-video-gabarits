@@ -1,0 +1,207 @@
+{
+  "viewports": [
+    {
+      "ecran": 1,
+      "scene": 1,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 2,
+      "scene": 1,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 3,
+      "scene": 1,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 4,
+      "scene": 2,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 5,
+      "scene": 2,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 6,
+      "scene": 2,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 7,
+      "scene": 3,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 8,
+      "scene": 3,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 9,
+      "scene": 3,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 10,
+      "scene": 4,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 11,
+      "scene": 4,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 12,
+      "scene": 4,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 360,
+      "debordement": false
+    },
+    {
+      "ecran": 1,
+      "scene": 1,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 2,
+      "scene": 1,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 3,
+      "scene": 1,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 4,
+      "scene": 2,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 5,
+      "scene": 2,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 6,
+      "scene": 2,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 7,
+      "scene": 3,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 8,
+      "scene": 3,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 9,
+      "scene": 3,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 10,
+      "scene": 4,
+      "etat": "A",
+      "fonction": "Guide",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 11,
+      "scene": 4,
+      "etat": "B",
+      "fonction": "Enregistrement",
+      "largeur": 430,
+      "debordement": false
+    },
+    {
+      "ecran": 12,
+      "scene": 4,
+      "etat": "C",
+      "fonction": "Vérification",
+      "largeur": 430,
+      "debordement": false
+    }
+  ],
+  "tests": [
+    "Formulaire : ordre, questions, exemples, six entrées obligatoires vides, montant formaté, téléphone masqué refusé, aperçu vérifié",
+    "24 contrôles du parcours dans Chromium et de largeur ; 12 captures réelles",
+    "4 décomptes et arrêts automatiques ; relecture, reprise et sortie après 4C"
+  ],
+  "non_testes": [
+    "Android physique",
+    "caméra et micro réels",
+    "publication"
+  ],
+  "errors": []
+}

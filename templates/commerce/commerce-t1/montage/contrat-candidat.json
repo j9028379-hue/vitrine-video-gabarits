@@ -1,0 +1,357 @@
+{
+  "id": "COMMERCE-T1",
+  "version": "2.0.0",
+  "etat": "Montage et mixes de démonstration validés.",
+  "guide": {
+    "path": "capture-guide/guide.json",
+    "sha256": "f2c908a813fee66be73404363ef7330442c53effa833d85c8153f223e0a4e5db",
+    "usage": "Consignes à la capture seulement ; ne pas incruster les exemples de parole."
+  },
+  "formulaire": {
+    "schema": "form/schema-v2.json",
+    "champs_requis": [
+      "nom",
+      "produit",
+      "prix",
+      "accroche",
+      "quartier",
+      "whatsapp"
+    ],
+    "whatsapp": "Enlever les espaces à la saisie, puis valider. Si une valeur est absente ou invalide, bloquer la préparation.",
+    "questions": "form/questions.json",
+    "origine": "Réponses du commerçant uniquement. Aucune réponse préremplie, aucun produit par défaut."
+  },
+  "reference": {
+    "lot": 2,
+    "option": 2,
+    "url": "https://www.capcut.com/template-detail/New-Drink-Product/7641833250612137223",
+    "sha256_apercu": "c200dbaa3bf7e2a0804402b7f1c041612fee45b201e174d8ca2ccad645387ca7"
+  },
+  "duree_s": 30,
+  "scenes": [
+    {
+      "id": "S1",
+      "prise": "prise_validee_S1",
+      "sortie_s": [
+        0,
+        6
+      ],
+      "capture_s": 8,
+      "source_s": [
+        1,
+        7
+      ],
+      "textes": [
+        "{nom}",
+        "{produit}"
+      ]
+    },
+    {
+      "id": "S2",
+      "prise": "prise_validee_S2",
+      "sortie_s": [
+        6,
+        14
+      ],
+      "capture_s": 10,
+      "source_s": [
+        1,
+        9
+      ],
+      "textes": [
+        "{accroche}",
+        "{prix}"
+      ]
+    },
+    {
+      "id": "S3",
+      "prise": "prise_validee_S3",
+      "sortie_s": [
+        14,
+        21
+      ],
+      "capture_s": 9,
+      "source_s": [
+        0.75,
+        7.75
+      ],
+      "textes": []
+    },
+    {
+      "id": "S4",
+      "prise": "prise_validee_S4",
+      "sortie_s": [
+        21,
+        30
+      ],
+      "capture_s": 11,
+      "source_s": [
+        1,
+        10
+      ],
+      "textes": [
+        "{nom}",
+        "{quartier}",
+        "Écris-nous sur WhatsApp",
+        "{whatsapp}"
+      ]
+    }
+  ],
+  "effets": [
+    {
+      "motif": "A",
+      "effet": "lamelles et cercle",
+      "sortie_s": [
+        0,
+        1.45
+      ]
+    },
+    {
+      "motif": "B",
+      "effet": "éclat coloré",
+      "sortie_s": [
+        2.85,
+        3.25
+      ]
+    },
+    {
+      "motif": "C",
+      "effet": "papier oblique",
+      "sortie_s": [
+        5.8,
+        6.25
+      ]
+    },
+    {
+      "motif": "D",
+      "effet": "poussée et voile clair",
+      "sortie_s": [
+        10,
+        10.55
+      ]
+    },
+    {
+      "motif": "E",
+      "effet": "fente horizontale",
+      "sortie_s": [
+        13.75,
+        14.55
+      ]
+    },
+    {
+      "motif": "F",
+      "effet": "tranche puis carte",
+      "sortie_s": [
+        17.1,
+        18.1
+      ]
+    },
+    {
+      "motif": "G",
+      "effet": "bande oblique et recul",
+      "sortie_s": [
+        20.85,
+        22.2
+      ]
+    },
+    {
+      "motif": "H",
+      "effet": "fermeture en lamelles",
+      "sortie_s": [
+        29.3,
+        30
+      ]
+    }
+  ],
+  "audio": {
+    "voix_off_ajoutee": false,
+    "musique_ajoutee": false,
+    "source": "Proposition pour ce premier master : son des prises coupé au montage ; originaux intacts, relecture de capture avec leur son."
+  },
+  "polices": {
+    "dmserifdisplay/DMSerifDisplay-Regular.ttf": "8cc3643535edf039aa5d95440a8542735e9197e4f4b8d9303e980fefbf5ab616",
+    "greatvibes/GreatVibes-Regular.ttf": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15",
+    "DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e"
+  },
+  "typographie": {
+    "reference": "image-3.png : signature calligraphique, produit à empattements, lumière ivoire et relief sombre. Correspondance visuelle, familles exactes non identifiées.",
+    "script": "greatvibes/GreatVibes-Regular.ttf",
+    "serif": "dmserifdisplay/DMSerifDisplay-Regular.ttf",
+    "encre_rgb": [
+      255,
+      245,
+      224
+    ],
+    "relief_rgb": [
+      45,
+      28,
+      21
+    ],
+    "casse": "Casse du commerçant conservée."
+  },
+  "calques": [
+    {
+      "id": "signature",
+      "scene": "S1",
+      "texte": "{nom}",
+      "police": "script",
+      "taille_px": 95,
+      "centre": [
+        360,
+        788
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        45,
+        171
+      ],
+      "entree": 23,
+      "sortie": 7,
+      "mouvement": "plume"
+    },
+    {
+      "id": "produit",
+      "scene": "S1",
+      "texte": "{produit}",
+      "police": "serif",
+      "taille_px": 68,
+      "centre": [
+        360,
+        962
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        72,
+        171
+      ],
+      "entree": 16,
+      "sortie": 7,
+      "mouvement": "lever"
+    },
+    {
+      "id": "detail",
+      "scene": "S2",
+      "texte": "{accroche}",
+      "police": "serif",
+      "taille_px": 68,
+      "centre": [
+        360,
+        927
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        194,
+        295
+      ],
+      "entree": 20,
+      "sortie": 7,
+      "mouvement": "vague"
+    },
+    {
+      "id": "offre",
+      "scene": "S2",
+      "texte": "{prix}",
+      "police": "serif",
+      "taille_px": 78,
+      "centre": [
+        360,
+        934
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        321,
+        407
+      ],
+      "entree": 15,
+      "sortie": 7,
+      "mouvement": "lever"
+    },
+    {
+      "id": "enseigne",
+      "scene": "S4",
+      "texte": "{nom}",
+      "police": "script",
+      "taille_px": 100,
+      "centre": [
+        360,
+        480
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        666,
+        763
+      ],
+      "entree": 19,
+      "sortie": 7,
+      "mouvement": "plume"
+    },
+    {
+      "id": "lieu",
+      "scene": "S4",
+      "texte": "{quartier}",
+      "police": "serif",
+      "taille_px": 56,
+      "centre": [
+        360,
+        629
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        682,
+        763
+      ],
+      "entree": 13,
+      "sortie": 7,
+      "mouvement": "lever"
+    },
+    {
+      "id": "appel",
+      "scene": "S4",
+      "texte": "Écris-nous sur WhatsApp",
+      "police": "script",
+      "taille_px": 67,
+      "centre": [
+        360,
+        575
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        765,
+        879
+      ],
+      "entree": 18,
+      "sortie": 7,
+      "mouvement": "plume"
+    },
+    {
+      "id": "numero",
+      "scene": "S4",
+      "texte": "{whatsapp}",
+      "police": "serif",
+      "taille_px": 65,
+      "centre": [
+        360,
+        695
+      ],
+      "largeur_max": 606,
+      "lignes_max": 2,
+      "images": [
+        777,
+        879
+      ],
+      "entree": 12,
+      "sortie": 7,
+      "mouvement": "lever"
+    }
+  ],
+  "template_id": "COMMERCE-T1",
+  "schema_version": "2.0.0",
+  "audio_profile": "afrobeat_amapiano_commerce"
+}

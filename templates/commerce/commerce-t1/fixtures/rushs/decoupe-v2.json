@@ -1,0 +1,86 @@
+[
+  {
+    "scene": 1,
+    "tableau": 0,
+    "repere_montage": 0,
+    "repere_rush": 3.6,
+    "cx": 0.565,
+    "cy": 0.5,
+    "zoom_debut": 1.0,
+    "zoom_fin": 1.04,
+    "angle_debut": 0,
+    "angle_fin": 0
+  },
+  {
+    "scene": 1,
+    "tableau": 1,
+    "repere_montage": 3.0,
+    "repere_rush": 6.78,
+    "cx": 0.53,
+    "cy": 0.45,
+    "zoom_debut": 1.24,
+    "zoom_fin": 1.12,
+    "angle_debut": -6,
+    "angle_fin": -2
+  },
+  {
+    "scene": 2,
+    "tableau": 0,
+    "repere_montage": 6.0,
+    "repere_rush": 1.85,
+    "cx": 0.48,
+    "cy": 0.53,
+    "zoom_debut": 1.05,
+    "zoom_fin": 1.12,
+    "angle_debut": -2,
+    "angle_fin": 0
+  },
+  {
+    "scene": 2,
+    "tableau": 1,
+    "repere_montage": 10.3,
+    "repere_rush": 8.88,
+    "cx": 0.51,
+    "cy": 0.54,
+    "zoom_debut": 1.28,
+    "zoom_fin": 1.12,
+    "angle_debut": 4,
+    "angle_fin": 0
+  },
+  {
+    "scene": 3,
+    "tableau": 0,
+    "repere_montage": 14.0,
+    "repere_rush": 12.65,
+    "cx": 0.56,
+    "cy": 0.54,
+    "zoom_debut": 1.02,
+    "zoom_fin": 1.04,
+    "angle_debut": 0,
+    "angle_fin": -2
+  },
+  {
+    "scene": 3,
+    "tableau": 1,
+    "repere_montage": 17.55,
+    "repere_rush": 23.82,
+    "cx": 0.55,
+    "cy": 0.64,
+    "zoom_debut": 1.26,
+    "zoom_fin": 1.14,
+    "angle_debut": -4,
+    "angle_fin": 0
+  },
+  {
+    "scene": 4,
+    "tableau": 0,
+    "repere_montage": 21.0,
+    "repere_rush": 1.06,
+    "cx": 0.515,
+    "cy": 0.5,
+    "zoom_debut": 1.0,
+    "zoom_fin": 1.0,
+    "angle_debut": 0,
+    "angle_fin": 0
+  }
+]

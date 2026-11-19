@@ -1,0 +1,107 @@
+{
+  "prerequis": [
+    "nom",
+    "produit",
+    "prix",
+    "accroche",
+    "quartier",
+    "whatsapp"
+  ],
+  "states": [
+    "1A",
+    "1B",
+    "1C",
+    "2A",
+    "2B",
+    "2C",
+    "3A",
+    "3B",
+    "3C",
+    "4A",
+    "4B",
+    "4C"
+  ],
+  "countdown": "3–2–1 transitoire, hors prise",
+  "events": {
+    "A:start": "décompte → B, temps de prise à zéro",
+    "B:deadline": "arrêt automatique → C",
+    "C:play": "relecture avec piste source",
+    "C:retry": "invalider et supprimer la prise précédente → A de la même scène",
+    "C:next": "validation explicite → A suivante, ou sortie montage après 4C"
+  },
+  "simulation": "Médias de démonstration et piste sonore synthétique embarqués. Pas de caméra, de micro ou de rendu de publicité réels. Les raccourcis de revue sont externes au téléphone.",
+  "ecrans": [
+    {
+      "ecran": 1,
+      "scene": 1,
+      "etat": "A",
+      "fonction": "Guide"
+    },
+    {
+      "ecran": 2,
+      "scene": 1,
+      "etat": "B",
+      "fonction": "Enregistrement"
+    },
+    {
+      "ecran": 3,
+      "scene": 1,
+      "etat": "C",
+      "fonction": "Vérification"
+    },
+    {
+      "ecran": 4,
+      "scene": 2,
+      "etat": "A",
+      "fonction": "Guide"
+    },
+    {
+      "ecran": 5,
+      "scene": 2,
+      "etat": "B",
+      "fonction": "Enregistrement"
+    },
+    {
+      "ecran": 6,
+      "scene": 2,
+      "etat": "C",
+      "fonction": "Vérification"
+    },
+    {
+      "ecran": 7,
+      "scene": 3,
+      "etat": "A",
+      "fonction": "Guide"
+    },
+    {
+      "ecran": 8,
+      "scene": 3,
+      "etat": "B",
+      "fonction": "Enregistrement"
+    },
+    {
+      "ecran": 9,
+      "scene": 3,
+      "etat": "C",
+      "fonction": "Vérification"
+    },
+    {
+      "ecran": 10,
+      "scene": 4,
+      "etat": "A",
+      "fonction": "Guide"
+    },
+    {
+      "ecran": 11,
+      "scene": 4,
+      "etat": "B",
+      "fonction": "Enregistrement"
+    },
+    {
+      "ecran": 12,
+      "scene": 4,
+      "etat": "C",
+      "fonction": "Vérification"
+    }
+  ]
+}

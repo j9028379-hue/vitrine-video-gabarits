@@ -1,0 +1,58 @@
+[
+  {
+    "scene": 1,
+    "source_id": 42487,
+    "source_page": "https://mixkit.co/free-stock-video/pizza-while-someone-takes-a-slice-42487/",
+    "licence": "https://mixkit.co/license/#videoFree",
+    "source_url": "https://assets.mixkit.co/videos/42487/42487-720.mp4",
+    "sha256": "ba57f207c16c32ea85bf34610d337a9b16ac2ce1159c699e4ea646f7066aad2f",
+    "facteur_duree_images": 1.58,
+    "voix_fr": "À La Braise Ronde, voici notre pizza au pepperoni.",
+    "voix_sha256": "ea2f97095b7ed65679d03f80d2938e901d9bbe08db76450871d303bbdf9b99b1",
+    "debut_voix_depuis_scene": 1.1,
+    "pause_position_s": 0,
+    "pause_ajoutee_s": 0
+  },
+  {
+    "scene": 2,
+    "source_id": 44001,
+    "source_page": "https://mixkit.co/free-stock-video/close-up-shot-of-a-pepperoni-pizza-44001/",
+    "licence": "https://mixkit.co/license/#videoFree",
+    "source_url": "https://assets.mixkit.co/videos/44001/44001-720.mp4",
+    "sha256": "84efe76ccb792ba988153ad80c304493f73a87936e4f532141dd2d4a01c893b8",
+    "facteur_duree_images": 1.08,
+    "voix_fr": "Regarde la croûte dorée et le fromage fondu. Huit euros cinquante.",
+    "voix_sha256": "df1349df06d1481984f50af40b66aa0c682b2bb3446bbb740f5279a090309182",
+    "debut_voix_depuis_scene": 0.65,
+    "pause_position_s": 2.4,
+    "pause_ajoutee_s": 1.27
+  },
+  {
+    "scene": 3,
+    "source_id": 42469,
+    "source_page": "https://mixkit.co/free-stock-video/chef-shaping-a-pizza-42469/",
+    "licence": "https://mixkit.co/license/#videoFree",
+    "source_url": "https://assets.mixkit.co/videos/42469/42469-720.mp4",
+    "sha256": "c4443b114064725752dd9e9e17da01b371f4bb6113970f13202632fd8e226373",
+    "facteur_duree_images": 1.01,
+    "voix_fr": "Tout commence par la pâte, étirée à la main.",
+    "voix_sha256": "0e1d63fa484c5cfcf817db81927c5dc444bc153b8adcd576c134f2a9e6b788f8",
+    "debut_voix_depuis_scene": 0.95,
+    "pause_position_s": 0,
+    "pause_ajoutee_s": 0
+  },
+  {
+    "scene": 4,
+    "source_id": 42484,
+    "source_page": "https://mixkit.co/free-stock-video/close-up-shot-of-a-freshly-made-hot-pizza-42484/",
+    "licence": "https://mixkit.co/license/#videoFree",
+    "source_url": "https://assets.mixkit.co/videos/42484/42484-720.mp4",
+    "sha256": "7305639ca5ed031d1ede9c8440daed44afcdff92814fe57ba3e5f22289ebf442",
+    "facteur_duree_images": 1.61,
+    "voix_fr": "Retrouve La Braise Ronde à Cadjèhoun. Pour commander, écris-nous sur WhatsApp.",
+    "voix_sha256": "12e6c2f65ac993d136871e4e05131c1bf3b6e36dd99d58185e6b7e28a771be7e",
+    "debut_voix_depuis_scene": 1.2,
+    "pause_position_s": 1.8,
+    "pause_ajoutee_s": 1.55
+  }
+]

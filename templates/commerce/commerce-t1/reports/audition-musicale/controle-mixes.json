@@ -1,0 +1,67 @@
+{
+  "resultat": "PASS technique ; écoute propriétaire en attente",
+  "video_originale": "SHA256=a53dbda2381eff0644bc09864947a01a772126f9b7f309cee76c11c86d015ddc",
+  "musique_ouverte_db": -3,
+  "musique_sous_parole_db": -10,
+  "attaque_ms": 120,
+  "relachement_ms": 450,
+  "voix_vitesse": 1,
+  "versions": [
+    {
+      "numero": 1,
+      "id": 623364,
+      "titre": "Afrobeat Groove",
+      "mp4": "01-Sonican.mp4",
+      "sha256": "aa2365b2877278d9df2afe828abf35f0b9b86ed9e1e22cbb68a92772488ac2f0",
+      "source_s": 0,
+      "source_duree_s": 80.48,
+      "wav_lufs": -16.0,
+      "wav_dbtp": -2.52,
+      "aac_lufs": -16.04,
+      "aac_dbtp": -2.44,
+      "rapport_voix_musique_db": 7.93
+    },
+    {
+      "numero": 2,
+      "id": 523977,
+      "titre": "Afrobeat Afro Summer",
+      "mp4": "02-SolarFLEX.mp4",
+      "sha256": "e1ca676c7efc2ffa03c5c7bcfe789734c02090e0c9a19f14888782f432846b2b",
+      "source_s": 8.94,
+      "source_duree_s": 96.6,
+      "wav_lufs": -16.01,
+      "wav_dbtp": -2.52,
+      "aac_lufs": -16.04,
+      "aac_dbtp": -2.46,
+      "rapport_voix_musique_db": 6.36
+    },
+    {
+      "numero": 3,
+      "id": 277584,
+      "titre": "Afrobeat",
+      "mp4": "03-Kulakovka.mp4",
+      "sha256": "23ee48fd8399d9669e064fecee460540c2bae52dc441d7c0ce91ca7121abf548",
+      "source_s": 0,
+      "source_duree_s": 46.55,
+      "wav_lufs": -16.01,
+      "wav_dbtp": -2.53,
+      "aac_lufs": -16.05,
+      "aac_dbtp": -2.39,
+      "rapport_voix_musique_db": 8.01
+    },
+    {
+      "numero": 4,
+      "id": 597968,
+      "titre": "Amapiano Afrobeat",
+      "mp4": "04-SigmaMusicArt.mp4",
+      "sha256": "099127d6f6a70bda05a8e194833567f369ece1e3848b89d13dc30a909a97abb1",
+      "source_s": 19.5,
+      "source_duree_s": 131.81,
+      "wav_lufs": -16.01,
+      "wav_dbtp": -2.53,
+      "aac_lufs": -16.06,
+      "aac_dbtp": -2.15,
+      "rapport_voix_musique_db": 7.05
+    }
+  ]
+}
