@@ -25,3 +25,5 @@ j=json.loads((out/'render-job.json').read_text());d=j['merchant_payload'];prix=d
 if j['merchant_payload']==json.loads((root/'fixtures/rushs/formulaire.json').read_text()) and (root/'audio/auditions/voix-demo.flac').exists():
  subprocess.run([sys.executable,str(root/'audio/auditions/mixer.py'),str(p),str(out/'ecoutes')],check=True)
 subprocess.run([sys.executable,str(root/'tests/cq_architecture.py'),str(out)],check=True)
+if __import__('os').environ.get('GITHUB_ACTIONS')=='true':
+ subprocess.run([sys.executable,str(root/'essais/braise-ronde/rendu.py'),str(out/'essai-pizza')],check=True)
