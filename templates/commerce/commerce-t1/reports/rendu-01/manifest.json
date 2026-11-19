@@ -1,0 +1,72 @@
+{
+  "sha256": "23727da108938539563825d0c93fa7b33fc3e562d3da65224ebc109b142d7ce1",
+  "contrat_sha256": "52720aafce404397a5c911fe2af22aee07a29bd4a2d63f4bb3c1790692efec13",
+  "inputs": {
+    "S1.mp4": "f40f98131bced345f6e431eeffdff419fbc978df0098dd4c6f10d58ea3069190",
+    "S2.mp4": "5a0e2299b8b6b7c7950dcfe01e2ef058b47ae315115c2fb209d63e31f4ff17cf",
+    "S3.mp4": "9bd0a16c890ee182d2c32990c86aeebf1ca4cb60c999ad6c2a36280db4928dc0",
+    "S4.mp4": "100a3ec7353dd402e55e09701a36ca6ed465d11e6646376f6b02765f1c273fb8"
+  },
+  "textes_resolus": [
+    [
+      "Cappuccino"
+    ],
+    [
+      "Un dessin dans la mousse"
+    ],
+    [],
+    [
+      "1 500 F CFA",
+      "Comptoir Démo · Akpakpa",
+      "Contacte-nous sur WhatsApp",
+      "+12025550142"
+    ]
+  ],
+  "polices": {
+    "DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890",
+    "DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e"
+  },
+  "effets": {
+    "A": {
+      "premiere_image": 0,
+      "derniere_image": 43,
+      "images": 44
+    },
+    "B": {
+      "premiere_image": 86,
+      "derniere_image": 97,
+      "images": 12
+    },
+    "C": {
+      "premiere_image": 174,
+      "derniere_image": 187,
+      "images": 14
+    },
+    "D": {
+      "premiere_image": 300,
+      "derniere_image": 316,
+      "images": 17
+    },
+    "E": {
+      "premiere_image": 413,
+      "derniere_image": 436,
+      "images": 24
+    },
+    "F": {
+      "premiere_image": 513,
+      "derniere_image": 542,
+      "images": 30
+    },
+    "G": {
+      "premiere_image": 626,
+      "derniere_image": 665,
+      "images": 40
+    },
+    "H": {
+      "premiere_image": 879,
+      "derniere_image": 899,
+      "images": 21
+    }
+  },
+  "commit": "9068ec54b4a26e252d6bb46c15e570908e3a8a55"
+}
