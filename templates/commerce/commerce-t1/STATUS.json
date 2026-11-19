@@ -34,19 +34,25 @@
     "montage/Apercu-textes.png",
     "reports/rendu-01/controle.json",
     "reports/rendu-01/manifest.json",
-    "reports/rendu-01/planche-QC.jpg"
+    "reports/rendu-01/planche-QC.jpg",
+    "approvals/refus-rendu-v1.json",
+    "reports/rendu-02/controle.json",
+    "reports/rendu-02/manifest.json",
+    "reports/rendu-02/planche-QC.jpg"
   ],
   "derniere_approbation": "Écrans corrigés et consignes produit acceptés.",
-  "decision_attendue": "Visionner le master GitHub et valider les transitions, le rythme et la lisibilité, ou demander une correction.",
+  "decision_attendue": "Visionner la V2 plein écran et valider le style et les raccords, ou demander une correction.",
   "blocages": [
     "Audio non écouté."
   ],
   "duree_imposee_s": 30,
   "depot": "https://github.com/j9028379-hue/vitrine-video-gabarits",
   "rendu_silencieux": {
-    "run": "https://github.com/j9028379-hue/vitrine-video-gabarits/actions/runs/44540698528",
-    "commit": "9068ec54b4a26e252d6bb46c15e570908e3a8a55",
-    "artefact": "COMMERCE-T1-sans-voix-2",
+    "version": "V2",
+    "run": "https://github.com/j9028379-hue/vitrine-video-gabarits/actions/runs/44543249370",
+    "commit": "1de7aeefded24331399f5447c6905c4447d41a3c",
+    "artefact": "COMMERCE-T1-sans-voix-4",
+    "sha256": "b45d8010201b53cc7b53f99e5b37e67427d9c68377a198e71402c927599c79f1",
     "publication_release": false
   }
 }
