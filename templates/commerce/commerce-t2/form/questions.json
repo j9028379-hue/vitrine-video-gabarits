@@ -1,0 +1,12 @@
+{
+  "titre": "PRÉPARE TA PUBLICITÉ — NOUVEL ARRIVAGE",
+  "champs": [
+    {"cle":"nom","question":"Comment s'appelle ton commerce ?","exemple":"Boutique Élégance"},
+    {"cle":"produit","question":"Quel nouvel article veux-tu présenter ?","exemple":"Sac à main pour femme"},
+    {"cle":"prix","question":"Quel est son prix ?","exemple":"8 000 FCFA"},
+    {"cle":"accroche","question":"Quel message veux-tu donner aux clients ?","exemple":"Nos nouveaux sacs sont disponibles !"},
+    {"cle":"quartier","question":"Où peut-on te trouver ?","exemple":"Cotonou, Akpakpa"},
+    {"cle":"whatsapp","question":"Quel est ton numéro WhatsApp ?","exemple":"+229 XX XX XX XX"}
+  ],
+  "regles": ["Six réponses obligatoires. Les exemples ne sont pas préremplis.","Un seul article, pas une liste de produits.","Le prix et sa devise sont saisis librement et conservés tels quels.","Le numéro masqué est un exemple, pas un contact valide."]
+}
