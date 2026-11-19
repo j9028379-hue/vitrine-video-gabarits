@@ -22,10 +22,15 @@
     "capture-guide/flux.json",
     "ui-screens/Planche-12-ecrans.png",
     "simulation/Parcours-12-ecrans.html",
-    "reports/verification-ecrans.json"
+    "reports/verification-ecrans.json",
+    "approvals/revision-textes-demandee.json",
+    "capture-guide/Quatre-guides.md",
+    "ui-screens/Planche-4-guides.png",
+    "reports/controle-textes.json",
+    "reports/reference-redaction-T1.json"
   ],
   "derniere_approbation": "Passage à la conception des écrans demandé explicitement ; toutes les informations importantes à renseigner.",
-  "decision_attendue": "Valider les douze écrans et le parcours, ou préciser les numéros à modifier.",
+  "decision_attendue": "Valider ou corriger les textes révisés des douze écrans ; aucune validation humaine acquise.",
   "blocages": [
     "Dépôt commun : API GitHub publique HTTP 404, accès privé éventuel non vérifié. gh absent. Aucun push.",
     "Audio non écouté."

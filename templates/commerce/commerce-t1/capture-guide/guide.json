@@ -19,55 +19,100 @@
     "retry": "REFAIRE",
     "next": "SCÈNE SUIVANTE",
     "finish": "PASSER AU MONTAGE",
-    "play": "Relire avec le son",
-    "pause": "Mettre en pause",
-    "record": "REC",
-    "mic": "Micro actif",
-    "verify": "Vérifie ta prise",
-    "confirm": "En continuant, tu valides cette prise.",
-    "voice": "Tu peux parler, ce n’est pas obligatoire.",
-    "end": "Les quatre prises sont validées. Le parcours de capture est terminé. Aucun montage n’est lancé dans cette simulation."
+    "play": "Revoir avec le son",
+    "pause": "Pause",
+    "record": "On filme",
+    "mic": "Micro ouvert",
+    "verify": "Regarde ta vidéo",
+    "confirm": "Si la vidéo te plaît, garde-la et passe à la suite.",
+    "voice": "Tu peux parler pendant que tu filmes, en fon, yoruba, français ou anglais, pour présenter ton produit.",
+    "end": "Tu as gardé tes quatre vidéos. Dans cette démo, le montage ne démarre pas.",
+    "voiceTitle": "Parler est facultatif",
+    "choice": "Tu peux aussi filmer sans parler.",
+    "example": "Exemple de phrase (facultatif)",
+    "say": "Tu peux le dire avec tes mots.",
+    "confirmLast": "Si la vidéo te plaît, garde-la et passe au montage.",
+    "needed": "À filmer",
+    "avoid": "À éviter",
+    "action": "Ce que tu dois faire",
+    "what": "Ce que tu vas filmer",
+    "image": "Exemple à l’image",
+    "film": "À filmer :",
+    "keptLabel": "Dans la pub :",
+    "length": "Ta vidéo :",
+    "scene": "Scène",
+    "outOf": "sur"
   },
   "scenes": [
     {
       "id": 1,
-      "title": "Le produit entier",
-      "instruction": "Pose ton article sur un fond simple. Cadre-le en entier et tiens ton téléphone immobile.",
-      "needed": "Tout le produit, avec un peu d’espace autour.",
-      "avoid": "Ne coupe ni le haut ni la base.",
+      "title": "Présente ton produit",
+      "instruction": "Pose la lampe sur la table. Recule un peu pour qu’on la voie en entier.",
+      "needed": [
+        "La lampe, du pied jusqu’en haut."
+      ],
+      "avoid": [
+        "Ne coupe pas le haut ou le pied de la lampe."
+      ],
       "sample": "Voici notre lampe de bureau.",
       "capture": 8,
-      "kept": 6
+      "kept": 6,
+      "action": "Tiens ton téléphone droit et ne bouge plus."
     },
     {
       "id": 2,
-      "title": "Le détail qui compte",
-      "instruction": "Approche-toi du détail annoncé. Attends que l’image soit nette avant de filmer.",
-      "needed": "Le détail indiqué dans le formulaire : ici, la tête orientable.",
-      "avoid": "Ne cache pas le détail avec ton doigt.",
-      "sample": "Regarde la tête orientable.",
+      "title": "Montre le détail",
+      "instruction": "Approche ton téléphone de la tête de la lampe. Montre la partie qui tourne.",
+      "needed": [
+        "La tête de la lampe.",
+        "La petite pièce qui lui permet de tourner."
+      ],
+      "avoid": [
+        "Ne mets pas ton doigt devant cette pièce."
+      ],
+      "sample": "Regarde, la tête de la lampe peut tourner.",
       "capture": 10,
-      "kept": 8
+      "kept": 8,
+      "action": "Attends que l’image soit nette avant de filmer."
     },
     {
       "id": 3,
-      "title": "Le geste qui le prouve",
-      "instruction": "Montre comment le produit fonctionne. Fais le geste une fois, puis laisse voir le résultat.",
-      "needed": "Tes mains, l’article et le résultat du geste.",
-      "avoid": "Ne sors pas du cadre au moment important.",
-      "sample": "Je peux orienter la lumière ici.",
+      "title": "Montre comment ça marche",
+      "instruction": "Tourne doucement la tête de la lampe pour montrer où va la lumière.",
+      "needed": [
+        "Ta main qui tourne la lampe.",
+        "L’endroit que tu éclaires."
+      ],
+      "avoid": [
+        "Ne cache pas la lampe avec ta main."
+      ],
+      "sample": "Je peux diriger la lumière ici.",
       "capture": 9,
-      "kept": 7
+      "kept": 7,
+      "action": "Fais le geste une fois. Puis laisse la lampe dans cette position."
     },
     {
       "id": 4,
-      "title": "Le produit au comptoir",
-      "instruction": "Pose le produit au comptoir. Garde le bas du cadre dégagé pour le prix et le contact.",
-      "needed": "L’article et un repère de ta boutique.",
-      "avoid": "Ne filme pas un numéro personnel en arrière-plan.",
-      "sample": "Contacte-nous pour commander.",
+      "title": "Montre ta boutique",
+      "instruction": "Pose la lampe sur le comptoir. Filme-la avec le nom de ta boutique derrière, si on peut le voir.",
+      "needed": [
+        "La lampe sur le comptoir.",
+        "Le nom de la boutique ou son entrée."
+      ],
+      "avoid": [
+        "Ne filme pas les clients sans leur accord."
+      ],
+      "sample": "Tu veux cette lampe ? Passe à la boutique ou écris-nous sur WhatsApp.",
       "capture": 11,
-      "kept": 9
+      "kept": 9,
+      "action": "Laisse un peu de place sous la lampe à l’écran. Le prix et ton numéro s’afficheront là."
     }
-  ]
+  ],
+  "text_policy": {
+    "portée": "Tous les gabarits VITRINE VIDÉO",
+    "principe": "Parler au commerçant comme en face de lui. Dire quoi filmer et proposer un exemple différent pour chaque scène, lié aux réponses confirmées et à ce que la caméra montre. Ne rien promettre à sa place.",
+    "service": "Tu peux parler pendant que tu filmes, en fon, yoruba, français ou anglais, pour présenter ton travail.",
+    "parole": "Facultative, libre et sans lien avec la future voix off de démonstration.",
+    "exemple_courant": "Lampe de bureau ; tête orientable (détail déclaré dans le formulaire de démonstration)."
+  }
 }
