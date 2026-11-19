@@ -1,6 +1,6 @@
 {
   "id": "COMMERCE-T1",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "etat": "contrat candidat, non rendu",
   "guide": {
     "path": "capture-guide/guide.json",
@@ -167,13 +167,13 @@
     "source": "Proposition pour ce premier master : son des prises coupé au montage ; originaux intacts, relecture de capture avec leur son."
   },
   "polices": {
-    "DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890",
-    "DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e"
+    "poppins/Poppins-ExtraBold.ttf": "f2ab17c1a63a0ecc12c2461848fc8a469395e3cd2d641803e889c643d9f958e1"
   },
   "typographie": {
-    "gras": "titre produit et prix",
-    "normal": "détail, commerce, quartier et contact",
-    "si_absente": "Erreur ; aucun remplacement silencieux."
+    "famille": "Poppins ExtraBold",
+    "référence": "Aspect recherché : capitales épaisses blanches directement sur le rush. Police exacte de l’image non identifiée.",
+    "casse": "Majuscules au dessin seulement ; données brutes conservées.",
+    "habillage": "Aucun panneau, aucun fond flou ; ombre courte épousant les lettres."
   },
   "cta_stable_s": [
     22.3,
