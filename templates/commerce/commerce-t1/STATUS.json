@@ -2,7 +2,7 @@
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
   "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "Liaison formulaire → 12 écrans → RenderJob → rendu silencieux démontrée sur runner GitHub. Musique en pause.",
+  "statut_workflow": "Quatre mixes voix + musiques disponibles pour écoute propriétaire.",
   "branche": "feat/commerce-t1-silencieux",
   "commit": "Voir le HEAD de la branche de travail.",
   "preuves": [
@@ -50,9 +50,9 @@
     "audio/audition-voix.json"
   ],
   "derniere_approbation": "Écrans corrigés et consignes produit acceptés.",
-  "decision_attendue": "Revue du parcours et des preuves. Aucun déploiement mobile ni publication.",
+  "decision_attendue": "Écouter les quatre versions ; pas de diffusion ni de rotation activée.",
   "blocages": [
-    "Fichiers audio Pixabay non disponibles dans cet espace ; aucun mix voix-musique livré."
+    "Validation humaine des mixes en attente."
   ],
   "duree_imposee_s": 30,
   "depot": "https://github.com/j9028379-hue/vitrine-video-gabarits",
@@ -70,5 +70,9 @@
     "sha256_mp4": "5aef9d9dd2514e0b8fb0c052f142e30828b8f78ac47170e8614d230293740dcb",
     "dossier": "reports/parcours-vers-montage",
     "profil": "Démo : import MP4, simulateur de capture, Chrome sur GitHub Actions."
+  },
+  "audition_musicale": {
+    "run": "https://github.com/j9028379-hue/vitrine-video-gabarits/actions/runs/44571258004",
+    "rapport": "reports/audition-musicale/controle-mixes.json"
   }
 }
