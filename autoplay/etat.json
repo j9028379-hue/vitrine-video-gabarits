@@ -1,6 +1,5 @@
 {
-  "last_success": 623364,
-  "run_id": 44576803415,
-  "render_sha256": "97aedcad3a1c1936a02e3bc2901c65bbf53ec7d91e94783db79e10d22f02ec89",
-  "note": "Dernier rendu marchand du contrôle 2.0.0 ; point de départ du journal de rotation."
+  "last_success": 277584,
+  "run_id": 44578646208,
+  "render_sha256": "a277f0d2a21524615b5741c621a431276a1d12093af2435adba2761e88f1febf"
 }
