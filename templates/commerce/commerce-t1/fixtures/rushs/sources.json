@@ -1,0 +1,54 @@
+[
+  {
+    "scene": "S1",
+    "page": "https://mixkit.co/free-stock-video/coffee-in-green-mug-818/",
+    "url": "https://assets.mixkit.co/videos/818/818-720.mp4",
+    "auteur": "franklandgrave",
+    "licence": "Mixkit Stock Video Free License",
+    "url_licence": "https://mixkit.co/license/#videoFree",
+    "date_controle": "2026-11-19",
+    "observation": "Produit entier : les mains posent la tasse verte sur sa soucoupe.",
+    "start": 2.0,
+    "duration": 8,
+    "sha256": "7e89890b99af3ce1d9fac49064d6754ddbc636b71c2be78e6d4c18f835b5ba58"
+  },
+  {
+    "scene": "S2",
+    "page": "https://mixkit.co/free-stock-video/close-up-view-serving-a-sparkling-cappuccino-41858/",
+    "url": "https://assets.mixkit.co/videos/41858/41858-720.mp4",
+    "auteur": "mixkit",
+    "licence": "Mixkit Stock Video Free License",
+    "url_licence": "https://mixkit.co/license/#videoFree",
+    "date_controle": "2026-11-19",
+    "observation": "Détail : le dessin blanc se détache sur la mousse.",
+    "start": 1.5,
+    "duration": 10,
+    "sha256": "030919eff6c0d5e9eac5a3fafbdf499aa14b878b881b10df7f090d957e7e10a2"
+  },
+  {
+    "scene": "S3",
+    "page": "https://mixkit.co/free-stock-video/latte-art-810/",
+    "url": "https://assets.mixkit.co/videos/810/810-720.mp4",
+    "auteur": "franklandgrave",
+    "licence": "Mixkit Stock Video Free License",
+    "url_licence": "https://mixkit.co/license/#videoFree",
+    "date_controle": "2026-11-19",
+    "observation": "Preuve du service : le barista dessine avec le lait dans la tasse.",
+    "start": 16.6,
+    "duration": 9,
+    "sha256": "da04155d66bb59158d63c83bb4e27591b65b0da40c635914a67eafd8cc3f7062"
+  },
+  {
+    "scene": "S4",
+    "page": "https://mixkit.co/free-stock-video/barista-cleaning-a-coffee-machine-817/",
+    "url": "https://assets.mixkit.co/videos/817/817-720.mp4",
+    "auteur": "franklandgrave",
+    "licence": "Mixkit Stock Video Free License",
+    "url_licence": "https://mixkit.co/license/#videoFree",
+    "date_controle": "2026-11-19",
+    "observation": "Point de vente : tasse verte au premier plan, machine et comptoir derrière.",
+    "start": 0.4,
+    "duration": 11,
+    "sha256": "10910dcab842fb4ae19739cb715f9824ec2aa3d9986de2d7a7eaefba0bf72b5d"
+  }
+]
