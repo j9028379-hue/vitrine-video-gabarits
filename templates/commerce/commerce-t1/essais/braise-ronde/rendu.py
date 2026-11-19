@@ -1,6 +1,6 @@
 """Test client distinct ; exécuté sur GitHub, quatre MP4 importés via le vrai parcours navigateur."""
 from pathlib import Path as P
-import base64,hashlib,json,os,subprocess,sys,tempfile,shutil,wave
+import hashlib,json,os,subprocess,sys,tempfile,shutil,wave
 import numpy as np
 D=P(__file__).resolve().parent;R=D.parents[1];sys.path.insert(0,str(R/'engine'));from runtime import execute,read,sha,atomic,select
 run=lambda args,**kw:subprocess.run(args,check=True,**kw)
@@ -18,9 +18,14 @@ def main(dest):
   # Générer le RenderJob via formulaire, A/B/C et reprise 1C (aucune validation falsifiée).
   run(['npm','install','--prefix',str(q/'tools'),'--no-audit','--no-fund','--ignore-scripts','puppeteer-core@23.11.1']);run(['node',str(R/'integration/banc.cjs')],env={**os.environ,'NODE_PATH':str(q/'tools/node_modules'),'COMMERCE_JOB_DIR':str(src)})
   # Chaque runner relit le journal public durable. La publication compare la révision avant d’accepter la proposition.
-  remote='https://api.github.com/repos/'+os.environ['GITHUB_REPOSITORY']+'/contents/autoplay/etat.json?ref=state/commerce-autoplay';get(remote,q/'state-api.json');record=read(q/'state-api.json');last=json.loads(base64.b64decode(record['content']))['last_success'];state=q/'etat.json';atomic(state,{'last_success':last});catalog=read(R/'audio/catalogue.json')['pistes'];ids=[e['id'] for e in catalog];assert len(ids)==len(set(ids))==4 and last in ids;expected=select(ids,jobid,last);assert expected!=last;track=next(e for e in read(R/'audio/auditions/sources.json') if e['id']==expected);get(track['source_mp3'],q/f'{expected}.mp3');assert sha(q/f'{expected}.mp3')==track['sha256']
+  # Une seule révision immuable pour le contenu et le SHA de comparaison.
+  # Échec fermé si la branche est absente : ne jamais réinitialiser la rotation.
+  ref='refs/commerce-test/rotation';run(['git','fetch','--quiet','--no-tags','--depth=1','origin','+refs/heads/state/commerce-autoplay:'+ref],cwd=R)
+  blob=subprocess.check_output(['git','rev-parse','--verify',ref+':autoplay/etat.json'],cwd=R,text=True).strip()
+  last=json.loads(subprocess.check_output(['git','cat-file','blob',blob],cwd=R))['last_success']
+  state=q/'etat.json';atomic(state,{'last_success':last});catalog=read(R/'audio/catalogue.json')['pistes'];ids=[e['id'] for e in catalog];assert len(ids)==len(set(ids))==4 and last in ids;expected=select(ids,jobid,last);assert expected!=last;track=next(e for e in read(R/'audio/auditions/sources.json') if e['id']==expected);get(track['source_mp3'],q/f'{expected}.mp3');assert sha(q/f'{expected}.mp3')==track['sha256']
   result=execute(src,q/'output',jobid,'merchant-music',state,q);assert result['status']=='COMPLETED',result;selected=read(state)['last_success'];mix=read(q/'output/mix-marchand.json');assert expected==selected==mix['music_id'] and mix['active_blocks']>500;mp=dest/'La-Braise-Ronde-Pizza.mp4';shutil.copyfile(q/'output'/result['output'],mp);assert sha(mp)==result['sha256'];mf=read(q/'output/manifest.json');a=read(src/'formulaire.json');assert mf['textes_affiches']==[[a['nom'],a['produit']],[a['accroche'],a['prix']],[],[a['nom'],a['quartier'],'Écris-nous sur WhatsApp',a['whatsapp']]]
   info=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(mp)]));v,au=info['streams'];assert (v['width'],v['height'],v['nb_read_frames'],au['codec_name'],au['sample_rate'])==(720,1280,'900','aac','48000') and float(info['format']['duration'])==30
   for f in ['render-job.json','preuve-parcours.json']:shutil.copyfile(src/f,dest/f)
-  atomic(dest/'CQ-pizza.json',dict(job=jobid,run_id=int(os.environ['GITHUB_RUN_ID']),commit=os.environ['GITHUB_SHA'],sha256=result['sha256'],libelle='Restaurant fictif, quatre rushs importés et voix IA française',images=900,duree_s=30,textes=mf['textes_affiches'],voix=plan,son=mix,stock_sha256=[s['sha256'] for s in sources],rotation={'revision_precedente':record['sha'],'precedente':last,'numero_precedent':ids.index(last)+1,'choisie':selected,'numero_choisi':ids.index(selected)+1,'titre':track['titre'],'artiste':track['artiste'],'candidates':ids,'choix_manuel':False}));print('PASS rendu pizza + rotation automatique',last,selected,flush=True)
+  atomic(dest/'CQ-pizza.json',dict(job=jobid,run_id=int(os.environ['GITHUB_RUN_ID']),commit=os.environ['GITHUB_SHA'],sha256=result['sha256'],libelle='Restaurant fictif, quatre rushs importés et voix IA française',images=900,duree_s=30,textes=mf['textes_affiches'],voix=plan,son=mix,stock_sha256=[s['sha256'] for s in sources],rotation={'revision_precedente':blob,'precedente':last,'numero_precedent':ids.index(last)+1,'choisie':selected,'numero_choisi':ids.index(selected)+1,'titre':track['titre'],'artiste':track['artiste'],'candidates':ids,'choix_manuel':False}));print('PASS rendu pizza + rotation automatique',last,selected,flush=True)
 if __name__=='__main__':main(P(sys.argv[1]))
