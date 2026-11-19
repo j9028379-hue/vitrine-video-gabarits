@@ -14,12 +14,15 @@
     "research/lot-01-refuse.json",
     "Lot-02.md",
     "approvals/choix-lot02-option02.json",
-    "research/reverse-engineering/REPORT.md"
+    "research/reverse-engineering/REPORT.md",
+    "form/QUESTIONS.md",
+    "approvals/duree-30s.json"
   ],
-  "derniere_approbation": "Lot 02, option 2 uniquement ; tous les raccords visuels à adapter à quatre scènes",
-  "decision_attendue": "Valider ou corriger le plan 24 secondes, quatre scènes et huit motifs avant les douze écrans",
+  "derniere_approbation": "Durée de 30 secondes imposée ; option 2 seule retenue.",
+  "decision_attendue": "Retour sur la proposition de saisie ; répartition 6/8/7/9 et parcours non encore approuvés.",
   "blocages": [
     "Dépôt commun : API GitHub publique HTTP 404, accès privé éventuel non vérifié. gh absent. Aucun push.",
     "Audio non écouté."
-  ]
+  ],
+  "duree_imposee_s": 30
 }
