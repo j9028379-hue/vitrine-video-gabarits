@@ -1,0 +1,75 @@
+{
+  "reference": "https://github.com/j9028379-hue/vitrine-video-t1-pilot/blob/c656510ab81d31d413dc4dfd74b42671532cd978/config/T1_special_menu_voice_mix_v1_0_0.json",
+  "provider": "Arena.ai Agent Mode",
+  "voix": "voice-01",
+  "langue": "fr",
+  "selection": "Voix retenue dans la seconde paire",
+  "date": "2026-11-19",
+  "vitesse": 1,
+  "duree_s": 30,
+  "frequence": 48000,
+  "clips": [
+    {
+      "scene": 1,
+      "texte": "Voici le cappuccino du Comptoir Démo.",
+      "sha256": "3eae9ed84799ea6525439bfc9cacebd31da798d933bb44bcd4740931dcdb9157",
+      "source_hz": 44100,
+      "source_s": 2.554,
+      "placement_s": 1.2,
+      "pause_ajoutee_s": null,
+      "voix_detectee_s": [
+        1.29,
+        3.7
+      ]
+    },
+    {
+      "scene": 2,
+      "texte": "Regarde le dessin dans la mousse. Le prix ? Mille cinq cents francs CFA.",
+      "sha256": "5fbceb264f596fd74b1636ef0ad311d66ebabe58fa6d858ce4bc5a0cb38a232b",
+      "source_hz": 44100,
+      "source_s": 6.687,
+      "placement_s": 6.8,
+      "pause_ajoutee_s": [
+        3.05,
+        0.38
+      ],
+      "voix_detectee_s": [
+        6.95,
+        13.7
+      ]
+    },
+    {
+      "scene": 3,
+      "texte": "Le lait tourne dans la tasse, et le dessin apparaît.",
+      "sha256": "565248a932e4b303df16410b966c67dd7cf6c80c457ed9ce530ed8e21a9a15e7",
+      "source_hz": 44100,
+      "source_s": 3.576,
+      "placement_s": 14.7,
+      "pause_ajoutee_s": null,
+      "voix_detectee_s": [
+        14.75,
+        18.22
+      ]
+    },
+    {
+      "scene": 4,
+      "texte": "Retrouve le Comptoir Démo à Akpakpa. Écris-nous sur WhatsApp.",
+      "sha256": "2d3b47cfa5d283079f40846ad89650b23a376faafdcdfbd27e5d9afe99046d45",
+      "source_hz": 44100,
+      "source_s": 3.924,
+      "placement_s": 21.8,
+      "pause_ajoutee_s": [
+        2.5,
+        1.34
+      ],
+      "voix_detectee_s": [
+        22.0,
+        26.79
+      ]
+    }
+  ],
+  "voix_seule_sha256": "545858373045644db8a9c8cd6277897f28c57c841e59ea8a9b60eac58854a2d6",
+  "audit_mp4_sha256": "63cfab4a65f138c478e82444ec4f7f81780b21f6d7f1e93501cc2c9fbeebd2c1",
+  "flux_video_source_et_apercu": "SHA256=221cbfcbfccd4c46fd1dc20c7a634addc254a7813cf44f9554220fa1360602a7",
+  "musique": "Absente : fichiers source des quatre pistes en attente ; pas de mix ni ducking validés."
+}

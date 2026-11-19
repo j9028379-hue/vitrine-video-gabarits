@@ -2,8 +2,8 @@
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
   "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "Socle universel v1 intégré à la maquette et au parcours de Produit vedette. Master V3 conservé.",
-  "branche": "feat/commerce-base-commune",
+  "statut_workflow": "Quatre musiques approuvées ; voix française choisie ; aperçu voix seule assemblé localement.",
+  "branche": "feat/commerce-t1-audition",
   "commit": "Voir le HEAD de la branche de travail.",
   "preuves": [
     "approvals/selection.json",
@@ -45,12 +45,14 @@
     "reports/rendu-03/controle.json",
     "reports/rendu-03/planche-QC.jpg",
     "../base-commune/socle-v1.json",
-    "reports/controle-socle.mjs"
+    "reports/controle-socle.mjs",
+    "approvals/musiques-validees.json",
+    "audio/audition-voix.json"
   ],
   "derniere_approbation": "Écrans corrigés et consignes produit acceptés.",
-  "decision_attendue": "Revoir le formulaire de principe et les 12 écrans ; pas de publication ni de création des quatre autres gabarits.",
+  "decision_attendue": "Écoute du débit ; attente des sources musicales pour le contrôle des quatre mixes.",
   "blocages": [
-    "Pas de déploiement autorisé ni de validation Android."
+    "Fichiers audio Pixabay non disponibles dans cet espace ; aucun mix voix-musique livré."
   ],
   "duree_imposee_s": 30,
   "depot": "https://github.com/j9028379-hue/vitrine-video-gabarits",
