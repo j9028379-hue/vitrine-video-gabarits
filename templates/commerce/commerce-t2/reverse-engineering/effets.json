@@ -1,0 +1,406 @@
+{
+  "template_id": "COMMERCE-T2",
+  "statut": "Proposition de reconstruction visuelle ; références 1 et 4 choisies, adaptation à valider",
+  "format_propose": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frames": 900
+  },
+  "conventions": {
+    "intervalles": "début inclus, fin exclue ; temps local à partir du début de chaque effet",
+    "interpolation": "linéaire entre clés ; 0 et 1 sont transparent et opaque",
+    "centre": "centre du produit ; par défaut (0.5, 0.5) en coordonnées normalisées",
+    "ordre": "image source → recadrage → compositing → textes ; noir final après les textes",
+    "hors_effet": "lecture naturelle de la prise courante à vitesse 1×, zoom 1, sans effet ; une coupe ne nécessite pas de prise supplémentaire",
+    "voix": "aucun traitement temporel par les effets image",
+    "gabarit": "durées adaptées au brief T2 ; paramètres numériques de synthèse proposés, non extraits du projet CapCut"
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "images_sortie": [
+        0,
+        180
+      ],
+      "prise": "S1",
+      "images_source": [
+        0,
+        180
+      ],
+      "fonction": "Arrivée et article entier",
+      "donnees_ecran": [
+        "nom",
+        "produit"
+      ]
+    },
+    {
+      "id": "S2",
+      "images_sortie": [
+        180,
+        420
+      ],
+      "prise": "S2",
+      "images_source": [
+        0,
+        240
+      ],
+      "fonction": "Détails et finition",
+      "donnees_ecran": [
+        "accroche",
+        "prix"
+      ]
+    },
+    {
+      "id": "S3",
+      "images_sortie": [
+        420,
+        630
+      ],
+      "prise": "S3",
+      "images_source": [
+        0,
+        210
+      ],
+      "fonction": "Utilisation réelle",
+      "donnees_ecran": []
+    },
+    {
+      "id": "S4",
+      "images_sortie": [
+        630,
+        900
+      ],
+      "prise": "S4",
+      "images_source": [
+        0,
+        270
+      ],
+      "fonction": "Présentation finale et commande",
+      "donnees_ecran": [
+        "nom",
+        "quartier",
+        "whatsapp"
+      ]
+    }
+  ],
+  "effets": [
+    {
+      "id": "reveal",
+      "reference": 1,
+      "images_reference": [
+        0,
+        63
+      ],
+      "images_t2": [
+        0,
+        42
+      ],
+      "operation": "revelation_par_geste",
+      "consigne": "article entier centré ; une main le découvre ou le dépose. Pas de boîte imposée.",
+      "zoom": [
+        1,
+        1.035
+      ]
+    },
+    {
+      "id": "angle",
+      "reference": 1,
+      "images_reference": [
+        63,
+        103
+      ],
+      "images_t2": [
+        42,
+        103
+      ],
+      "operation": "coupe_recadrage",
+      "zoom": [
+        1.065,
+        1.065
+      ]
+    },
+    {
+      "id": "ambre",
+      "reference": 1,
+      "images_reference": [
+        103,
+        128
+      ],
+      "images_t2": [
+        103,
+        113
+      ],
+      "operation": "voile_chaud",
+      "couleur_sRGB": "#FFCF9F",
+      "opacite": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          0.32
+        ],
+        [
+          9,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "entier",
+      "reference": 1,
+      "images_reference": [
+        128,
+        200
+      ],
+      "images_t2": [
+        128,
+        180
+      ],
+      "operation": "retour_plan_entier",
+      "zoom": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "macro",
+      "reference": 1,
+      "images_reference": [
+        200,
+        268
+      ],
+      "images_t2": [
+        180,
+        268
+      ],
+      "operation": "coupe_detail",
+      "zoom": [
+        1.05,
+        1.15
+      ]
+    },
+    {
+      "id": "revers",
+      "reference": 1,
+      "images_reference": [
+        268,
+        311
+      ],
+      "images_t2": [
+        268,
+        311
+      ],
+      "operation": "coupe_recadrage",
+      "zoom": [
+        1.22,
+        1.22
+      ]
+    },
+    {
+      "id": "reflet",
+      "reference": 1,
+      "images_reference": [
+        311,
+        372
+      ],
+      "images_t2": [
+        311,
+        365
+      ],
+      "operation": "reflet_local_mobile",
+      "couleur_sRGB": "#FFF7EC",
+      "mode": "screen",
+      "rayon_xy": [
+        0.22,
+        0.17
+      ],
+      "centre_xy": [
+        [
+          0.38,
+          0.48
+        ],
+        [
+          0.64,
+          0.4
+        ]
+      ],
+      "opacite": [
+        [
+          0,
+          0.78
+        ],
+        [
+          12,
+          0.58
+        ],
+        [
+          53,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "double",
+      "reference": 4,
+      "images_reference": [
+        240,
+        255
+      ],
+      "images_t2": [
+        420,
+        435
+      ],
+      "operation": "fondu_aligne_deux_echelles",
+      "sortant": "dernière image de S2 ; centre du produit aligné",
+      "entrant": "S3 en lecture normale",
+      "zoom_sortant": [
+        1.22,
+        1.05
+      ],
+      "alpha_entrant": [
+        [
+          0,
+          0
+        ],
+        [
+          14,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "recul",
+      "reference": 4,
+      "images_reference": [
+        89,
+        113
+      ],
+      "images_t2": [
+        478,
+        502
+      ],
+      "operation": "surimpression_floue",
+      "images_utilisees": "deux copies de S3 à la même image",
+      "zoom_copie": [
+        1.18,
+        1
+      ],
+      "sigma_max_px": 6,
+      "opacite": [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          0.36
+        ],
+        [
+          23,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "ombre",
+      "reference": 4,
+      "images_reference": [
+        184,
+        207
+      ],
+      "images_t2": [
+        622,
+        639
+      ],
+      "operation": "passage_assombri",
+      "couleur_sRGB": "#000000",
+      "opacite": [
+        [
+          0,
+          0
+        ],
+        [
+          7,
+          0.67
+        ],
+        [
+          16,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "portrait",
+      "reference": 1,
+      "images_reference": [
+        372,
+        418
+      ],
+      "images_t2": [
+        639,
+        810
+      ],
+      "operation": "tenue_finale",
+      "zoom": [
+        1.04,
+        1
+      ],
+      "consigne": "article entier, pas de poignet imposé"
+    },
+    {
+      "id": "chaleur",
+      "reference": 1,
+      "images_reference": [
+        418,
+        450
+      ],
+      "images_t2": [
+        810,
+        829
+      ],
+      "operation": "voile_chaud",
+      "couleur_sRGB": "#FFD49E",
+      "opacite": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0.27
+        ],
+        [
+          18,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "noir",
+      "reference": 4,
+      "images_reference": [
+        401,
+        423
+      ],
+      "images_t2": [
+        879,
+        900
+      ],
+      "operation": "fondu_noir",
+      "couleur_sRGB": "#000000",
+      "opacite": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          1
+        ]
+      ]
+    }
+  ]
+}
