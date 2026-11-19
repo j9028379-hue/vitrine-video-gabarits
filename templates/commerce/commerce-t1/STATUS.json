@@ -2,7 +2,7 @@
   "identifiant": "COMMERCE-T1",
   "secteur": "Petits commerçants et entreprises",
   "statut_catalogue": "À DÉVELOPPER",
-  "statut_workflow": "Quatre mixes voix + musiques disponibles pour écoute propriétaire.",
+  "statut_workflow": "Audition des quatre mixes validée ; en attente de la prochaine instruction.",
   "branche": "feat/commerce-t1-silencieux",
   "commit": "Voir le HEAD de la branche de travail.",
   "preuves": [
@@ -47,13 +47,12 @@
     "../base-commune/socle-v1.json",
     "reports/controle-socle.mjs",
     "approvals/musiques-validees.json",
-    "audio/audition-voix.json"
+    "audio/audition-voix.json",
+    "approvals/mixes-valides.json"
   ],
-  "derniere_approbation": "Écrans corrigés et consignes produit acceptés.",
-  "decision_attendue": "Écouter les quatre versions ; pas de diffusion ni de rotation activée.",
-  "blocages": [
-    "Validation humaine des mixes en attente."
-  ],
+  "derniere_approbation": "Audition COMMERCE-T1 : quatre variantes voix + musique.",
+  "decision_attendue": "Prochaine instruction du propriétaire. Aucune variante par défaut désignée.",
+  "blocages": [],
   "duree_imposee_s": 30,
   "depot": "https://github.com/j9028379-hue/vitrine-video-gabarits",
   "rendu_silencieux": {
@@ -73,6 +72,7 @@
   },
   "audition_musicale": {
     "run": "https://github.com/j9028379-hue/vitrine-video-gabarits/actions/runs/44571258004",
-    "rapport": "reports/audition-musicale/controle-mixes.json"
+    "rapport": "reports/audition-musicale/controle-mixes.json",
+    "decision": "approvals/mixes-valides.json"
   }
 }
