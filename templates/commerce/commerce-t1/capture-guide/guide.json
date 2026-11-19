@@ -47,30 +47,29 @@
     {
       "id": 1,
       "title": "Présente ton produit",
-      "instruction": "Pose la lampe sur la table. Recule un peu pour qu’on la voie en entier.",
+      "instruction": "Montre ton produit en entier. Recule un peu si on ne voit pas tout.",
       "needed": [
-        "La lampe, du pied jusqu’en haut."
+        "Le produit en entier."
       ],
       "avoid": [
-        "Ne coupe pas le haut ou le pied de la lampe."
+        "Ne coupe pas une partie du produit à l’écran."
       ],
-      "sample": "Voici notre lampe de bureau.",
+      "sample": "Voici le produit que je te présente aujourd’hui.",
       "capture": 8,
       "kept": 6,
-      "action": "Tiens ton téléphone droit et ne bouge plus."
+      "action": "Tiens ton téléphone droit, sans bouger."
     },
     {
       "id": 2,
       "title": "Montre le détail",
-      "instruction": "Approche ton téléphone de la tête de la lampe. Montre la partie qui tourne.",
+      "instruction": "Approche ton téléphone du détail que tu veux montrer.",
       "needed": [
-        "La tête de la lampe.",
-        "La petite pièce qui lui permet de tourner."
+        "Le détail du produit que tu as indiqué dans le formulaire."
       ],
       "avoid": [
-        "Ne mets pas ton doigt devant cette pièce."
+        "Ne cache pas le détail avec ton doigt."
       ],
-      "sample": "Regarde, la tête de la lampe peut tourner.",
+      "sample": "Regarde ce détail de près.",
       "capture": 10,
       "kept": 8,
       "action": "Attends que l’image soit nette avant de filmer."
@@ -78,34 +77,32 @@
     {
       "id": 3,
       "title": "Montre comment ça marche",
-      "instruction": "Tourne doucement la tête de la lampe pour montrer où va la lumière.",
+      "instruction": "Montre comment tu utilises le produit.",
       "needed": [
-        "Ta main qui tourne la lampe.",
-        "L’endroit que tu éclaires."
+        "Ta main, le produit et ce que tu fais avec."
       ],
       "avoid": [
-        "Ne cache pas la lampe avec ta main."
+        "Ne cache pas le produit au moment de t’en servir."
       ],
-      "sample": "Je peux diriger la lumière ici.",
+      "sample": "Voilà comment je m’en sers.",
       "capture": 9,
       "kept": 7,
-      "action": "Fais le geste une fois. Puis laisse la lampe dans cette position."
+      "action": "Fais le geste une fois. Puis laisse le temps de voir le résultat."
     },
     {
       "id": 4,
       "title": "Montre ta boutique",
-      "instruction": "Pose la lampe sur le comptoir. Filme-la avec le nom de ta boutique derrière, si on peut le voir.",
+      "instruction": "Montre ton produit dans ta boutique. Si tu peux, filme aussi le nom de la boutique.",
       "needed": [
-        "La lampe sur le comptoir.",
-        "Le nom de la boutique ou son entrée."
+        "Le produit et un endroit où on reconnaît ta boutique."
       ],
       "avoid": [
         "Ne filme pas les clients sans leur accord."
       ],
-      "sample": "Tu veux cette lampe ? Passe à la boutique ou écris-nous sur WhatsApp.",
+      "sample": "Tu veux ce produit ? Passe à la boutique ou écris-nous sur WhatsApp.",
       "capture": 11,
       "kept": 9,
-      "action": "Laisse un peu de place sous la lampe à l’écran. Le prix et ton numéro s’afficheront là."
+      "action": "Laisse un peu de place sous le produit à l’écran, pour le prix et ton numéro."
     }
   ],
   "text_policy": {
@@ -113,6 +110,6 @@
     "principe": "Parler au commerçant comme en face de lui. Dire quoi filmer et proposer un exemple différent pour chaque scène, lié aux réponses confirmées et à ce que la caméra montre. Ne rien promettre à sa place.",
     "service": "Tu peux parler pendant que tu filmes, en fon, yoruba, français ou anglais, pour présenter ton travail.",
     "parole": "Facultative, libre et sans lien avec la future voix off de démonstration.",
-    "exemple_courant": "Lampe de bureau ; tête orientable (détail déclaré dans le formulaire de démonstration)."
+    "exemple_courant": "Les images illustrent un produit. Les consignes communes disent « ton produit » ou « le produit ». Aucun nom ni détail d’article de démonstration n’est imposé."
   }
 }
