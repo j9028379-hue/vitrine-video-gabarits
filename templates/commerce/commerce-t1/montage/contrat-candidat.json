@@ -1,0 +1,180 @@
+{
+  "id": "COMMERCE-T1",
+  "version": "0.1.0",
+  "etat": "contrat candidat, non rendu",
+  "guide": {
+    "path": "capture-guide/guide.json",
+    "sha256": "530446bf19662ebbf3c569df27191fb144761a302a966b17b7ead916b6bf5149",
+    "usage": "Consignes à la capture seulement ; ne pas incruster les exemples de parole."
+  },
+  "formulaire": {
+    "schema": "form/schema-v0.1.json",
+    "champs_requis": [
+      "nom",
+      "produit",
+      "prix",
+      "whatsapp",
+      "quartier",
+      "accroche"
+    ],
+    "whatsapp": "Enlever les espaces à la saisie, puis valider. Si une valeur est absente ou invalide, bloquer la préparation."
+  },
+  "reference": {
+    "lot": 2,
+    "option": 2,
+    "url": "https://www.capcut.com/template-detail/New-Drink-Product/7641833250612137223",
+    "sha256_apercu": "c200dbaa3bf7e2a0804402b7f1c041612fee45b201e174d8ca2ccad645387ca7"
+  },
+  "duree_s": 30,
+  "scenes": [
+    {
+      "id": "S1",
+      "prise": "prise_validee_S1",
+      "sortie_s": [
+        0,
+        6
+      ],
+      "capture_s": 8,
+      "source_s": [
+        1,
+        7
+      ],
+      "textes": [
+        "{produit}"
+      ]
+    },
+    {
+      "id": "S2",
+      "prise": "prise_validee_S2",
+      "sortie_s": [
+        6,
+        14
+      ],
+      "capture_s": 10,
+      "source_s": [
+        1,
+        9
+      ],
+      "textes": [
+        "{accroche}"
+      ]
+    },
+    {
+      "id": "S3",
+      "prise": "prise_validee_S3",
+      "sortie_s": [
+        14,
+        21
+      ],
+      "capture_s": 9,
+      "source_s": [
+        1,
+        8
+      ],
+      "textes": []
+    },
+    {
+      "id": "S4",
+      "prise": "prise_validee_S4",
+      "sortie_s": [
+        21,
+        30
+      ],
+      "capture_s": 11,
+      "source_s": [
+        1,
+        10
+      ],
+      "textes": [
+        "{prix:fcfa}",
+        "{nom} · {quartier}",
+        "Contacte-nous sur WhatsApp",
+        "{whatsapp}"
+      ]
+    }
+  ],
+  "effets": [
+    {
+      "motif": "A",
+      "effet": "lamelles et cercle",
+      "sortie_s": [
+        0,
+        1.45
+      ]
+    },
+    {
+      "motif": "B",
+      "effet": "éclat coloré",
+      "sortie_s": [
+        2.85,
+        3.25
+      ]
+    },
+    {
+      "motif": "C",
+      "effet": "papier oblique",
+      "sortie_s": [
+        5.8,
+        6.25
+      ]
+    },
+    {
+      "motif": "D",
+      "effet": "poussée et voile clair",
+      "sortie_s": [
+        10,
+        10.55
+      ]
+    },
+    {
+      "motif": "E",
+      "effet": "fente horizontale",
+      "sortie_s": [
+        13.75,
+        14.55
+      ]
+    },
+    {
+      "motif": "F",
+      "effet": "tranche puis carte",
+      "sortie_s": [
+        17.1,
+        18.1
+      ]
+    },
+    {
+      "motif": "G",
+      "effet": "bande oblique et recul",
+      "sortie_s": [
+        20.85,
+        22.2
+      ]
+    },
+    {
+      "motif": "H",
+      "effet": "fermeture en lamelles",
+      "sortie_s": [
+        29.3,
+        30
+      ]
+    }
+  ],
+  "audio": {
+    "voix_off_ajoutee": false,
+    "musique_ajoutee": false,
+    "source": "Proposition pour ce premier master : son des prises coupé au montage ; originaux intacts, relecture de capture avec leur son."
+  },
+  "polices": {
+    "DejaVuSans-Bold.ttf": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890",
+    "DejaVuSans.ttf": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e"
+  },
+  "typographie": {
+    "gras": "titre produit et prix",
+    "normal": "détail, commerce, quartier et contact",
+    "si_absente": "Erreur ; aucun remplacement silencieux."
+  },
+  "cta_stable_s": [
+    22.3,
+    29.3
+  ]
+}

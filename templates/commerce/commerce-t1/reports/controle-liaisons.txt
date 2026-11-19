@@ -1,0 +1,1 @@
+PASS — guide, référence 2, six omissions rejetées, numéro masqué rejeté, substitution avec un second produit, quatre sources ordonnées, fenêtres, 30 s, huit motifs, deux polices. Tests locaux de contrat uniquement : aucun rendu ni CI.
