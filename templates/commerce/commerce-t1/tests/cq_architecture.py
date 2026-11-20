@@ -13,7 +13,7 @@ for f in [lambda a:a.update(secret='x'),lambda a:a['captures']['S1'].update(debu
 checks['5 mutations de job refusées']=True;catalog=read(repo/'catalogue/catalogue.json')['entries'][0];assert all(c[k]==catalog[k] for k in ['template_id','version','audio_profile']);assert not catalog['ota_implemented'];assert (repo/catalog['contrat']).resolve()==(r/'montage/contrat-candidat.json').resolve();checks['identité catalogue hors ligne']=True
 songs=read(r/'audio/catalogue.json')['pistes'];ids=[s['id'] for s in songs];assert len(ids)==len(set(ids))==4;prev=None;seen=set()
 for i in range(10000):
- key=f'job-{i}';a=select(ids,key,prev);assert a==select(ids,key,prev) and a!=prev;seen.add(a);prev=a
+ key=f'job-{i}';a=select(ids,key,prev);assert a==select(ids,key,prev) and a==ids[i%4] and a!=prev;seen.add(a);prev=a
 assert seen==set(ids);checks['rotation déterministe sans répétition']=10000
 with tempfile.TemporaryDirectory() as temp:
  q=P(temp);res=execute(q,q/'output','invalide');assert res['code']=='INVALID_JOB';contract('render-error',res)

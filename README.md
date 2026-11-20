@@ -8,3 +8,6 @@
 - [Parcours jusqu’au RenderJob](templates/commerce/commerce-t1/integration/README.md) · [Contrat du montage](templates/commerce/commerce-t1/montage/contrat-candidat.json) · [Approbation des quatre mixes](templates/commerce/commerce-t1/approvals/mixes-valides.json)
 
 Le paquet programme un moteur Python/Linux. Il ne constitue pas une application Android ou un service OTA en production. Les dates et les anciens statuts des rapports d’étape sont historiques.
+
+## Migration du service de génération — phase rotation
+La règle active de choix pour les nouvelles livraisons est le cycle strict 1 → 2 → 3 → 4 → 1, par gabarit, à partir du dernier succès, sans saut de piste. Cette règle remplace les descriptions de sélection antérieures. Cette étape ne publie aucun nouveau média, ne migre pas les masters et ne constitue pas un déploiement R2.

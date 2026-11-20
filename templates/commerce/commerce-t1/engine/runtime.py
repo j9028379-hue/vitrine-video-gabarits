@@ -6,11 +6,11 @@ from job import lire
 ROOT=Path(__file__).resolve().parents[1]
 read=lambda p:json.loads(Path(p).read_text());sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def select(ids,job_id,last=None,requested=None):
- pool=[i for i in ids if i!=last]
- if requested is not None:
-  if requested not in pool:raise ValueError('Sélection interdite ou répétée')
-  return requested
- return pool[int.from_bytes(hashlib.sha256(job_id.encode()).digest()[:8],'big')%len(pool)]
+ if not job_id or len(ids)!=4 or len(set(ids))!=4 or (last is not None and last not in ids):raise ValueError('Catalogue ou état de rotation invalide')
+ suivant=ids[0] if last is None else ids[(ids.index(last)+1)%4]
+ if requested is not None and requested!=suivant:raise ValueError('Seule la prochaine piste du cycle est autorisée')
+ return suivant
+
 def atomic(p,value):
  tmp=p.with_name(p.name+'.tmp');tmp.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n');os.replace(tmp,p)
 def contract(kind,x):validate(x,read(ROOT/'schemas'/f'{kind}.json'));return x

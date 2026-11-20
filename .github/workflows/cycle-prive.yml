@@ -1,0 +1,27 @@
+name: Cycle privé · validation sans livraison
+on:
+  push:
+    branches: [feat/commerce-t1-silencieux]
+permissions: {contents: read}
+jobs:
+  verifier:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - run: python -m pip install jsonschema
+      - run: |
+          PYTHONPATH=templates/commerce/commerce-t1/engine python - <<'PY'
+          import json
+          from runtime import select as choisir
+          ids=[p['id'] for p in json.load(open('templates/commerce/commerce-t1/audio/catalogue.json'))['pistes']]
+          last=None
+          for k in range(10000):
+              last=choisir(ids,str(k),last);assert last==ids[k%4]
+          for prev in ids:
+              for bad in set(ids)-{ids[(ids.index(prev)+1)%4]}:
+                  try: choisir(ids,'refus',prev,bad)
+                  except ValueError: continue
+                  raise AssertionError('Saut accepté')
+          print('PASS : 10 000 choix et 12 demandes hors cycle refusées ; aucun journal de production utilisé')
+          PY
